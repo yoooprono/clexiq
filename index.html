@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-0cEJLdq42TLWaAjBpS9a3fuR6O79C7erGOCKoxMPyZU=' https://www.gstatic.com https://apis.google.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://*.googleusercontent.com https://www.gstatic.com; connect-src https://*.googleapis.com https://*.firebaseio.com wss://*.firebaseio.com https://clexiq.firebaseapp.com; frame-src https://clexiq.firebaseapp.com https://accounts.google.com https://apis.google.com https://www.google.com; object-src 'none'; base-uri 'none'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-hfwhSk1SR/k7cu8OujFhB+sCNuG8Oyh0gMy8fFfTQSw=' https://www.gstatic.com https://apis.google.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://*.googleusercontent.com https://www.gstatic.com; connect-src https://*.googleapis.com https://*.firebaseio.com wss://*.firebaseio.com https://clexiq.firebaseapp.com; frame-src https://clexiq.firebaseapp.com https://accounts.google.com https://apis.google.com https://www.google.com; object-src 'none'; base-uri 'none'; form-action 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#060B1A">
 <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJDbGV4aXEiPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJjeGciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMyRUYyQzIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxNkI4REUiLz48L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJjeGIiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwRjFDMzgiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwNzBFMjAiLz48L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB4PSIyIiB5PSIyIiB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNjeGIpIiBzdHJva2U9IiMxRjNBNjMiIHN0cm9rZS13aWR0aD0iMS4yIi8+CiAgPHBhdGggZD0iTTM5LjUgMjIuNEExNSAxNSAwIDEgMCAzOS41IDQxLjYiIGZpbGw9Im5vbmUiIHN0cm9rZT0idXJsKCNjeGcpIiBzdHJva2Utd2lkdGg9IjYuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBhdGggZD0iTTI0LjUgMjUuNSAzNy41IDM4LjVNMzcuNSAyNS41IDI0LjUgMzguNSIgc3Ryb2tlPSIjRjRGOEZGIiBzdHJva2Utd2lkdGg9IjUuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGcgc3Ryb2tlPSIjMkVGMkMyIiBzdHJva2Utd2lkdGg9IjIuNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj48cGF0aCBkPSJNNDMuNiAyMi40IDQ2LjYgMTkuNCIvPjxwYXRoIGQ9Ik00NC41IDI3LjVoNS41Ii8+PHBhdGggZD0iTTQzLjUgNDAuNSA0Ny44IDQ0LjgiLz48L2c+CiAgPGNpcmNsZSBjeD0iNTAuNiIgY3k9IjE1LjQiIHI9IjIiIGZpbGw9IiMyRUYyQzIiLz4KPC9zdmc+Cg==" type="image/svg+xml">
@@ -192,6 +192,12 @@ input[type=color]{padding:3px;height:44px;cursor:pointer}
 .notice{border:1px solid rgba(245,181,68,.35);background:rgba(245,181,68,.08);color:var(--amber);border-radius:12px;padding:12px 14px;font-size:13px;font-weight:500}
 .secure{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:12px;justify-content:center}.secure svg{width:14px;height:14px;color:var(--primary)}
 a.nav{text-decoration:none}
+/* sélecteur de langue */
+select.lang{width:auto;height:38px;padding:0 30px 0 12px;font-size:13px;font-weight:600;border-radius:10px;background:var(--surface2);cursor:pointer}
+select.lang.sm{height:34px;padding:0 24px 0 8px;font-size:12px}
+select.lang.block{width:100%;margin-bottom:10px}
+.notice .btn{flex:none}
+@media(max-width:820px){.lh select.lang{height:38px}.lh .row.gap{gap:8px}}
 
 </style>
 </head>
@@ -203,24 +209,39 @@ a.nav{text-decoration:none}
 import { getAuth, onAuthStateChanged, GoogleAuthProvider, signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, updateProfile, updatePassword, signOut, deleteUser } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js';
 import { getFirestore, doc, getDoc, getDocs, setDoc, updateDoc, deleteDoc, addDoc, collection, query, where, orderBy, limit, writeBatch, serverTimestamp, increment, getAggregateFromServer, sum, count } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
 
-const PLATFORMS = ['TikTok', 'Instagram Reels', 'YouTube Shorts', 'X', 'Facebook'];
-const PLC = { 'TikTok': '#FF2D55', 'Instagram Reels': '#E1306C', 'YouTube Shorts': '#FF4D4D', 'X': '#C3CBDA', 'Facebook': '#4C8DFF' };
-const METHODS = ['MTN Mobile Money', 'Moov Money', 'Wave', 'Orange Money', 'PayPal', 'Virement bancaire'];
+const I18N = {"en": {"à l'instant": "just now", "il y a {n} min": "{n} min ago", "il y a {n} h": "{n} h ago", "il y a {n} j": "{n} d ago", "Fermer": "Close", "Confirmer": "Confirm", "Annuler": "Cancel", "Connexion impossible. Vérifie ton internet.": "Unable to connect. Check your internet.", "Une erreur est survenue. Réessaie.": "Something went wrong. Please try again.", "Continuer avec Google": "Continue with Google", "ou avec ton email": "or with your email", "Nom complet": "Full name", "Email": "Email", "Mot de passe": "Password", "8 caractères minimum, avec au moins une lettre et un chiffre.": "At least 8 characters, with at least one letter and one number.", "J'accepte les conditions d'utilisation et le règlement des campagnes": "I accept the terms of use and the campaign rules", "Créer mon compte": "Create my account", "Se connecter": "Log in", "Mot de passe oublié ?": "Forgot password?", "Déjà inscrit ?": "Already registered?", "Pas encore de compte ?": "No account yet?", "Créer un compte": "Create an account", "Connexion chiffrée · données protégées": "Encrypted connection · protected data", "Adresse email invalide.": "Invalid email address.", "Indique ton nom.": "Enter your name.", "Mot de passe trop faible : 8 caractères minimum, avec lettres et chiffres.": "Password too weak: at least 8 characters, with letters and numbers.", "Accepte les conditions pour continuer.": "Accept the terms to continue.", "Mot de passe oublié": "Forgot password", "Entre ton email : tu recevras un lien pour choisir un nouveau mot de passe.": "Enter your email: you'll receive a link to choose a new password.", "Envoyer le lien": "Send the link", "Si un compte existe, un email vient d'être envoyé.": "If an account exists, an email has just been sent.", "Confirme ton adresse email": "Confirm your email address", "Un lien de confirmation a été envoyé à {email}. Clique dessus, puis reviens ici. Pense à regarder dans les spams.": "A confirmation link was sent to {email}. Click it, then come back here. Check your spam folder too.", "J'ai confirmé mon email": "I've confirmed my email", "Renvoyer l'email": "Resend the email", "Se déconnecter": "Log out", "Email renvoyé.": "Email resent.", "Email pas encore confirmé. Clique sur le lien reçu.": "Email not confirmed yet. Click the link you received.", "Tu es déconnecté.": "You are logged out.", "Ce compte a été supprimé.": "This account has been deleted.", "Ce compte est suspendu. Contacte le support.": "This account is suspended. Contact support.", "Ton compte a été suspendu.": "Your account has been suspended.", "Ce compte n'est plus actif.": "This account is no longer active.", "Connexion": "Log in", "Commencer": "Get started", "Programme clippers · paiement en USDT": "Clipper program · paid in USDT", "Transforme tes clips en {r}.": "Turn your clips into {r}.", "revenus": "income", "Rejoins les campagnes des marques et créateurs, publie des clips courts sur TikTok, Instagram et YouTube, et sois payé pour chaque 1 000 vues vérifiées.": "Join campaigns from brands and creators, post short clips on TikTok, Instagram and YouTube, and get paid for every 1,000 verified views.", "Créer mon compte gratuit": "Create my free account", "J'ai déjà un compte": "I already have an account", "campagnes actives": "active campaigns", "vues vérifiées": "verified views", "clippers inscrits": "registered clippers", "Comment ça marche": "How it works", "Campagnes du moment": "Current campaigns", "Monte en rang": "Rank up", "Plus tes clips cumulent de vues vérifiées, plus tu débloques d'avantages.": "The more verified views your clips get, the more perks you unlock.", "Prêt à clipper ?": "Ready to clip?", "Inscription gratuite, aucun abonnement.": "Free sign-up, no subscription.", "Je m'inscris": "Sign me up", "/ 1K vues": "/ 1K views", "Budget utilisé": "Budget used", "Brief": "Brief", "Budget épuisé": "Budget exhausted", "Participer": "Join", "Description": "Description", "Règles à respecter": "Rules to follow", "Plateformes acceptées": "Accepted platforms", "{n}+ vues": "{n}+ views", "Débloqué": "Unlocked", "Verrouillé": "Locked", "Clip sans titre": "Untitled clip", "Motif : {r}": "Reason: {r}", "{n} vues": "{n} views", "déclarées": "declared", "Retirer": "Remove", "Ton rang actuel": "Your current rank", "Prochain :": "Next:", "encore {n} vues": "{n} views to go", "Rang maximum atteint": "Maximum rank reached", "{n} vues vérifiées": "{n} verified views", "Relie et fais vérifier au moins une chaîne pour pouvoir soumettre des clips.": "Link and verify at least one channel to submit clips.", "Relier une chaîne": "Link a channel", "Vues vérifiées": "Verified views", "Gains totaux": "Total earnings", "Solde disponible": "Available balance", "Clips approuvés": "Approved clips", "Clips récents": "Recent clips", "Tout voir": "See all", "Aucun clip pour le moment": "No clips yet", "Choisis une campagne et soumets ton premier clip.": "Pick a campaign and submit your first clip.", "Voir les campagnes": "See campaigns", "Aucune campagne active": "No active campaigns", "De nouvelles campagnes arrivent bientôt. Reviens vite !": "New campaigns are coming soon. Check back soon!", "Rien ici": "Nothing here", "Aucun clip dans cette catégorie.": "No clips in this category.", "Soumettre un clip": "Submit a clip", "Ajoute ta chaîne TikTok, Instagram ou YouTube.": "Add your TikTok, Instagram or YouTube channel.", "Copie le code unique Clexiq et colle-le dans ta bio (ou la description YouTube).": "Copy your unique Clexiq code and paste it in your bio (or YouTube description).", "Touche « J'ai placé le code » : l'équipe vérifie que la chaîne t'appartient.": "Tap “I've added the code”: the team checks that the channel is yours.", "Une fois vérifiée, tu peux retirer le code et soumettre des clips de cette chaîne.": "Once verified, you can remove the code and submit clips from this channel.", "ajoutée le {d}": "added on {d}", "Place ce code {where} :": "Put this code {where}:", "Copier": "Copy", "J'ai placé le code": "I've added the code", "Code {c} — vérification en cours par l'équipe. Garde le code dans ta bio jusqu'à la validation.": "Code {c} — the team is verifying. Keep the code in your bio until it's approved.", "Vérification refusée : le code n'a pas été trouvé. Supprime puis ajoute à nouveau la chaîne.": "Verification rejected: the code wasn't found. Delete and add the channel again.", "Supprimer": "Delete", "Aucune chaîne reliée": "No linked channels", "Relie ta première chaîne pour pouvoir participer aux campagnes.": "Link your first channel to join campaigns.", "Classement des clippers": "Clipper leaderboard", "Ta position : #{n}": "Your position: #{n}", "Hors top 20": "Outside the top 20", "Classement vide": "Empty leaderboard", "Sois le premier à faire valider un clip.": "Be the first to get a clip approved.", "Retraits en cours": "Pending withdrawals", "Déjà retiré": "Already withdrawn", "Demander un retrait": "Request a withdrawal", "Montant (USD)": "Amount (USD)", "Minimum {m}": "Minimum {m}", "Méthode de paiement": "Payment method", "Adresse USDT BEP20": "USDT BEP20 address", "Demander le retrait": "Request withdrawal", "Utilise uniquement une adresse du réseau BEP20 (BNB Smart Chain). Un envoi vers un mauvais réseau est perdu définitivement.": "Only use an address on the BEP20 network (BNB Smart Chain). Funds sent on the wrong network are lost forever.", "Il te faut au moins {m} de solde pour retirer.": "You need at least {m} in balance to withdraw.", "Historique des retraits": "Withdrawal history", "Aucun retrait": "No withdrawals", "Tes demandes apparaîtront ici.": "Your requests will appear here.", "Pays": "Country", "Le pays ne peut plus être modifié.": "The country can no longer be changed.", "Choisis ton pays…": "Choose your country…", "Attention : une fois confirmé, le pays ne pourra plus être modifié.": "Note: once confirmed, the country can't be changed.", "Membre depuis le {d}": "Member since {d}", "Compte Google": "Google account", "Compte email": "Email account", "Langue": "Language", "Enregistrer": "Save", "Tes chaînes TikTok, Instagram et YouTube se gèrent dans l'onglet « Chaînes ».": "Manage your TikTok, Instagram and YouTube channels in the “Channels” tab.", "Ouvrir": "Open", "Sécurité": "Security", "Tu te connectes avec Google : ton mot de passe et la double authentification sont gérés par ton compte Google.": "You sign in with Google: your password and two-step verification are managed by your Google account.", "Nouveau mot de passe": "New password", "Confirme": "Confirm", "Changer le mot de passe": "Change password", "Zone dangereuse": "Danger zone", "La suppression efface ton compte, tes clips et ton historique. Ton solde non retiré sera perdu. Action irréversible.": "Deleting erases your account, clips and history. Any unwithdrawn balance will be lost. This can't be undone.", "Supprimer mon compte": "Delete my account", "Panel admin": "Admin panel", "Déconnexion": "Log out", "Copié !": "Copied!", "Montant minimum : {m}": "Minimum amount: {m}", "Solde insuffisant.": "Insufficient balance.", "Adresse USDT BEP20 invalide : elle commence par 0x et contient 42 caractères.": "Invalid USDT BEP20 address: it starts with 0x and has 42 characters.", "Confirmer le retrait ?": "Confirm withdrawal?", "Tu demandes {a} en USDT sur le réseau BEP20 vers l'adresse {acc}. Vérifie-la caractère par caractère : un envoi est irréversible.": "You're requesting {a} in USDT on the BEP20 network to the address {acc}. Check it character by character: transfers can't be reversed.", "Demande de retrait envoyée.": "Withdrawal request sent.", "Confirmer ton pays ?": "Confirm your country?", "Tu as choisi {c}. Ce choix est définitif et ne pourra plus être modifié.": "You chose {c}. This choice is final and can't be changed.", "Profil mis à jour.": "Profile updated.", "Les deux mots de passe sont différents.": "The two passwords don't match.", "Mot de passe modifié.": "Password changed.", "Plateforme": "Platform", "Nom d'utilisateur de la chaîne": "Channel username", "Tu recevras un code unique à placer dans la bio de cette chaîne. C'est ce qui prouve qu'elle t'appartient : personne d'autre ne pourra la relier.": "You'll get a unique code to put in this channel's bio. It proves the channel is yours: no one else will be able to link it.", "Obtenir mon code": "Get my code", "Nom d'utilisateur invalide (lettres, chiffres, point, tiret, tiret bas).": "Invalid username (letters, numbers, dot, hyphen, underscore).", "Nombre maximum de chaînes atteint.": "Maximum number of channels reached.", "Chaîne ajoutée. Place maintenant le code dans ta bio.": "Channel added. Now put the code in your bio.", "Cette chaîne est déjà reliée à un compte Clexiq.": "This channel is already linked to a Clexiq account.", "Code placé ?": "Code added?", "Vérifie que le code {c} est bien visible dans ta bio, puis confirme. L'équipe va contrôler ta chaîne.": "Make sure the code {c} is visible in your bio, then confirm. The team will check your channel.", "Demande envoyée. Garde le code jusqu'à la validation.": "Request sent. Keep the code until it's approved.", "Supprimer cette chaîne ?": "Delete this channel?", "Tu ne pourras plus soumettre de clips depuis cette chaîne, sauf si tu la relies à nouveau.": "You won't be able to submit clips from this channel unless you link it again.", "Chaîne supprimée.": "Channel deleted.", "Relie et fais vérifier une chaîne avant de soumettre un clip.": "Link and verify a channel before submitting a clip.", "Aucune campagne ouverte pour le moment.": "No open campaigns right now.", "Aucune chaîne vérifiée pour cette campagne": "No verified channel for this campaign", "Campagne": "Campaign", "/1K": "/1K", "Chaîne de publication": "Posting channel", "Lien de la publication": "Post link", "Titre / accroche": "Title / hook", "Ex : Le moment où tout bascule": "E.g. The moment everything changes", "Vues actuelles": "Current views", "Chaque clip est vérifié par l'équipe. Seules les vues vérifiées sont rémunérées. Les clips trompeurs ou à vues achetées sont refusés.": "Every clip is reviewed by the team. Only verified views are paid. Misleading clips or clips with bought views are rejected.", "Envoyer pour validation": "Send for review", "Choisis une chaîne vérifiée acceptée par cette campagne.": "Choose a verified channel accepted by this campaign.", "Colle le lien complet de la vidéo {p}.": "Paste the full {p} video link.", "Ce lien TikTok ne vient pas de la chaîne @{h}.": "This TikTok link isn't from the @{h} channel.", "Tu as déjà soumis ce lien.": "You've already submitted this link.", "Clip envoyé ! En attente de validation.": "Clip sent! Awaiting review.", "Retirer ce clip ?": "Remove this clip?", "Le clip sera retiré de la file de validation.": "The clip will be removed from the review queue.", "Clip retiré.": "Clip removed.", "Le compte administrateur ne peut pas être supprimé depuis le site.": "The admin account can't be deleted from the site.", "Supprimer ton compte ?": "Delete your account?", "Ton compte, tes clips et ton historique seront définitivement supprimés. Ton solde non retiré sera perdu.": "Your account, clips and history will be permanently deleted. Any unwithdrawn balance will be lost.", "Supprimer définitivement": "Delete permanently", "Compte supprimé.": "Account deleted.", "Accueil": "Home", "Campagnes": "Campaigns", "Mes clips": "My clips", "Chaînes": "Channels", "Portefeuille": "Wallet", "Rangs": "Ranks", "Profil": "Profile", "Tableau de bord": "Dashboard", "Tes performances en un coup d'œil.": "Your performance at a glance.", "Choisis une campagne et commence à clipper.": "Pick a campaign and start clipping.", "Le statut de tous tes clips soumis.": "The status of all your submitted clips.", "Mes chaînes": "My channels", "Relie et vérifie tes comptes TikTok, Instagram et YouTube.": "Link and verify your TikTok, Instagram and YouTube accounts.", "Rangs & classement": "Ranks & leaderboard", "Monte en rang en cumulant des vues vérifiées.": "Rank up by earning verified views.", "Tes gains et tes retraits.": "Your earnings and withdrawals.", "Mon profil": "My profile", "Tes informations et la sécurité du compte.": "Your details and account security.", "dans la bio de ton profil TikTok": "in your TikTok profile bio", "dans la bio de ton profil Instagram": "in your Instagram profile bio", "dans la description de ta chaîne YouTube": "in your YouTube channel description", "Relie ta chaîne": "Link your channel", "Connecte tes comptes TikTok, Instagram ou YouTube et vérifie-les.": "Connect your TikTok, Instagram or YouTube accounts and verify them.", "Choisis une campagne": "Pick a campaign", "Lis le brief, le tarif par 1 000 vues et le budget restant.": "Read the brief, the rate per 1,000 views and the remaining budget.", "Publie et soumets": "Post and submit", "Coupe les meilleurs moments, publie, puis colle le lien. L'équipe vérifie.": "Cut the best moments, post, then paste the link. The team reviews it.", "Encaisse en USDT": "Cash out in USDT", "Retire tes gains en dollars sur ton adresse USDT BEP20.": "Withdraw your earnings in dollars to your USDT BEP20 address.", "Tous": "All", "En attente": "Pending", "Approuvés": "Approved", "Refusés": "Rejected", "Approuvé": "Approved", "Refusé": "Rejected", "Payé": "Paid", "Active": "Active", "En pause": "Paused", "Terminée": "Ended", "Code à placer": "Code to add", "En vérification": "Under review", "Vérifiée": "Verified", "Refusée": "Rejected", "Email ou mot de passe incorrect.": "Incorrect email or password.", "Cet email est déjà utilisé. Connecte-toi plutôt.": "This email is already in use. Log in instead.", "Trop de tentatives. Réessaie dans quelques minutes.": "Too many attempts. Try again in a few minutes.", "Ce compte est désactivé.": "This account is disabled.", "Connexion Google annulée.": "Google sign-in cancelled.", "La fenêtre Google a été bloquée. Autorise les pop-ups puis réessaie.": "The Google window was blocked. Allow pop-ups and try again.", "Ce domaine n'est pas autorisé dans Firebase (Authentication > Paramètres > Domaines autorisés).": "This domain isn't authorized in Firebase (Authentication > Settings > Authorized domains).", "Cette méthode de connexion n'est pas activée dans Firebase.": "This sign-in method isn't enabled in Firebase.", "Par sécurité, déconnecte-toi puis reconnecte-toi avant cette action.": "For security, log out and log back in before doing this.", "Un compte existe déjà avec cet email. Connecte-toi avec ta méthode habituelle.": "An account already exists with this email. Log in with your usual method.", "Action refusée par les règles de sécurité.": "Action blocked by the security rules.", "Serveur injoignable. Vérifie ton internet.": "Server unreachable. Check your internet.", "Opération impossible pour le moment. Réessaie.": "Operation not possible right now. Try again.", "Bronze": "Bronze", "Accès aux campagnes publiques": "Access to public campaigns", "Argent": "Silver", "Validation prioritaire des clips": "Priority clip review", "Or": "Gold", "Campagnes premium mieux payées": "Better-paid premium campaigns", "Platine": "Platinum", "Retraits sous 24 h et badge vérifié": "Withdrawals within 24 h and verified badge", "Diamant": "Diamond", "Manager dédié et campagnes exclusives": "Dedicated manager and exclusive campaigns"}, "es": {"à l'instant": "justo ahora", "il y a {n} min": "hace {n} min", "il y a {n} h": "hace {n} h", "il y a {n} j": "hace {n} d", "Fermer": "Cerrar", "Confirmer": "Confirmar", "Annuler": "Cancelar", "Connexion impossible. Vérifie ton internet.": "No se puede conectar. Revisa tu internet.", "Une erreur est survenue. Réessaie.": "Ocurrió un error. Inténtalo de nuevo.", "Continuer avec Google": "Continuar con Google", "ou avec ton email": "o con tu correo", "Nom complet": "Nombre completo", "Email": "Correo electrónico", "Mot de passe": "Contraseña", "8 caractères minimum, avec au moins une lettre et un chiffre.": "Mínimo 8 caracteres, con al menos una letra y un número.", "J'accepte les conditions d'utilisation et le règlement des campagnes": "Acepto los términos de uso y el reglamento de las campañas", "Créer mon compte": "Crear mi cuenta", "Se connecter": "Iniciar sesión", "Mot de passe oublié ?": "¿Olvidaste tu contraseña?", "Déjà inscrit ?": "¿Ya tienes cuenta?", "Pas encore de compte ?": "¿Aún no tienes cuenta?", "Créer un compte": "Crear una cuenta", "Connexion chiffrée · données protégées": "Conexión cifrada · datos protegidos", "Adresse email invalide.": "Correo electrónico no válido.", "Indique ton nom.": "Indica tu nombre.", "Mot de passe trop faible : 8 caractères minimum, avec lettres et chiffres.": "Contraseña demasiado débil: mínimo 8 caracteres, con letras y números.", "Accepte les conditions pour continuer.": "Acepta los términos para continuar.", "Mot de passe oublié": "Contraseña olvidada", "Entre ton email : tu recevras un lien pour choisir un nouveau mot de passe.": "Introduce tu correo: recibirás un enlace para elegir una nueva contraseña.", "Envoyer le lien": "Enviar el enlace", "Si un compte existe, un email vient d'être envoyé.": "Si existe una cuenta, se acaba de enviar un correo.", "Confirme ton adresse email": "Confirma tu correo electrónico", "Un lien de confirmation a été envoyé à {email}. Clique dessus, puis reviens ici. Pense à regarder dans les spams.": "Se envió un enlace de confirmación a {email}. Haz clic en él y vuelve aquí. Revisa también la carpeta de spam.", "J'ai confirmé mon email": "Ya confirmé mi correo", "Renvoyer l'email": "Reenviar el correo", "Se déconnecter": "Cerrar sesión", "Email renvoyé.": "Correo reenviado.", "Email pas encore confirmé. Clique sur le lien reçu.": "Correo aún no confirmado. Haz clic en el enlace recibido.", "Tu es déconnecté.": "Has cerrado sesión.", "Ce compte a été supprimé.": "Esta cuenta ha sido eliminada.", "Ce compte est suspendu. Contacte le support.": "Esta cuenta está suspendida. Contacta con soporte.", "Ton compte a été suspendu.": "Tu cuenta ha sido suspendida.", "Ce compte n'est plus actif.": "Esta cuenta ya no está activa.", "Connexion": "Iniciar sesión", "Commencer": "Empezar", "Programme clippers · paiement en USDT": "Programa de clippers · pago en USDT", "Transforme tes clips en {r}.": "Convierte tus clips en {r}.", "revenus": "ingresos", "Rejoins les campagnes des marques et créateurs, publie des clips courts sur TikTok, Instagram et YouTube, et sois payé pour chaque 1 000 vues vérifiées.": "Únete a campañas de marcas y creadores, publica clips cortos en TikTok, Instagram y YouTube, y cobra por cada 1000 vistas verificadas.", "Créer mon compte gratuit": "Crear mi cuenta gratis", "J'ai déjà un compte": "Ya tengo una cuenta", "campagnes actives": "campañas activas", "vues vérifiées": "vistas verificadas", "clippers inscrits": "clippers registrados", "Comment ça marche": "Cómo funciona", "Campagnes du moment": "Campañas del momento", "Monte en rang": "Sube de rango", "Plus tes clips cumulent de vues vérifiées, plus tu débloques d'avantages.": "Cuantas más vistas verificadas acumulen tus clips, más ventajas desbloqueas.", "Prêt à clipper ?": "¿Listo para clipear?", "Inscription gratuite, aucun abonnement.": "Registro gratuito, sin suscripción.", "Je m'inscris": "Me registro", "/ 1K vues": "/ 1K vistas", "Budget utilisé": "Presupuesto usado", "Brief": "Brief", "Budget épuisé": "Presupuesto agotado", "Participer": "Participar", "Description": "Descripción", "Règles à respecter": "Reglas a respetar", "Plateformes acceptées": "Plataformas aceptadas", "{n}+ vues": "{n}+ vistas", "Débloqué": "Desbloqueado", "Verrouillé": "Bloqueado", "Clip sans titre": "Clip sin título", "Motif : {r}": "Motivo: {r}", "{n} vues": "{n} vistas", "déclarées": "declaradas", "Retirer": "Retirar", "Ton rang actuel": "Tu rango actual", "Prochain :": "Siguiente:", "encore {n} vues": "faltan {n} vistas", "Rang maximum atteint": "Rango máximo alcanzado", "{n} vues vérifiées": "{n} vistas verificadas", "Relie et fais vérifier au moins une chaîne pour pouvoir soumettre des clips.": "Vincula y verifica al menos un canal para poder enviar clips.", "Relier une chaîne": "Vincular un canal", "Vues vérifiées": "Vistas verificadas", "Gains totaux": "Ganancias totales", "Solde disponible": "Saldo disponible", "Clips approuvés": "Clips aprobados", "Clips récents": "Clips recientes", "Tout voir": "Ver todo", "Aucun clip pour le moment": "Aún no hay clips", "Choisis une campagne et soumets ton premier clip.": "Elige una campaña y envía tu primer clip.", "Voir les campagnes": "Ver campañas", "Aucune campagne active": "No hay campañas activas", "De nouvelles campagnes arrivent bientôt. Reviens vite !": "Pronto llegarán nuevas campañas. ¡Vuelve pronto!", "Rien ici": "Nada aquí", "Aucun clip dans cette catégorie.": "No hay clips en esta categoría.", "Soumettre un clip": "Enviar un clip", "Ajoute ta chaîne TikTok, Instagram ou YouTube.": "Añade tu canal de TikTok, Instagram o YouTube.", "Copie le code unique Clexiq et colle-le dans ta bio (ou la description YouTube).": "Copia tu código único de Clexiq y pégalo en tu biografía (o en la descripción de YouTube).", "Touche « J'ai placé le code » : l'équipe vérifie que la chaîne t'appartient.": "Pulsa «Ya puse el código»: el equipo comprueba que el canal es tuyo.", "Une fois vérifiée, tu peux retirer le code et soumettre des clips de cette chaîne.": "Una vez verificado, puedes quitar el código y enviar clips de este canal.", "ajoutée le {d}": "añadido el {d}", "Place ce code {where} :": "Coloca este código {where}:", "Copier": "Copiar", "J'ai placé le code": "Ya puse el código", "Code {c} — vérification en cours par l'équipe. Garde le code dans ta bio jusqu'à la validation.": "Código {c} — el equipo lo está verificando. Mantén el código en tu biografía hasta la validación.", "Vérification refusée : le code n'a pas été trouvé. Supprime puis ajoute à nouveau la chaîne.": "Verificación rechazada: no se encontró el código. Elimina y vuelve a añadir el canal.", "Supprimer": "Eliminar", "Aucune chaîne reliée": "Ningún canal vinculado", "Relie ta première chaîne pour pouvoir participer aux campagnes.": "Vincula tu primer canal para participar en las campañas.", "Classement des clippers": "Clasificación de clippers", "Ta position : #{n}": "Tu posición: #{n}", "Hors top 20": "Fuera del top 20", "Classement vide": "Clasificación vacía", "Sois le premier à faire valider un clip.": "Sé el primero en conseguir un clip aprobado.", "Retraits en cours": "Retiros en curso", "Déjà retiré": "Ya retirado", "Demander un retrait": "Solicitar un retiro", "Montant (USD)": "Monto (USD)", "Minimum {m}": "Mínimo {m}", "Méthode de paiement": "Método de pago", "Adresse USDT BEP20": "Dirección USDT BEP20", "Demander le retrait": "Solicitar el retiro", "Utilise uniquement une adresse du réseau BEP20 (BNB Smart Chain). Un envoi vers un mauvais réseau est perdu définitivement.": "Usa solo una dirección de la red BEP20 (BNB Smart Chain). Un envío a una red equivocada se pierde para siempre.", "Il te faut au moins {m} de solde pour retirer.": "Necesitas al menos {m} de saldo para retirar.", "Historique des retraits": "Historial de retiros", "Aucun retrait": "Ningún retiro", "Tes demandes apparaîtront ici.": "Tus solicitudes aparecerán aquí.", "Pays": "País", "Le pays ne peut plus être modifié.": "El país ya no se puede modificar.", "Choisis ton pays…": "Elige tu país…", "Attention : une fois confirmé, le pays ne pourra plus être modifié.": "Atención: una vez confirmado, el país no podrá modificarse.", "Membre depuis le {d}": "Miembro desde el {d}", "Compte Google": "Cuenta de Google", "Compte email": "Cuenta de correo", "Langue": "Idioma", "Enregistrer": "Guardar", "Tes chaînes TikTok, Instagram et YouTube se gèrent dans l'onglet « Chaînes ».": "Gestiona tus canales de TikTok, Instagram y YouTube en la pestaña «Canales».", "Ouvrir": "Abrir", "Sécurité": "Seguridad", "Tu te connectes avec Google : ton mot de passe et la double authentification sont gérés par ton compte Google.": "Inicias sesión con Google: tu contraseña y la verificación en dos pasos se gestionan desde tu cuenta de Google.", "Nouveau mot de passe": "Nueva contraseña", "Confirme": "Confirma", "Changer le mot de passe": "Cambiar la contraseña", "Zone dangereuse": "Zona de peligro", "La suppression efface ton compte, tes clips et ton historique. Ton solde non retiré sera perdu. Action irréversible.": "La eliminación borra tu cuenta, tus clips y tu historial. Tu saldo no retirado se perderá. Acción irreversible.", "Supprimer mon compte": "Eliminar mi cuenta", "Panel admin": "Panel de administración", "Déconnexion": "Cerrar sesión", "Copié !": "¡Copiado!", "Montant minimum : {m}": "Monto mínimo: {m}", "Solde insuffisant.": "Saldo insuficiente.", "Adresse USDT BEP20 invalide : elle commence par 0x et contient 42 caractères.": "Dirección USDT BEP20 no válida: empieza por 0x y tiene 42 caracteres.", "Confirmer le retrait ?": "¿Confirmar el retiro?", "Tu demandes {a} en USDT sur le réseau BEP20 vers l'adresse {acc}. Vérifie-la caractère par caractère : un envoi est irréversible.": "Solicitas {a} en USDT en la red BEP20 a la dirección {acc}. Revísala carácter por carácter: un envío es irreversible.", "Demande de retrait envoyée.": "Solicitud de retiro enviada.", "Confirmer ton pays ?": "¿Confirmar tu país?", "Tu as choisi {c}. Ce choix est définitif et ne pourra plus être modifié.": "Elegiste {c}. Esta elección es definitiva y no podrá modificarse.", "Profil mis à jour.": "Perfil actualizado.", "Les deux mots de passe sont différents.": "Las dos contraseñas no coinciden.", "Mot de passe modifié.": "Contraseña cambiada.", "Plateforme": "Plataforma", "Nom d'utilisateur de la chaîne": "Nombre de usuario del canal", "Tu recevras un code unique à placer dans la bio de cette chaîne. C'est ce qui prouve qu'elle t'appartient : personne d'autre ne pourra la relier.": "Recibirás un código único para poner en la biografía de este canal. Eso demuestra que es tuyo: nadie más podrá vincularlo.", "Obtenir mon code": "Obtener mi código", "Nom d'utilisateur invalide (lettres, chiffres, point, tiret, tiret bas).": "Nombre de usuario no válido (letras, números, punto, guion, guion bajo).", "Nombre maximum de chaînes atteint.": "Número máximo de canales alcanzado.", "Chaîne ajoutée. Place maintenant le code dans ta bio.": "Canal añadido. Ahora coloca el código en tu biografía.", "Cette chaîne est déjà reliée à un compte Clexiq.": "Este canal ya está vinculado a una cuenta de Clexiq.", "Code placé ?": "¿Código colocado?", "Vérifie que le code {c} est bien visible dans ta bio, puis confirme. L'équipe va contrôler ta chaîne.": "Comprueba que el código {c} es visible en tu biografía y confirma. El equipo revisará tu canal.", "Demande envoyée. Garde le code jusqu'à la validation.": "Solicitud enviada. Mantén el código hasta la validación.", "Supprimer cette chaîne ?": "¿Eliminar este canal?", "Tu ne pourras plus soumettre de clips depuis cette chaîne, sauf si tu la relies à nouveau.": "Ya no podrás enviar clips desde este canal, salvo que lo vuelvas a vincular.", "Chaîne supprimée.": "Canal eliminado.", "Relie et fais vérifier une chaîne avant de soumettre un clip.": "Vincula y verifica un canal antes de enviar un clip.", "Aucune campagne ouverte pour le moment.": "No hay campañas abiertas por ahora.", "Aucune chaîne vérifiée pour cette campagne": "Ningún canal verificado para esta campaña", "Campagne": "Campaña", "/1K": "/1K", "Chaîne de publication": "Canal de publicación", "Lien de la publication": "Enlace de la publicación", "Titre / accroche": "Título / gancho", "Ex : Le moment où tout bascule": "Ej.: El momento en que todo cambia", "Vues actuelles": "Vistas actuales", "Chaque clip est vérifié par l'équipe. Seules les vues vérifiées sont rémunérées. Les clips trompeurs ou à vues achetées sont refusés.": "Cada clip es revisado por el equipo. Solo se pagan las vistas verificadas. Se rechazan los clips engañosos o con vistas compradas.", "Envoyer pour validation": "Enviar para validación", "Choisis une chaîne vérifiée acceptée par cette campagne.": "Elige un canal verificado aceptado por esta campaña.", "Colle le lien complet de la vidéo {p}.": "Pega el enlace completo del video de {p}.", "Ce lien TikTok ne vient pas de la chaîne @{h}.": "Este enlace de TikTok no es del canal @{h}.", "Tu as déjà soumis ce lien.": "Ya enviaste este enlace.", "Clip envoyé ! En attente de validation.": "¡Clip enviado! Pendiente de validación.", "Retirer ce clip ?": "¿Retirar este clip?", "Le clip sera retiré de la file de validation.": "El clip se retirará de la cola de validación.", "Clip retiré.": "Clip retirado.", "Le compte administrateur ne peut pas être supprimé depuis le site.": "La cuenta de administrador no se puede eliminar desde el sitio.", "Supprimer ton compte ?": "¿Eliminar tu cuenta?", "Ton compte, tes clips et ton historique seront définitivement supprimés. Ton solde non retiré sera perdu.": "Tu cuenta, tus clips y tu historial se eliminarán definitivamente. Tu saldo no retirado se perderá.", "Supprimer définitivement": "Eliminar definitivamente", "Compte supprimé.": "Cuenta eliminada.", "Accueil": "Inicio", "Campagnes": "Campañas", "Mes clips": "Mis clips", "Chaînes": "Canales", "Portefeuille": "Billetera", "Rangs": "Rangos", "Profil": "Perfil", "Tableau de bord": "Panel", "Tes performances en un coup d'œil.": "Tu rendimiento de un vistazo.", "Choisis une campagne et commence à clipper.": "Elige una campaña y empieza a clipear.", "Le statut de tous tes clips soumis.": "El estado de todos tus clips enviados.", "Mes chaînes": "Mis canales", "Relie et vérifie tes comptes TikTok, Instagram et YouTube.": "Vincula y verifica tus cuentas de TikTok, Instagram y YouTube.", "Rangs & classement": "Rangos y clasificación", "Monte en rang en cumulant des vues vérifiées.": "Sube de rango acumulando vistas verificadas.", "Tes gains et tes retraits.": "Tus ganancias y retiros.", "Mon profil": "Mi perfil", "Tes informations et la sécurité du compte.": "Tus datos y la seguridad de la cuenta.", "dans la bio de ton profil TikTok": "en la biografía de tu perfil de TikTok", "dans la bio de ton profil Instagram": "en la biografía de tu perfil de Instagram", "dans la description de ta chaîne YouTube": "en la descripción de tu canal de YouTube", "Relie ta chaîne": "Vincula tu canal", "Connecte tes comptes TikTok, Instagram ou YouTube et vérifie-les.": "Conecta tus cuentas de TikTok, Instagram o YouTube y verifícalas.", "Choisis une campagne": "Elige una campaña", "Lis le brief, le tarif par 1 000 vues et le budget restant.": "Lee el brief, la tarifa por 1000 vistas y el presupuesto restante.", "Publie et soumets": "Publica y envía", "Coupe les meilleurs moments, publie, puis colle le lien. L'équipe vérifie.": "Corta los mejores momentos, publica y pega el enlace. El equipo lo revisa.", "Encaisse en USDT": "Cobra en USDT", "Retire tes gains en dollars sur ton adresse USDT BEP20.": "Retira tus ganancias en dólares a tu dirección USDT BEP20.", "Tous": "Todos", "En attente": "Pendiente", "Approuvés": "Aprobados", "Refusés": "Rechazados", "Approuvé": "Aprobado", "Refusé": "Rechazado", "Payé": "Pagado", "Active": "Activa", "En pause": "En pausa", "Terminée": "Finalizada", "Code à placer": "Código por colocar", "En vérification": "En verificación", "Vérifiée": "Verificado", "Refusée": "Rechazado", "Email ou mot de passe incorrect.": "Correo o contraseña incorrectos.", "Cet email est déjà utilisé. Connecte-toi plutôt.": "Este correo ya está en uso. Inicia sesión.", "Trop de tentatives. Réessaie dans quelques minutes.": "Demasiados intentos. Inténtalo en unos minutos.", "Ce compte est désactivé.": "Esta cuenta está desactivada.", "Connexion Google annulée.": "Inicio de sesión con Google cancelado.", "La fenêtre Google a été bloquée. Autorise les pop-ups puis réessaie.": "La ventana de Google fue bloqueada. Permite las ventanas emergentes e inténtalo de nuevo.", "Ce domaine n'est pas autorisé dans Firebase (Authentication > Paramètres > Domaines autorisés).": "Este dominio no está autorizado en Firebase (Authentication > Configuración > Dominios autorizados).", "Cette méthode de connexion n'est pas activée dans Firebase.": "Este método de inicio de sesión no está activado en Firebase.", "Par sécurité, déconnecte-toi puis reconnecte-toi avant cette action.": "Por seguridad, cierra sesión y vuelve a iniciarla antes de esta acción.", "Un compte existe déjà avec cet email. Connecte-toi avec ta méthode habituelle.": "Ya existe una cuenta con este correo. Inicia sesión con tu método habitual.", "Action refusée par les règles de sécurité.": "Acción rechazada por las reglas de seguridad.", "Serveur injoignable. Vérifie ton internet.": "Servidor inaccesible. Revisa tu internet.", "Opération impossible pour le moment. Réessaie.": "Operación imposible por ahora. Inténtalo de nuevo.", "Bronze": "Bronce", "Accès aux campagnes publiques": "Acceso a campañas públicas", "Argent": "Plata", "Validation prioritaire des clips": "Validación prioritaria de clips", "Or": "Oro", "Campagnes premium mieux payées": "Campañas premium mejor pagadas", "Platine": "Platino", "Retraits sous 24 h et badge vérifié": "Retiros en 24 h e insignia verificada", "Diamant": "Diamante", "Manager dédié et campagnes exclusives": "Mánager dedicado y campañas exclusivas"}};
+const PLATFORMS = ['TikTok', 'Instagram', 'YouTube'];
+const PLC = { 'TikTok': '#FF2D55', 'Instagram': '#E1306C', 'YouTube': '#FF4D4D' };
+const METHODS = ['USDT BEP20', 'PayPal'];
 const ST = { pending: ['En attente', 'amber'], approved: ['Approuvé', 'green'], rejected: ['Refusé', 'red'] };
 const PST = { pending: ['En attente', 'amber'], paid: ['Payé', 'green'], rejected: ['Refusé', 'red'] };
 const CST = { active: ['Active', 'green'], paused: ['En pause', 'amber'], ended: ['Terminée', 'red'] };
-let SET = { platformName: 'Clexiq', currency: 'FCFA', minPayout: 5000, supportEmail: '', ranks: null };
+const CHST = { pending: ['Code à placer', 'amber'], submitted: ['En vérification', 'primary'], verified: ['Vérifiée', 'green'], rejected: ['Refusée', 'red'] };
+let SET = { platformName: 'Clexiq', currency: 'USD', minPayout: 20, supportEmail: '', ranks: null };
 let RANKS = [{ name: 'Bronze', min_views: 0, color: '#C9875A', perks: '' }];
 
+/* ===== Langues ===== */
+const LANGS = { fr: 'Français', en: 'English', es: 'Español' };
+const LOCALE = { fr: 'fr-FR', en: 'en-US', es: 'es-ES' };
+let LANG = 'fr';
+try { const l = localStorage.getItem('clexiq_lang'); if (LANGS[l]) LANG = l } catch (e) { }
+document.documentElement.lang = LANG;
+const t = (s, v) => {
+  let r = (LANG !== 'fr' && typeof I18N !== 'undefined' && I18N[LANG] && I18N[LANG][s]) || s;
+  if (v) for (const k in v) r = r.split('{' + k + '}').join(v[k]);
+  return r;
+};
+const BEP20 = /^0x[0-9a-fA-F]{40}$/;
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const safeUrl = u => /^https:\/\/[^\s"'<>]+$/i.test(u || '') ? esc(u) : '#';
 const safeColor = c => /^#[0-9a-f]{6}$/i.test(c || '') ? c : '#8796B5';
-const money = n => Math.round(+n || 0).toLocaleString('fr-FR') + ' ' + SET.currency;
+const money = n => '$' + (Math.floor((+n || 0) * 100 + 1e-6) / 100).toLocaleString(LOCALE[LANG], { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 const nf = n => { n = +n || 0; if (n >= 1e6) return (n / 1e6).toFixed(n >= 1e7 ? 0 : 1).replace('.0', '') + 'M'; if (n >= 1e3) return (n / 1e3).toFixed(n >= 1e4 ? 0 : 1).replace('.0', '') + 'K'; return String(n) };
 const toDate = t => t && t.toDate ? t.toDate() : (t ? new Date(t) : null);
-const dt = t => t ? toDate(t).toLocaleDateString('fr-FR', { day: '2-digit', month: 'short', year: 'numeric' }) : '—';
-const ago = t => { if (!t) return 'à l\'instant'; const m = (Date.now() - toDate(t)) / 6e4; if (m < 60) return 'il y a ' + Math.max(1, Math.round(m)) + ' min'; if (m < 1440) return 'il y a ' + Math.round(m / 60) + ' h'; return 'il y a ' + Math.round(m / 1440) + ' j' };
+const dt = t => t ? toDate(t).toLocaleDateString(LOCALE[LANG], { day: '2-digit', month: 'short', year: 'numeric' }) : '—';
+const ago = t => { if (!t) return t_('à l\'instant'); const m = (Date.now() - toDate(t)) / 6e4; if (m < 60) return t_('il y a {n} min', { n: Math.max(1, Math.round(m)) }); if (m < 1440) return t_('il y a {n} h', { n: Math.round(m / 60) }); return t_('il y a {n} j', { n: Math.round(m / 1440) }) };
+function t_(s, v) { return t(s, v) }
 const initials = n => String(n || '?').trim().split(/\s+/).map(x => x[0]).slice(0, 2).join('').toUpperCase();
 const clipEarn = c => c.status === 'approved' ? (+c.earn || 0) : 0;
 function rankOf(views) {
@@ -249,12 +270,13 @@ const ICONS = {
   edit: '<path d="M4 20h4L19 9l-4-4L4 16z"/>', clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
   search: '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>', key: '<circle cx="7.5" cy="15.5" r="4.5"/><path d="m10.7 12.3 9.3-9.3M17 6l3 3M14 9l2 2"/>',
   refresh: '<path d="M21 12a9 9 0 1 1-3-6.7L21 8M21 3v5h-5"/>', mail: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>',
-  shield: '<path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/>', lock: '<rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>'
+  shield: '<path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/>', link: '<path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/>', copy: '<rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/>',
+  lock: '<rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>'
 };
 const ic = n => `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${ICONS[n] || ''}</svg>`;
 const GOOGLE = '<svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.6 5.4 2.7 13.3l7.9 6.1C12.5 13.6 17.8 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.4c-.5 2.9-2.2 5.4-4.6 7l7.4 5.7c4.3-4 6.9-9.9 6.9-17.2z"/><path fill="#FBBC05" d="M10.6 28.6c-.5-1.4-.8-3-.8-4.6s.3-3.2.8-4.6l-7.9-6.1C1 16.6 0 20.2 0 24s1 7.4 2.7 10.7l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.8-5.8l-7.4-5.7c-2.1 1.4-4.8 2.3-8.4 2.3-6.2 0-11.5-4.2-13.4-9.9l-7.9 6.1C6.6 42.6 14.6 48 24 48z"/></svg>';
 const logo = tag => `<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJDbGV4aXEiPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJjeGciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMyRUYyQzIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxNkI4REUiLz48L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJjeGIiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwRjFDMzgiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwNzBFMjAiLz48L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB4PSIyIiB5PSIyIiB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNjeGIpIiBzdHJva2U9IiMxRjNBNjMiIHN0cm9rZS13aWR0aD0iMS4yIi8+CiAgPHBhdGggZD0iTTM5LjUgMjIuNEExNSAxNSAwIDEgMCAzOS41IDQxLjYiIGZpbGw9Im5vbmUiIHN0cm9rZT0idXJsKCNjeGcpIiBzdHJva2Utd2lkdGg9IjYuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBhdGggZD0iTTI0LjUgMjUuNSAzNy41IDM4LjVNMzcuNSAyNS41IDI0LjUgMzguNSIgc3Ryb2tlPSIjRjRGOEZGIiBzdHJva2Utd2lkdGg9IjUuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGcgc3Ryb2tlPSIjMkVGMkMyIiBzdHJva2Utd2lkdGg9IjIuNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj48cGF0aCBkPSJNNDMuNiAyMi40IDQ2LjYgMTkuNCIvPjxwYXRoIGQ9Ik00NC41IDI3LjVoNS41Ii8+PHBhdGggZD0iTTQzLjUgNDAuNSA0Ny44IDQ0LjgiLz48L2c+CiAgPGNpcmNsZSBjeD0iNTAuNiIgY3k9IjE1LjQiIHI9IjIiIGZpbGw9IiMyRUYyQzIiLz4KPC9zdmc+Cg==" alt="" width="36" height="36"><span class="wm">Cle<span class="x">X</span>iq</span>${tag ? `<em>${esc(tag)}</em>` : ''}`;
-const badge = (st, map = ST) => { const [l, c] = map[st] || [st, '']; return `<span class="badge ${c}">${esc(l)}</span>` };
+const badge = (st, map = ST) => { const [l, c] = map[st] || [st, '']; return `<span class="badge ${c}">${esc(t(l))}</span>` };
 const platIc = p => `<div class="plat" style="background:${PLC[p] || '#8796B5'}22;color:${PLC[p] || '#8796B5'}" title="${esc(p)}">${esc((p || '?')[0])}</div>`;
 const avatar = (name, url, color, cls = '') => `<div class="av ${cls}" style="background:${safeColor(color)}">${/^https:\/\//.test(url || '') ? `<img src="${esc(url)}" alt="" referrerpolicy="no-referrer">` : esc(initials(name))}</div>`;
 const stat = (l, v, i, c) => `<div class="card stat"><div class="si t-${c}">${ic(i)}</div><div style="min-width:0"><small class="muted">${l}</small><b>${v}</b></div></div>`;
@@ -268,14 +290,15 @@ function toast(msg, type = 'ok') {
 }
 function openModal(title, body, opt = {}) {
   closeModal(); const m = document.createElement('div'); m.className = 'modal-bg'; m.id = 'modal';
-  m.innerHTML = `<div class="modal ${opt.wide ? 'wide' : ''}" role="dialog" aria-modal="true"><div class="modal-h"><h3>${esc(title)}</h3><button class="icon-btn" data-a="closeModal" aria-label="Fermer">${ic('x')}</button></div><div class="modal-b">${body}</div></div>`;
+  m.innerHTML = `<div class="modal ${opt.wide ? 'wide' : ''}" role="dialog" aria-modal="true"><div class="modal-h"><h3>${esc(title)}</h3><button class="icon-btn" data-a="closeModal" aria-label="${t('Fermer')}">${ic('x')}</button></div><div class="modal-b">${body}</div></div>`;
   m.addEventListener('click', e => { if (e.target === m && !opt.locked) closeModal() }); document.body.appendChild(m);
   const f = m.querySelector('input:not([type=hidden]),select,textarea'); if (f) setTimeout(() => f.focus(), 50);
 }
 function closeModal() { const m = $('#modal'); if (m) m.remove() }
-function confirmBox(title, text, okLabel = 'Confirmer', danger = true) {
+function confirmBox(title, text, okLabel, danger = true) {
+  okLabel = okLabel || t('Confirmer');
   return new Promise(res => {
-    openModal(title, `<p class="muted">${text}</p><div class="modal-f"><button class="btn ghost" id="cfNo">Annuler</button><button class="btn ${danger ? 'danger' : 'primary'}" id="cfOk">${esc(okLabel)}</button></div>`);
+    openModal(title, `<p class="muted">${text}</p><div class="modal-f"><button class="btn ghost" id="cfNo">${t('Annuler')}</button><button class="btn ${danger ? 'danger' : 'primary'}" id="cfOk">${esc(okLabel)}</button></div>`);
     $('#cfNo').onclick = () => { closeModal(); res(false) }; $('#cfOk').onclick = () => { closeModal(); res(true) };
   });
 }
@@ -291,6 +314,14 @@ document.addEventListener('change', e => { const el = e.target.closest('[data-ch
 document.addEventListener('keydown', e => { if (e.key === 'Escape') { const m = $('#modal'); if (m) closeModal() } });
 
 
+/* ===== Pays (ISO 3166) ===== */
+const COUNTRY_CODES = 'AF AX AL DZ AS AD AO AI AQ AG AR AM AW AU AT AZ BS BH BD BB BY BE BZ BJ BM BT BO BQ BA BW BV BR IO BN BG BF BI CV KH CM CA KY CF TD CL CN CX CC CO KM CG CD CK CR CI HR CU CW CY CZ DK DJ DM DO EC EG SV GQ ER EE SZ ET FK FO FJ FI FR GF PF TF GA GM GE DE GH GI GR GL GD GP GU GT GG GN GW GY HT HM VA HN HK HU IS IN ID IR IQ IE IM IL IT JM JP JE JO KZ KE KI KP KR XK KW KG LA LV LB LS LR LY LI LT LU MO MG MW MY MV ML MT MH MQ MR MU YT MX FM MD MC MN ME MS MA MZ MM NA NR NP NL NC NZ NI NE NG NU NF MK MP NO OM PK PW PS PA PG PY PE PH PN PL PT PR QA RE RO RU RW BL SH KN LC MF PM VC WS SM ST SA SN RS SC SL SG SX SK SI SB SO ZA GS SS ES LK SD SR SJ SE CH SY TW TJ TZ TH TL TG TK TO TT TN TR TM TC TV UG UA AE GB US UM UY UZ VU VE VN VG VI WF EH YE ZM ZW'.split(' ');
+const flag = c => /^[A-Z]{2}$/.test(c || '') ? String.fromCodePoint(...[...c].map(x => 127397 + x.charCodeAt(0))) : '';
+function countryName(c) { if (!c) return ''; try { return new Intl.DisplayNames([LOCALE[LANG]], { type: 'region' }).of(c) || c } catch (e) { return c } }
+function countryOptions() { return COUNTRY_CODES.map(c => [c, countryName(c)]).sort((a, b) => a[1].localeCompare(b[1], LOCALE[LANG])) }
+const langSelect = (cls = '') => `<select class="lang ${cls}" data-ch="setLang" aria-label="Langue / Language">${Object.entries(LANGS).map(([k, v]) => `<option value="${k}" ${k === LANG ? 'selected' : ''}>${v}</option>`).join('')}</select>`;
+A.setLang = v => { if (!LANGS[v]) return; try { localStorage.setItem('clexiq_lang', v) } catch (e) { } location.reload() };
+
 /* ===== Firebase ===== */
 const firebaseConfig = {
   apiKey: 'AIzaSyBowTba6DsA4xt6OpbYWY-yKJaDq36Al4o',
@@ -303,7 +334,7 @@ const firebaseConfig = {
 const ADMIN_EMAIL = 'yoooprono@gmail.com';
 const fbApp = initializeApp(firebaseConfig);
 const auth = getAuth(fbApp);
-auth.languageCode = 'fr';
+auth.languageCode = LANG;
 const db = getFirestore(fbApp);
 const DEFAULT_RANKS = [
   { name: 'Bronze', min_views: 0, color: '#C9875A', perks: 'Accès aux campagnes publiques' },
@@ -316,7 +347,8 @@ const isAdminUser = u => !!u && u.emailVerified && (u.email || '').toLowerCase()
 const listOf = snap => snap.docs.map(x => ({ id: x.id, ...x.data() }));
 const tms = t => t && t.toMillis ? t.toMillis() : (t ? +new Date(t) : Date.now());
 const byNewest = (a, b) => tms(b.createdAt) - tms(a.createdAt);
-const balanceOf = u => Math.max(0, Math.floor((+u.earned || 0) - (+u.paid || 0) - (+u.pending || 0)));
+const balanceOf = u => Math.max(0, Math.floor(((+u.earned || 0) - (+u.paid || 0) - (+u.pending || 0)) * 100 + 1e-6) / 100);
+const cents = n => Math.round((+n || 0) * 100) / 100;
 
 function errMsg(e) {
   const c = String((e && e.code) || ''), m = String((e && e.message) || e || '');
@@ -335,9 +367,9 @@ function errMsg(e) {
     'permission-denied': 'Action refusée par les règles de sécurité.', 'unavailable': 'Serveur injoignable. Vérifie ton internet.',
     'failed-precondition': 'Opération impossible pour le moment. Réessaie.'
   };
-  if (codes[c]) return codes[c];
-  if (/offline|network/i.test(m)) return 'Connexion impossible. Vérifie ton internet.';
-  return m && m.length < 160 ? m : 'Une erreur est survenue. Réessaie.';
+  if (codes[c]) return t(codes[c]);
+  if (/offline|network/i.test(m)) return t('Connexion impossible. Vérifie ton internet.');
+  return m && m.length < 160 ? m : t('Une erreur est survenue. Réessaie.');
 }
 async function loadSettings() {
   try {
@@ -363,26 +395,26 @@ async function ensureProfile(u) {
 /* ===== Connexion ===== */
 function authForm(mode, opts = {}) {
   const reg = mode === 'register';
-  return `<button class="btn google" data-a="google">${GOOGLE} Continuer avec Google</button><div class="or">ou avec ton email</div>
+  return `<button class="btn google" data-a="google">${GOOGLE} ${t('Continuer avec Google')}</button><div class="or">${t('ou avec ton email')}</div>
   <form id="authF" class="form" novalidate>
-    ${reg ? '<label>Nom complet<input name="name" required maxlength="60" autocomplete="name"></label>' : ''}
-    <label>Email<input name="email" type="email" required maxlength="120" autocomplete="email"></label>
-    <label>Mot de passe<input name="pass" type="password" required minlength="8" maxlength="72" autocomplete="${reg ? 'new-password' : 'current-password'}"></label>
-    ${reg ? '<p class="muted small" style="margin-top:-6px">8 caractères minimum, avec au moins une lettre et un chiffre.</p><label class="check"><input type="checkbox" name="terms" required> J\'accepte les conditions d\'utilisation et le règlement des campagnes</label>' : ''}
-    <button class="btn primary block" type="submit">${reg ? 'Créer mon compte' : 'Se connecter'}</button>
-    ${reg ? '' : '<p class="center small"><a data-a="forgot">Mot de passe oublié ?</a></p>'}
-    ${opts.noSwitch ? '' : `<p class="muted center small">${reg ? 'Déjà inscrit ?' : 'Pas encore de compte ?'} <a data-a="openAuth" data-v="${reg ? 'login' : 'register'}">${reg ? 'Se connecter' : 'Créer un compte'}</a></p>`}
-    <p class="secure">${ic('lock')} Connexion chiffrée · données protégées</p></form>`;
+    ${reg ? `<label>${t('Nom complet')}<input name="name" required maxlength="60" autocomplete="name"></label>` : ''}
+    <label>${t('Email')}<input name="email" type="email" required maxlength="120" autocomplete="email"></label>
+    <label>${t('Mot de passe')}<input name="pass" type="password" required minlength="8" maxlength="72" autocomplete="${reg ? 'new-password' : 'current-password'}"></label>
+    ${reg ? `<p class="muted small" style="margin-top:-6px">${t('8 caractères minimum, avec au moins une lettre et un chiffre.')}</p><label class="check"><input type="checkbox" name="terms" required> ${t('J\'accepte les conditions d\'utilisation et le règlement des campagnes')}</label>` : ''}
+    <button class="btn primary block" type="submit">${reg ? t('Créer mon compte') : t('Se connecter')}</button>
+    ${reg ? '' : `<p class="center small"><a data-a="forgot">${t('Mot de passe oublié ?')}</a></p>`}
+    ${opts.noSwitch ? '' : `<p class="muted center small">${reg ? t('Déjà inscrit ?') : t('Pas encore de compte ?')} <a data-a="openAuth" data-v="${reg ? 'login' : 'register'}">${reg ? t('Se connecter') : t('Créer un compte')}</a></p>`}
+    <p class="secure">${ic('lock')} ${t('Connexion chiffrée · données protégées')}</p></form>`;
 }
 function bindAuth(mode) {
   const reg = mode === 'register', f = $('#authF'); if (!f) return;
   f.onsubmit = async e => {
     e.preventDefault(); const d = Object.fromEntries(new FormData(f)), btn = f.querySelector('button[type=submit]');
     const email = String(d.email || '').trim().toLowerCase(), pass = String(d.pass || '');
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) return toast('Adresse email invalide.', 'err');
-    if (reg && !String(d.name || '').trim()) return toast('Indique ton nom.', 'err');
-    if (reg && !validPassword(pass)) return toast('Mot de passe : 8 caractères minimum, avec lettres et chiffres.', 'err');
-    if (reg && !d.terms) return toast('Accepte les conditions pour continuer.', 'err');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) return toast(t('Adresse email invalide.'), 'err');
+    if (reg && !String(d.name || '').trim()) return toast(t('Indique ton nom.'), 'err');
+    if (reg && !validPassword(pass)) return toast(t('Mot de passe trop faible : 8 caractères minimum, avec lettres et chiffres.'), 'err');
+    if (reg && !d.terms) return toast(t('Accepte les conditions pour continuer.'), 'err');
     busy(btn, true);
     try {
       if (reg) {
@@ -400,35 +432,42 @@ A.google = async (v, el) => {
   catch (e) { toast(errMsg(e), 'err') } finally { busy(el, false) }
 };
 A.forgot = () => {
-  openModal('Mot de passe oublié', `<form id="fgF" class="form"><p class="muted small">Entre ton email : tu recevras un lien pour choisir un nouveau mot de passe.</p><label>Email<input name="email" type="email" required autocomplete="email"></label><button class="btn primary block" type="submit">Envoyer le lien</button></form>`);
+  openModal(t('Mot de passe oublié'), `<form id="fgF" class="form"><p class="muted small">${t('Entre ton email : tu recevras un lien pour choisir un nouveau mot de passe.')}</p><label>${t('Email')}<input name="email" type="email" required autocomplete="email"></label><button class="btn primary block" type="submit">${t('Envoyer le lien')}</button></form>`);
   $('#fgF').onsubmit = async e => {
     e.preventDefault(); const btn = e.target.querySelector('button'); busy(btn, true);
     try { await sendPasswordResetEmail(auth, new FormData(e.target).get('email').trim().toLowerCase()) } catch (err) { if (err.code !== 'auth/user-not-found') { busy(btn, false); return toast(errMsg(err), 'err') } }
-    busy(btn, false); closeModal(); toast('Si un compte existe, un email vient d\'être envoyé.');
+    busy(btn, false); closeModal(); toast(t('Si un compte existe, un email vient d\'être envoyé.'));
   };
 };
 function renderVerify(u, rootEl) {
-  rootEl.innerHTML = `<div class="login"><div class="card center"><div class="logo" style="justify-content:center">${logo()}</div><div class="empty" style="padding:10px 0"><div class="ei">${ic('mail')}</div><h3>Confirme ton adresse email</h3>
-  <p class="muted">Un lien de confirmation a été envoyé à <b style="color:var(--text)">${esc(u.email)}</b>. Clique dessus, puis reviens ici. Pense à regarder dans les spams.</p>
-  <div class="stack"><button class="btn primary block" data-a="verified">J'ai confirmé mon email</button><button class="btn ghost block" data-a="resendVerify">Renvoyer l'email</button><button class="btn ghost block" data-a="logout">Se déconnecter</button></div></div></div></div>`;
+  rootEl.innerHTML = `<div class="login"><div class="card center"><div class="row between" style="margin-bottom:8px"><div class="logo" style="padding:0">${logo()}</div>${langSelect()}</div><div class="empty" style="padding:10px 0"><div class="ei">${ic('mail')}</div><h3>${t('Confirme ton adresse email')}</h3>
+  <p class="muted">${t('Un lien de confirmation a été envoyé à {email}. Clique dessus, puis reviens ici. Pense à regarder dans les spams.', { email: `<b style="color:var(--text)">${esc(u.email)}</b>` })}</p>
+  <div class="stack"><button class="btn primary block" data-a="verified">${t('J\'ai confirmé mon email')}</button><button class="btn ghost block" data-a="resendVerify">${t('Renvoyer l\'email')}</button><button class="btn ghost block" data-a="logout">${t('Se déconnecter')}</button></div></div></div></div>`;
 }
-A.resendVerify = async (v, el) => { busy(el, true); try { await sendEmailVerification(auth.currentUser, { url: location.href.split('#')[0] }); toast('Email renvoyé.') } catch (e) { toast(errMsg(e), 'err') } finally { busy(el, false) } };
+A.resendVerify = async (v, el) => { busy(el, true); try { await sendEmailVerification(auth.currentUser, { url: location.href.split('#')[0] }); toast(t('Email renvoyé.')) } catch (e) { toast(errMsg(e), 'err') } finally { busy(el, false) } };
 A.verified = async (v, el) => {
   busy(el, true);
-  try { await auth.currentUser.reload(); if (!auth.currentUser.emailVerified) { toast('Email pas encore confirmé. Clique sur le lien reçu.', 'err'); return } await auth.currentUser.getIdToken(true); location.reload() }
+  try { await auth.currentUser.reload(); if (!auth.currentUser.emailVerified) { toast(t('Email pas encore confirmé. Clique sur le lien reçu.'), 'err'); return } await auth.currentUser.getIdToken(true); location.reload() }
   catch (e) { toast(errMsg(e), 'err') } finally { busy(el, false) }
 };
-A.logout = async () => { await signOut(auth); toast('Tu es déconnecté.') };
+A.logout = async () => { await signOut(auth); toast(t('Tu es déconnecté.')) };
 
 /* ===== Espace clipper ===== */
 let me = null, view = 'dashboard', clipFilter = 'all', D = null;
 const root = () => document.getElementById('root');
-const NAV = [['dashboard', 'Accueil', 'home'], ['campaigns', 'Campagnes', 'megaphone'], ['clips', 'Mes clips', 'film'], ['ranks', 'Rangs', 'trophy'], ['wallet', 'Portefeuille', 'wallet'], ['profile', 'Profil', 'user']];
+const NAV = [['dashboard', 'Accueil', 'home'], ['campaigns', 'Campagnes', 'megaphone'], ['clips', 'Mes clips', 'film'], ['channels', 'Chaînes', 'link'], ['wallet', 'Portefeuille', 'wallet'], ['ranks', 'Rangs', 'trophy'], ['profile', 'Profil', 'user']];
+const BOTTOM = ['dashboard', 'campaigns', 'clips', 'channels', 'wallet'];
 const TITLES = {
   dashboard: ['Tableau de bord', 'Tes performances en un coup d\'œil.'], campaigns: ['Campagnes', 'Choisis une campagne et commence à clipper.'],
-  clips: ['Mes clips', 'Le statut de tous tes clips soumis.'], ranks: ['Rangs & classement', 'Monte en rang en cumulant des vues vérifiées.'],
+  clips: ['Mes clips', 'Le statut de tous tes clips soumis.'], channels: ['Mes chaînes', 'Relie et vérifie tes comptes TikTok, Instagram et YouTube.'],
+  ranks: ['Rangs & classement', 'Monte en rang en cumulant des vues vérifiées.'],
   wallet: ['Portefeuille', 'Tes gains et tes retraits.'], profile: ['Mon profil', 'Tes informations et la sécurité du compte.']
 };
+ICONS.link = '<path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/>';
+ICONS.copy = '<rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/>';
+const CH_URL = { TikTok: h => 'https://www.tiktok.com/@' + h, Instagram: h => 'https://www.instagram.com/' + h, YouTube: h => 'https://www.youtube.com/@' + h };
+const CH_WHERE = { TikTok: 'dans la bio de ton profil TikTok', Instagram: 'dans la bio de ton profil Instagram', YouTube: 'dans la description de ta chaîne YouTube' };
+const URL_OK = { TikTok: /^https:\/\/(www\.|m\.)?tiktok\.com\/@[^\s/]+\/video\/\d+/i, Instagram: /^https:\/\/(www\.)?instagram\.com\/(reel|reels|p)\/[\w-]+/i, YouTube: /^https:\/\/((www|m)\.)?(youtube\.com\/(shorts\/|watch\?v=)|youtu\.be\/)[\w-]+/i };
 
 /* ---------- Démarrage ---------- */
 root().innerHTML = '<div class="boot"><div class="loader"></div></div>';
@@ -438,8 +477,8 @@ loadSettings().then(() => {
     if (!u.emailVerified) { me = null; return renderVerify(u, root()) }
     try {
       const p = await ensureProfile(u);
-      if (p.status === 'deleted') { await signOut(auth); return toast('Ce compte a été supprimé.', 'err') }
-      if (p.status !== 'active') { await signOut(auth); return toast('Ce compte est suspendu. Contacte le support.', 'err') }
+      if (p.status === 'deleted') { await signOut(auth); return toast(t('Ce compte a été supprimé.'), 'err') }
+      if (p.status !== 'active') { await signOut(auth); return toast(t('Ce compte est suspendu. Contacte le support.'), 'err') }
       me = p; me.isAdmin = isAdminUser(u); me.provider = (u.providerData[0] || {}).providerId || 'password';
       await loadAll(); render();
     } catch (e) { toast(errMsg(e), 'err'); renderLanding() }
@@ -450,19 +489,20 @@ window.addEventListener('focus', () => refresh(false));
 
 async function loadAll() {
   const uid = auth.currentUser.uid;
-  const [p, clips, camps, pays, lb] = await Promise.all([
+  const [p, clips, camps, pays, lb, chs] = await Promise.all([
     getDoc(doc(db, 'users', uid)),
     getDocs(query(collection(db, 'clips'), where('userId', '==', uid))),
     getDocs(query(collection(db, 'campaigns'), where('status', '==', 'active'))),
     getDocs(query(collection(db, 'payouts'), where('userId', '==', uid))),
-    getDocs(query(collection(db, 'leaderboard'), orderBy('views', 'desc'), limit(20)))
+    getDocs(query(collection(db, 'leaderboard'), orderBy('views', 'desc'), limit(20))),
+    getDocs(query(collection(db, 'channels'), where('userId', '==', uid)))
   ]);
   const prof = p.data();
-  if (!prof || prof.status !== 'active') { await signOut(auth); toast(prof && prof.status === 'suspended' ? 'Ton compte a été suspendu.' : 'Ce compte n\'est plus actif.', 'err'); throw new Error('stop') }
+  if (!prof || prof.status !== 'active') { await signOut(auth); toast(t(prof && prof.status === 'suspended' ? 'Ton compte a été suspendu.' : 'Ce compte n\'est plus actif.'), 'err'); throw new Error('stop') }
   Object.assign(me, prof);
   const cl = listOf(clips).sort(byNewest);
   D = {
-    clips: cl, camps: listOf(camps).sort(byNewest), pays: listOf(pays).sort(byNewest), lb: listOf(lb),
+    clips: cl, camps: listOf(camps).sort(byNewest), pays: listOf(pays).sort(byNewest), lb: listOf(lb), channels: listOf(chs).sort(byNewest),
     stats: { views: +me.views || 0, earned: +me.earned || 0, paid: +me.paid || 0, pending_pay: +me.pending || 0, balance: balanceOf(me),
       clips: cl.length, approved: cl.filter(c => c.status === 'approved').length, pending: cl.filter(c => c.status === 'pending').length, rejected: cl.filter(c => c.status === 'rejected').length }
   };
@@ -474,7 +514,7 @@ async function refresh(force) {
 }
 function render() { if (!me) return renderLanding(); renderApp() }
 A.go = v => { view = v; render(); window.scrollTo(0, 0) };
-A.openAuth = mode => { openModal(mode === 'register' ? 'Créer un compte' : 'Connexion', authForm(mode)); bindAuth(mode) };
+A.openAuth = mode => { openModal(mode === 'register' ? t('Créer un compte') : t('Connexion'), authForm(mode)); bindAuth(mode) };
 
 /* ---------- Accueil public ---------- */
 async function renderLanding() {
@@ -487,198 +527,254 @@ async function renderLanding() {
     camps = listOf(c).sort(byNewest); st = { campaigns: camps.length, views: agg.data().views || 0, clippers: agg.data().n || 0 };
   } catch (e) { }
   if (me) return;
-  const steps = [['megaphone', 'Choisis une campagne', 'Lis le brief, le tarif par 1 000 vues et le budget restant.'], ['film', 'Crée ton clip', 'Coupe les meilleurs moments en vertical, 15 à 60 secondes.'],
-    ['check', 'Soumets le lien', 'Publie sur ton compte puis colle le lien. L\'équipe vérifie.'], ['wallet', 'Encaisse', 'Retire tes gains par Mobile Money, Wave ou PayPal.']];
+  const steps = [['link', 'Relie ta chaîne', 'Connecte tes comptes TikTok, Instagram ou YouTube et vérifie-les.'], ['megaphone', 'Choisis une campagne', 'Lis le brief, le tarif par 1 000 vues et le budget restant.'],
+    ['film', 'Publie et soumets', 'Coupe les meilleurs moments, publie, puis colle le lien. L\'équipe vérifie.'], ['wallet', 'Encaisse en USDT', 'Retire tes gains en dollars sur ton adresse USDT BEP20.']];
   root().innerHTML = `<div class="land">
-  <header class="lh"><div class="logo">${logo()}</div><div class="row gap"><button class="btn ghost hide-m" data-a="openAuth" data-v="login">Connexion</button><button class="btn primary" data-a="openAuth" data-v="register">Commencer</button></div></header>
-  <section class="hero"><span class="pill">${ic('trophy')} Programme clippers · paiement Mobile Money</span>
-    <h1>Transforme tes clips en <span class="gt">revenus</span>.</h1>
-    <p>Rejoins les campagnes des marques et créateurs, publie des clips courts sur TikTok, Reels et Shorts, et sois payé pour chaque 1 000 vues vérifiées.</p>
-    <div class="row gap wrap" style="justify-content:center"><button class="btn primary lg" data-a="openAuth" data-v="register">Créer mon compte gratuit</button><button class="btn ghost lg" data-a="openAuth" data-v="login">J'ai déjà un compte</button></div>
-    <div class="hstats"><div><b>${nf(st.campaigns)}</b><small>campagnes actives</small></div><div><b>${nf(st.views)}</b><small>vues vérifiées</small></div><div><b>${nf(st.clippers)}</b><small>clippers inscrits</small></div></div></section>
-  <section class="sec"><h2>Comment ça marche</h2><div class="grid4">${steps.map(([i, t, d], n) => `<div class="card step"><span class="num">0${n + 1}</span><div class="si t-primary">${ic(i)}</div><h3>${t}</h3><p class="muted small">${d}</p></div>`).join('')}</div></section>
-  ${camps.length ? `<section class="sec"><h2>Campagnes du moment</h2><div class="grid3">${camps.slice(0, 3).map(k => campCard(k, true)).join('')}</div></section>` : ''}
-  <section class="sec"><h2>Monte en rang</h2><p class="muted center">Plus tes clips cumulent de vues vérifiées, plus tu débloques d'avantages.</p>${ranksGrid(-1)}</section>
-  <section class="cta"><h2>Prêt à clipper ?</h2><p class="muted">Inscription gratuite, aucun abonnement.</p><button class="btn primary lg" data-a="openAuth" data-v="register">Je m'inscris</button></section>
-  <footer class="foot muted small">© ${new Date().getFullYear()} Clexiq${SET.supportEmail ? ' · ' + esc(SET.supportEmail) : ''} · <a href="admin.html">Admin</a></footer></div>`;
+  <header class="lh"><div class="logo">${logo()}</div><div class="row gap">${langSelect()}<button class="btn ghost hide-m" data-a="openAuth" data-v="login">${t('Connexion')}</button><button class="btn primary" data-a="openAuth" data-v="register">${t('Commencer')}</button></div></header>
+  <section class="hero"><span class="pill">${ic('trophy')} ${t('Programme clippers · paiement en USDT')}</span>
+    <h1>${t('Transforme tes clips en {r}.', { r: `<span class="gt">${t('revenus')}</span>` })}</h1>
+    <p>${t('Rejoins les campagnes des marques et créateurs, publie des clips courts sur TikTok, Instagram et YouTube, et sois payé pour chaque 1 000 vues vérifiées.')}</p>
+    <div class="row gap wrap" style="justify-content:center"><button class="btn primary lg" data-a="openAuth" data-v="register">${t('Créer mon compte gratuit')}</button><button class="btn ghost lg" data-a="openAuth" data-v="login">${t('J\'ai déjà un compte')}</button></div>
+    <div class="hstats"><div><b>${nf(st.campaigns)}</b><small>${t('campagnes actives')}</small></div><div><b>${nf(st.views)}</b><small>${t('vues vérifiées')}</small></div><div><b>${nf(st.clippers)}</b><small>${t('clippers inscrits')}</small></div></div></section>
+  <section class="sec"><h2>${t('Comment ça marche')}</h2><div class="grid4">${steps.map(([i, ti, d], n) => `<div class="card step"><span class="num">0${n + 1}</span><div class="si t-primary">${ic(i)}</div><h3>${t(ti)}</h3><p class="muted small">${t(d)}</p></div>`).join('')}</div></section>
+  ${camps.length ? `<section class="sec"><h2>${t('Campagnes du moment')}</h2><div class="grid3">${camps.slice(0, 3).map(k => campCard(k, true)).join('')}</div></section>` : ''}
+  <section class="sec"><h2>${t('Monte en rang')}</h2><p class="muted center">${t('Plus tes clips cumulent de vues vérifiées, plus tu débloques d\'avantages.')}</p>${ranksGrid(-1)}</section>
+  <section class="cta"><h2>${t('Prêt à clipper ?')}</h2><p class="muted">${t('Inscription gratuite, aucun abonnement.')}</p><button class="btn primary lg" data-a="openAuth" data-v="register">${t('Je m\'inscris')}</button></section>
+  <footer class="foot muted small">© ${new Date().getFullYear()} Clexiq${SET.supportEmail ? ' · ' + esc(SET.supportEmail) : ''}</footer></div>`;
 }
 
 /* ---------- Composants ---------- */
 function campCard(k, pub) {
   const sp = +k.spent || 0, pct = Math.min(100, sp / k.budget * 100), full = pct >= 100;
-  return `<div class="card camp"><div class="camp-top" style="background:linear-gradient(135deg,${safeColor(k.color)} 0%,#060B1A 130%)"><span class="chip">${esc(k.brand)}</span><div class="rate"><b>${money(k.rate)}</b><small>/ 1K vues</small></div></div>
+  return `<div class="card camp"><div class="camp-top" style="background:linear-gradient(135deg,${safeColor(k.color)} 0%,#060B1A 130%)"><span class="chip">${esc(k.brand)}</span><div class="rate"><b>${money(k.rate)}</b><small>${t('/ 1K vues')}</small></div></div>
   <div class="camp-b"><h3>${esc(k.title)}</h3><p class="muted clamp">${esc(k.description)}</p>
   <div class="chips">${(k.platforms || []).map(p => `<span class="chip sm">${esc(p)}</span>`).join('')}</div>
-  <div class="row between small"><span class="muted">Budget utilisé</span><b>${Math.round(pct)} %</b></div><div class="bar sm"><i style="width:${pct}%"></i></div>
+  <div class="row between small"><span class="muted">${t('Budget utilisé')}</span><b>${Math.round(pct)} %</b></div><div class="bar sm"><i style="width:${pct}%"></i></div>
   <div class="row between small muted"><span>${money(sp)}</span><span>${money(k.budget)}</span></div>
-  <div class="acts"><button class="btn ghost" data-a="brief" data-v="${esc(k.id)}">Brief</button>
-  <button class="btn primary grow" ${full ? 'disabled' : ''} data-a="${pub ? 'openAuth' : 'submit'}" data-v="${pub ? 'register' : esc(k.id)}">${full ? 'Budget épuisé' : 'Participer'}</button></div></div></div>`;
+  <div class="acts"><button class="btn ghost" data-a="brief" data-v="${esc(k.id)}">${t('Brief')}</button>
+  <button class="btn primary grow" ${full ? 'disabled' : ''} data-a="${pub ? 'openAuth' : 'submit'}" data-v="${pub ? 'register' : esc(k.id)}">${full ? t('Budget épuisé') : t('Participer')}</button></div></div></div>`;
 }
 A.brief = async id => {
   let k = D && D.camps.find(c => c.id === id);
   if (!k) { try { const s = await getDoc(doc(db, 'campaigns', id)); k = { id, ...s.data() } } catch (e) { return toast(errMsg(e), 'err') } }
-  openModal(k.title, `<div class="row gap" style="margin-bottom:14px"><span class="badge primary">${esc(k.brand)}</span><span class="badge green">${money(k.rate)} / 1K vues</span></div>
-  <h3 style="margin-bottom:6px">Description</h3><p class="muted">${esc(k.description)}</p>
-  <h3 style="margin:16px 0 6px">Règles à respecter</h3><p class="muted" style="white-space:pre-line">${esc(k.rules || '—')}</p>
-  <h3 style="margin:16px 0 6px">Plateformes acceptées</h3><div class="chips">${(k.platforms || []).map(p => `<span class="chip sm">${esc(p)}</span>`).join('')}</div>
-  <div class="modal-f"><button class="btn primary" data-a="${me ? 'submit' : 'openAuth'}" data-v="${me ? esc(k.id) : 'register'}">Participer</button></div>`);
+  openModal(k.title, `<div class="row gap" style="margin-bottom:14px"><span class="badge primary">${esc(k.brand)}</span><span class="badge green">${money(k.rate)} ${t('/ 1K vues')}</span></div>
+  <h3 style="margin-bottom:6px">${t('Description')}</h3><p class="muted">${esc(k.description)}</p>
+  <h3 style="margin:16px 0 6px">${t('Règles à respecter')}</h3><p class="muted" style="white-space:pre-line">${esc(k.rules || '—')}</p>
+  <h3 style="margin:16px 0 6px">${t('Plateformes acceptées')}</h3><div class="chips">${(k.platforms || []).map(p => `<span class="chip sm">${esc(p)}</span>`).join('')}</div>
+  <div class="modal-f"><button class="btn primary" data-a="${me ? 'submit' : 'openAuth'}" data-v="${me ? esc(k.id) : 'register'}">${t('Participer')}</button></div>`);
 };
 function ranksGrid(views) {
   const cur = views >= 0 ? rankOf(views).cur.name : null;
-  return `<div class="ranks">${[...RANKS].sort((a, b) => a.min_views - b.min_views).map(x => `<div class="rk ${cur === x.name ? 'on' : ''}" style="--c:${safeColor(x.color)}"><div class="rk-ic">${ic('trophy')}</div><h3>${esc(x.name)}</h3><b>${nf(x.min_views)}+ vues</b><p class="muted small">${esc(x.perks)}</p>
-  ${views < 0 ? '' : views >= x.min_views ? '<span class="badge green">Débloqué</span>' : '<span class="badge">Verrouillé</span>'}</div>`).join('')}</div>`;
+  return `<div class="ranks">${[...RANKS].sort((a, b) => a.min_views - b.min_views).map(x => `<div class="rk ${cur === x.name ? 'on' : ''}" style="--c:${safeColor(x.color)}"><div class="rk-ic">${ic('trophy')}</div><h3>${esc(t(x.name))}</h3><b>${t('{n}+ vues', { n: nf(x.min_views) })}</b><p class="muted small">${esc(t(x.perks))}</p>
+  ${views < 0 ? '' : views >= x.min_views ? `<span class="badge green">${t('Débloqué')}</span>` : `<span class="badge">${t('Verrouillé')}</span>`}</div>`).join('')}</div>`;
 }
 function clipList(list) {
-  return `<div class="list">${list.map(c => `<div class="li">${platIc(c.platform)}<div class="grow"><a href="${safeUrl(c.url)}" target="_blank" rel="noopener noreferrer" class="b">${esc(c.title || 'Clip sans titre')}</a>
-  <small class="muted">${esc(c.campaignTitle || 'Campagne')} · ${dt(c.createdAt)}</small>
-  ${c.status === 'rejected' && c.reason ? `<small class="red-t">Motif : ${esc(c.reason)}</small>` : ''}</div>
-  <div class="nums"><b>${nf(c.status === 'approved' ? c.views : c.declaredViews)} vues</b><small class="${c.status === 'approved' ? 'green-t' : 'muted'}">${c.status === 'approved' ? '+' + money(clipEarn(c)) : 'déclarées'}</small></div>
-  ${badge(c.status)}${c.status === 'pending' ? `<button class="icon-btn red" title="Retirer" aria-label="Retirer" data-a="delClip" data-v="${esc(c.id)}">${ic('trash')}</button>` : ''}</div>`).join('')}</div>`;
+  return `<div class="list">${list.map(c => `<div class="li">${platIc(c.platform)}<div class="grow"><a href="${safeUrl(c.url)}" target="_blank" rel="noopener noreferrer" class="b">${esc(c.title || t('Clip sans titre'))}</a>
+  <small class="muted">${esc(c.campaignTitle || '')}${c.channelHandle ? ' · @' + esc(c.channelHandle) : ''} · ${dt(c.createdAt)}</small>
+  ${c.status === 'rejected' && c.reason ? `<small class="red-t">${t('Motif : {r}', { r: esc(c.reason) })}</small>` : ''}</div>
+  <div class="nums"><b>${t('{n} vues', { n: nf(c.status === 'approved' ? c.views : c.declaredViews) })}</b><small class="${c.status === 'approved' ? 'green-t' : 'muted'}">${c.status === 'approved' ? '+' + money(clipEarn(c)) : t('déclarées')}</small></div>
+  ${badge(c.status)}${c.status === 'pending' ? `<button class="icon-btn red" title="${t('Retirer')}" aria-label="${t('Retirer')}" data-a="delClip" data-v="${esc(c.id)}">${ic('trash')}</button>` : ''}</div>`).join('')}</div>`;
 }
 function rankCard(s, r) {
-  return `<div class="card"><div class="row between gap"><div><small class="muted">Ton rang actuel</small><h2 class="row gap" style="color:${safeColor(r.cur.color)};margin-top:4px">${ic('trophy')} ${esc(r.cur.name)}</h2></div>
-  <div class="right">${r.next ? `<small class="muted">Prochain : <b style="color:${safeColor(r.next.color)}">${esc(r.next.name)}</b></small><small class="muted">encore ${nf(r.next.min_views - s.views)} vues</small>` : '<b>Rang maximum atteint</b>'}</div></div>
-  <div class="bar"><i style="width:${r.pct}%;background:${safeColor(r.cur.color)}"></i></div><small class="muted">${nf(s.views)} vues vérifiées${r.cur.perks ? ' · ' + esc(r.cur.perks) : ''}</small></div>`;
+  return `<div class="card"><div class="row between gap"><div><small class="muted">${t('Ton rang actuel')}</small><h2 class="row gap" style="color:${safeColor(r.cur.color)};margin-top:4px">${ic('trophy')} ${esc(t(r.cur.name))}</h2></div>
+  <div class="right">${r.next ? `<small class="muted">${t('Prochain :')} <b style="color:${safeColor(r.next.color)}">${esc(t(r.next.name))}</b></small><small class="muted">${t('encore {n} vues', { n: nf(r.next.min_views - s.views) })}</small>` : `<b>${t('Rang maximum atteint')}</b>`}</div></div>
+  <div class="bar"><i style="width:${r.pct}%;background:${safeColor(r.cur.color)}"></i></div><small class="muted">${t('{n} vues vérifiées', { n: nf(s.views) })}${r.cur.perks ? ' · ' + esc(t(r.cur.perks)) : ''}</small></div>`;
 }
+const chUrl = c => CH_URL[c.platform] ? CH_URL[c.platform](c.handle) : '#';
+const verifiedChannels = () => D.channels.filter(c => c.status === 'verified');
 
 /* ---------- Vues ---------- */
 const V = {
   dashboard(s, r) {
-    const rec = D.clips.slice(0, 5);
-    return `<div class="stack"><div class="grid4">${stat('Vues vérifiées', nf(s.views), 'eye', 'cyan')}${stat('Gains totaux', money(s.earned), 'chart', 'green')}${stat('Solde disponible', money(s.balance), 'wallet', 'primary')}${stat('Clips approuvés', s.approved + ' / ' + s.clips, 'film', 'amber')}</div>
+    const rec = D.clips.slice(0, 5), noCh = !verifiedChannels().length;
+    return `<div class="stack">${noCh ? `<div class="notice row between gap wrap"><span>${t('Relie et fais vérifier au moins une chaîne pour pouvoir soumettre des clips.')}</span><button class="btn sm primary" data-a="go" data-v="channels">${t('Relier une chaîne')}</button></div>` : ''}
+    <div class="grid4">${stat(t('Vues vérifiées'), nf(s.views), 'eye', 'cyan')}${stat(t('Gains totaux'), money(s.earned), 'chart', 'green')}${stat(t('Solde disponible'), money(s.balance), 'wallet', 'primary')}${stat(t('Clips approuvés'), s.approved + ' / ' + s.clips, 'film', 'amber')}</div>
     ${rankCard(s, r)}
-    <div class="card"><div class="card-h"><h3>Clips récents</h3>${rec.length ? '<a data-a="go" data-v="clips" class="small">Tout voir</a>' : ''}</div>
-    ${rec.length ? clipList(rec) : empty('Aucun clip pour le moment', 'Choisis une campagne et soumets ton premier clip.', '<button class="btn primary" data-a="go" data-v="campaigns">Voir les campagnes</button>')}</div></div>`;
+    <div class="card"><div class="card-h"><h3>${t('Clips récents')}</h3>${rec.length ? `<a data-a="go" data-v="clips" class="small">${t('Tout voir')}</a>` : ''}</div>
+    ${rec.length ? clipList(rec) : empty(t('Aucun clip pour le moment'), t('Choisis une campagne et soumets ton premier clip.'), `<button class="btn primary" data-a="go" data-v="campaigns">${t('Voir les campagnes')}</button>`)}</div></div>`;
   },
   campaigns() {
-    return D.camps.length ? `<div class="grid3">${D.camps.map(k => campCard(k, false)).join('')}</div>` : `<div class="card">${empty('Aucune campagne active', 'De nouvelles campagnes arrivent bientôt. Reviens vite !', '', 'megaphone')}</div>`;
+    return D.camps.length ? `<div class="grid3">${D.camps.map(k => campCard(k, false)).join('')}</div>` : `<div class="card">${empty(t('Aucune campagne active'), t('De nouvelles campagnes arrivent bientôt. Reviens vite !'), '', 'megaphone')}</div>`;
   },
   clips(s) {
     const all = D.clips, list = clipFilter === 'all' ? all : all.filter(c => c.status === clipFilter);
     const tabs = [['all', 'Tous', all.length], ['pending', 'En attente', s.pending], ['approved', 'Approuvés', s.approved], ['rejected', 'Refusés', s.rejected]];
-    return `<div class="tabs">${tabs.map(([k, l, n]) => `<button class="tab ${clipFilter === k ? 'on' : ''}" data-a="clipTab" data-v="${k}">${l}<span>${n}</span></button>`).join('')}</div>
-    <div class="card">${list.length ? clipList(list) : empty('Rien ici', 'Aucun clip dans cette catégorie.', '<button class="btn primary" data-a="submit">Soumettre un clip</button>')}</div>`;
+    return `<div class="tabs">${tabs.map(([k, l, n]) => `<button class="tab ${clipFilter === k ? 'on' : ''}" data-a="clipTab" data-v="${k}">${t(l)}<span>${n}</span></button>`).join('')}</div>
+    <div class="card">${list.length ? clipList(list) : empty(t('Rien ici'), t('Aucun clip dans cette catégorie.'), `<button class="btn primary" data-a="submit">${t('Soumettre un clip')}</button>`)}</div>`;
+  },
+  channels() {
+    const L = D.channels;
+    return `<div class="stack"><div class="card"><div class="card-h"><h3>${t('Comment ça marche')}</h3><button class="btn sm primary" data-a="addChannel">${ic('plus')} ${t('Relier une chaîne')}</button></div>
+    <ol class="muted small" style="padding-left:18px;line-height:1.9"><li>${t('Ajoute ta chaîne TikTok, Instagram ou YouTube.')}</li><li>${t('Copie le code unique Clexiq et colle-le dans ta bio (ou la description YouTube).')}</li><li>${t('Touche « J\'ai placé le code » : l\'équipe vérifie que la chaîne t\'appartient.')}</li><li>${t('Une fois vérifiée, tu peux retirer le code et soumettre des clips de cette chaîne.')}</li></ol></div>
+    <div class="card">${L.length ? `<div class="list">${L.map(c => `<div class="li">${platIc(c.platform)}<div class="grow"><a class="b" href="${safeUrl(chUrl(c))}" target="_blank" rel="noopener noreferrer">@${esc(c.handle)} ${ic('ext')}</a><small class="muted">${esc(c.platform)} · ${t('ajoutée le {d}', { d: dt(c.createdAt) })}</small>
+      ${c.status === 'pending' ? `<div class="hint" style="margin-top:8px">${t('Place ce code {where} :', { where: t(CH_WHERE[c.platform]) })}<div class="row gap" style="margin-top:6px"><b style="font:700 18px monospace;color:var(--text);letter-spacing:1px">${esc(c.code)}</b><button class="icon-btn" data-a="copy" data-v="${esc(c.code)}" title="${t('Copier')}">${ic('copy')}</button></div></div><button class="btn sm primary" style="margin-top:8px" data-a="chSubmit" data-v="${esc(c.id)}">${t('J\'ai placé le code')}</button>` : ''}
+      ${c.status === 'submitted' ? `<small class="muted">${t('Code {c} — vérification en cours par l\'équipe. Garde le code dans ta bio jusqu\'à la validation.', { c: esc(c.code) })}</small>` : ''}
+      ${c.status === 'rejected' ? `<small class="red-t">${t('Vérification refusée : le code n\'a pas été trouvé. Supprime puis ajoute à nouveau la chaîne.')}</small>` : ''}</div>
+      ${badge(c.status, CHST)}<button class="icon-btn red" title="${t('Supprimer')}" aria-label="${t('Supprimer')}" data-a="delChannel" data-v="${esc(c.id)}">${ic('trash')}</button></div>`).join('')}</div>`
+      : empty(t('Aucune chaîne reliée'), t('Relie ta première chaîne pour pouvoir participer aux campagnes.'), `<button class="btn primary" data-a="addChannel">${t('Relier une chaîne')}</button>`, 'link')}</div></div>`;
   },
   ranks(s, r) {
     return `<div class="stack">${rankCard(s, r)}${ranksGrid(s.views)}
-    <div class="card"><div class="card-h"><h3>Classement des clippers</h3>${me.isAdmin ? '' : `<span class="badge primary">Ta position : ${s.position ? '#' + s.position : 'hors top 20'}</span>`}</div>
+    <div class="card"><div class="card-h"><h3>${t('Classement des clippers')}</h3>${me.isAdmin ? '' : `<span class="badge primary">${s.position ? t('Ta position : #{n}', { n: s.position }) : t('Hors top 20')}</span>`}</div>
     ${D.lb.length ? D.lb.map((x, i) => { const rk = rankOf(x.views).cur; return `<div class="lb-r ${x.id === me.id ? 'me' : ''}"><span class="pos p${i + 1}">${i + 1}</span>${avatar(x.name, x.photo, rk.color, 'sm')}
-    <div class="grow"><b>${esc(x.handle || x.name)}</b><small style="color:${safeColor(rk.color)}">${esc(rk.name)}</small></div><b>${nf(x.views)} vues</b></div>` }).join('') : empty('Classement vide', 'Sois le premier à faire valider un clip.', '', 'trophy')}</div></div>`;
+    <div class="grow"><b>${esc(x.name)}</b><small style="color:${safeColor(rk.color)}">${esc(t(rk.name))}</small></div><b>${t('{n} vues', { n: nf(x.views) })}</b></div>` }).join('') : empty(t('Classement vide'), t('Sois le premier à faire valider un clip.'), '', 'trophy')}</div></div>`;
   },
   wallet(s) {
     const min = +SET.minPayout || 0, can = s.balance >= min;
-    return `<div class="stack"><div class="grid4">${stat('Solde disponible', money(s.balance), 'wallet', 'primary')}${stat('Gains totaux', money(s.earned), 'chart', 'green')}${stat('Retraits en cours', money(s.pending_pay), 'clock', 'amber')}${stat('Déjà retiré', money(s.paid), 'check', 'cyan')}</div>
-    <div class="grid2"><div class="card"><h3 style="margin-bottom:14px">Demander un retrait</h3><form id="payF" class="form">
-    <label>Montant (${esc(SET.currency)})<input name="amount" type="number" inputmode="numeric" min="${min}" max="${s.balance}" step="1" required placeholder="Minimum ${money(min)}" ${can ? '' : 'disabled'}></label>
-    <label>Méthode de paiement<select name="method" ${can ? '' : 'disabled'}>${METHODS.map(m => `<option>${m}</option>`).join('')}</select></label>
-    <label>Numéro ou compte de réception<input name="account" required minlength="3" maxlength="80" placeholder="+229 ..." autocomplete="tel" ${can ? '' : 'disabled'}></label>
-    <button class="btn primary block" type="submit" ${can ? '' : 'disabled'}>Demander le retrait</button>
-    ${can ? '<p class="hint">Vérifie bien ton numéro : les paiements sont envoyés manuellement par l\'équipe.</p>' : `<p class="hint">Il te faut au moins ${money(min)} de solde pour retirer.</p>`}</form></div>
-    <div class="card"><h3 style="margin-bottom:6px">Historique des retraits</h3>${D.pays.length ? `<div class="list">${D.pays.map(p => `<div class="li"><div class="grow"><b>${money(p.amount)}</b><small class="muted">${esc(p.method)} · ${esc(p.account)} · ${dt(p.createdAt)}</small></div>${badge(p.status, PST)}</div>`).join('')}</div>` : empty('Aucun retrait', 'Tes demandes apparaîtront ici.', '', 'wallet')}</div></div></div>`;
+    return `<div class="stack"><div class="grid4">${stat(t('Solde disponible'), money(s.balance), 'wallet', 'primary')}${stat(t('Gains totaux'), money(s.earned), 'chart', 'green')}${stat(t('Retraits en cours'), money(s.pending_pay), 'clock', 'amber')}${stat(t('Déjà retiré'), money(s.paid), 'check', 'cyan')}</div>
+    <div class="grid2"><div class="card"><h3 style="margin-bottom:14px">${t('Demander un retrait')}</h3><form id="payF" class="form">
+    <label>${t('Montant (USD)')}<input name="amount" type="number" inputmode="decimal" min="${min}" max="${s.balance}" step="0.01" required placeholder="${t('Minimum {m}', { m: money(min) })}" ${can ? '' : 'disabled'}></label>
+    <label>${t('Méthode de paiement')}<input value="USDT (BEP20 · BNB Smart Chain)" readonly></label>
+    <label>${t('Adresse USDT BEP20')}<input name="account" required maxlength="42" placeholder="0x…" autocomplete="off" spellcheck="false" ${can ? '' : 'disabled'}></label>
+    <button class="btn primary block" type="submit" ${can ? '' : 'disabled'}>${t('Demander le retrait')}</button>
+    ${can ? `<p class="hint">${t('Utilise uniquement une adresse du réseau BEP20 (BNB Smart Chain). Un envoi vers un mauvais réseau est perdu définitivement.')}</p>` : `<p class="hint">${t('Il te faut au moins {m} de solde pour retirer.', { m: money(min) })}</p>`}</form></div>
+    <div class="card"><h3 style="margin-bottom:6px">${t('Historique des retraits')}</h3>${D.pays.length ? `<div class="list">${D.pays.map(p => `<div class="li"><div class="grow"><b>${money(p.amount)}</b><small class="muted" style="word-break:break-all">${esc(p.method)} · ${esc(p.account)} · ${dt(p.createdAt)}</small></div>${badge(p.status, PST)}</div>`).join('')}</div>` : empty(t('Aucun retrait'), t('Tes demandes apparaîtront ici.'), '', 'wallet')}</div></div></div>`;
   },
   profile(s, r) {
     const google = me.provider === 'google.com';
-    return `<div class="grid2"><div class="card"><div class="row gap" style="margin-bottom:18px">${avatar(me.name, me.photo, r.cur.color, 'lg')}<div style="min-width:0"><h3>${esc(me.name)}</h3><small class="muted">${esc(me.email)}</small><small class="muted">Membre depuis le ${dt(me.createdAt)} · ${google ? 'Compte Google' : 'Compte email'}</small></div></div>
-    <form id="profF" class="form"><label>Nom complet<input name="name" required maxlength="60" value="${esc(me.name)}"></label>
-    <label>Pseudo TikTok / Instagram<input name="handle" maxlength="40" value="${esc(me.handle)}" placeholder="@toncompte"></label><label>Pays<input name="country" maxlength="40" value="${esc(me.country)}"></label>
-    <button class="btn primary" type="submit">Enregistrer</button></form></div>
-    <div class="stack"><div class="card"><h3 style="margin-bottom:10px">Sécurité</h3>${google ? '<p class="muted small">Tu te connectes avec Google : ton mot de passe et la double authentification sont gérés par ton compte Google.</p>' : `<form id="pwF" class="form"><label>Nouveau mot de passe<input name="nw" type="password" minlength="8" maxlength="72" required autocomplete="new-password"></label><label>Confirme<input name="nw2" type="password" required autocomplete="new-password"></label><button class="btn ghost" type="submit">Changer le mot de passe</button></form>`}</div>
-    <div class="card" style="border-color:rgba(240,80,110,.35)"><h3 class="red-t">Zone dangereuse</h3><p class="muted small" style="margin:6px 0 14px">La suppression efface ton compte, tes clips et ton historique. Ton solde non retiré sera perdu. Action irréversible.</p><button class="btn danger" data-a="deleteMe">${ic('trash')} Supprimer mon compte</button></div></div></div>`;
+    const countryField = me.country
+      ? `<label>${t('Pays')}<input value="${esc(flag(me.country) + ' ' + countryName(me.country))}" readonly></label><p class="muted small" style="margin-top:-8px">${ic('lock')} ${t('Le pays ne peut plus être modifié.')}</p>`
+      : `<label>${t('Pays')}<select name="country"><option value="">${t('Choisis ton pays…')}</option>${countryOptions().map(([c, n]) => `<option value="${c}">${flag(c)} ${esc(n)}</option>`).join('')}</select></label><p class="muted small" style="margin-top:-8px">${t('Attention : une fois confirmé, le pays ne pourra plus être modifié.')}</p>`;
+    return `<div class="grid2"><div class="card"><div class="row gap" style="margin-bottom:18px">${avatar(me.name, me.photo, r.cur.color, 'lg')}<div style="min-width:0"><h3>${esc(me.name)}</h3><small class="muted">${esc(me.email)}</small><small class="muted">${t('Membre depuis le {d}', { d: dt(me.createdAt) })} · ${google ? t('Compte Google') : t('Compte email')}</small></div></div>
+    <form id="profF" class="form"><label>${t('Nom complet')}<input name="name" required maxlength="60" value="${esc(me.name)}"></label>${countryField}
+    <label>${t('Langue')}${langSelect()}</label>
+    <button class="btn primary" type="submit">${t('Enregistrer')}</button></form>
+    <p class="muted small" style="margin-top:14px">${t('Tes chaînes TikTok, Instagram et YouTube se gèrent dans l\'onglet « Chaînes ».')} <a data-a="go" data-v="channels">${t('Ouvrir')}</a></p></div>
+    <div class="stack"><div class="card"><h3 style="margin-bottom:10px">${t('Sécurité')}</h3>${google ? `<p class="muted small">${t('Tu te connectes avec Google : ton mot de passe et la double authentification sont gérés par ton compte Google.')}</p>` : `<form id="pwF" class="form"><label>${t('Nouveau mot de passe')}<input name="nw" type="password" minlength="8" maxlength="72" required autocomplete="new-password"></label><label>${t('Confirme')}<input name="nw2" type="password" required autocomplete="new-password"></label><button class="btn ghost" type="submit">${t('Changer le mot de passe')}</button></form>`}</div>
+    <div class="card" style="border-color:rgba(240,80,110,.35)"><h3 class="red-t">${t('Zone dangereuse')}</h3><p class="muted small" style="margin:6px 0 14px">${t('La suppression efface ton compte, tes clips et ton historique. Ton solde non retiré sera perdu. Action irréversible.')}</p><button class="btn danger" data-a="deleteMe">${ic('trash')} ${t('Supprimer mon compte')}</button></div></div></div>`;
   }
 };
 
 function renderApp() {
-  const s = D.stats, r = rankOf(s.views), [t, sub] = TITLES[view];
-  const adminLink = me.isAdmin ? `<a class="nav" href="admin.html">${ic('shield')}<span>Panel admin</span></a>` : '';
+  const s = D.stats, r = rankOf(s.views), [ti, sub] = TITLES[view];
+  const adminLink = me.isAdmin ? `<a class="nav" href="admin.html">${ic('shield')}<span>${t('Panel admin')}</span></a>` : '';
+  const chPend = D.channels.filter(c => c.status === 'pending').length;
   root().innerHTML = `<div class="app">
-  <div class="mtop"><div class="logo">${logo()}</div><div class="row gap"><div data-a="go" data-v="profile">${avatar(me.name, me.photo, r.cur.color, 'sm')}</div><button class="icon-btn" data-a="logout" aria-label="Déconnexion">${ic('logout')}</button></div></div>
-  <aside class="side"><div class="logo">${logo()}</div><nav>${NAV.map(([k, l, i]) => `<button class="nav ${view === k ? 'on' : ''}" data-a="go" data-v="${k}">${ic(i)}<span>${l}</span>${k === 'clips' && s.pending ? `<span class="cnt" style="background:var(--amber);color:#2A1B00">${s.pending}</span>` : ''}</button>`).join('')}${adminLink}</nav>
-  <div class="side-foot"><div class="me" data-a="go" data-v="profile">${avatar(me.name, me.photo, r.cur.color)}<div style="min-width:0"><b>${esc(me.name)}</b><small style="color:${safeColor(r.cur.color)}">${esc(r.cur.name)} · ${money(s.balance)}</small></div></div>
-  <button class="nav" data-a="logout">${ic('logout')}<span>Déconnexion</span></button></div></aside>
-  <main class="main"><header class="top"><div><h1>${t}</h1><p class="muted small">${sub}</p></div><button class="btn primary" data-a="submit" aria-label="Soumettre un clip">${ic('plus')}<span>Soumettre un clip</span></button></header>${V[view](s, r)}</main>
-  <nav class="bottom">${NAV.slice(0, 5).map(([k, l, i]) => `<a class="${view === k ? 'on' : ''}" data-a="go" data-v="${k}">${ic(i)}${l}</a>`).join('')}</nav></div>`;
+  <div class="mtop"><div class="logo">${logo()}</div><div class="row gap">${langSelect('sm')}<div data-a="go" data-v="profile">${avatar(me.name, me.photo, r.cur.color, 'sm')}</div><button class="icon-btn" data-a="logout" aria-label="${t('Déconnexion')}">${ic('logout')}</button></div></div>
+  <aside class="side"><div class="logo">${logo()}</div><nav>${NAV.map(([k, l, i]) => `<button class="nav ${view === k ? 'on' : ''}" data-a="go" data-v="${k}">${ic(i)}<span>${t(l)}</span>${k === 'clips' && s.pending ? `<span class="cnt" style="background:var(--amber);color:#2A1B00">${s.pending}</span>` : ''}${k === 'channels' && chPend ? `<span class="cnt" style="background:var(--amber);color:#2A1B00">${chPend}</span>` : ''}</button>`).join('')}${adminLink}</nav>
+  <div class="side-foot">${langSelect('block')}<div class="me" data-a="go" data-v="profile">${avatar(me.name, me.photo, r.cur.color)}<div style="min-width:0"><b>${esc(me.name)}</b><small style="color:${safeColor(r.cur.color)}">${esc(t(r.cur.name))} · ${money(s.balance)}</small></div></div>
+  <button class="nav" data-a="logout">${ic('logout')}<span>${t('Déconnexion')}</span></button></div></aside>
+  <main class="main"><header class="top"><div><h1>${t(ti)}</h1><p class="muted small">${t(sub)}</p></div><button class="btn primary" data-a="submit" aria-label="${t('Soumettre un clip')}">${ic('plus')}<span>${t('Soumettre un clip')}</span></button></header>${V[view](s, r)}</main>
+  <nav class="bottom">${NAV.filter(n => BOTTOM.includes(n[0])).map(([k, l, i]) => `<a class="${view === k ? 'on' : ''}" data-a="go" data-v="${k}">${ic(i)}${t(l)}</a>`).join('')}</nav></div>`;
   bindView();
 }
 A.clipTab = k => { clipFilter = k; render() };
+A.copy = async v => { try { await navigator.clipboard.writeText(v); toast(t('Copié !')) } catch (e) { toast(v) } };
 
 function bindView() {
   const pf = $('#payF'); if (pf) pf.onsubmit = async e => {
-    e.preventDefault(); const f = Object.fromEntries(new FormData(pf)), a = Math.floor(+f.amount), btn = pf.querySelector('button'), acc = String(f.account || '').trim();
-    if (!(a >= (+SET.minPayout || 0))) return toast('Montant minimum : ' + money(SET.minPayout), 'err');
-    if (a > D.stats.balance) return toast('Solde insuffisant.', 'err');
-    if (acc.length < 3) return toast('Indique ton numéro ou compte de réception.', 'err');
-    if (!await confirmBox('Confirmer le retrait ?', `Tu demandes <b>${money(a)}</b> via ${esc(f.method)} sur <b>${esc(acc)}</b>. Vérifie bien ce numéro.`, 'Confirmer', false)) return;
+    e.preventDefault(); const f = Object.fromEntries(new FormData(pf)), a = cents(f.amount), btn = pf.querySelector('button'), acc = String(f.account || '').trim();
+    if (!(a >= (+SET.minPayout || 0))) return toast(t('Montant minimum : {m}', { m: money(SET.minPayout) }), 'err');
+    if (a > D.stats.balance) return toast(t('Solde insuffisant.'), 'err');
+    if (!BEP20.test(acc)) return toast(t('Adresse USDT BEP20 invalide : elle commence par 0x et contient 42 caractères.'), 'err');
+    if (!await confirmBox(t('Confirmer le retrait ?'), t('Tu demandes {a} en USDT sur le réseau BEP20 vers l\'adresse {acc}. Vérifie-la caractère par caractère : un envoi est irréversible.', { a: `<b>${money(a)}</b>`, acc: `<b style="word-break:break-all">${esc(acc)}</b>` }), t('Confirmer'), false)) return;
     busy(btn, true);
     try {
       const uid = auth.currentUser.uid, pref = doc(collection(db, 'payouts')), b = writeBatch(db);
-      b.set(pref, { userId: uid, userName: me.name, userEmail: me.email, amount: a, method: f.method, account: acc, status: 'pending', createdAt: serverTimestamp(), processedAt: null });
+      b.set(pref, { userId: uid, userName: me.name, userEmail: me.email, amount: a, method: 'USDT BEP20', account: acc, status: 'pending', createdAt: serverTimestamp(), processedAt: null });
       b.update(doc(db, 'users', uid), { pending: increment(a), lastPayout: pref.id });
-      await b.commit(); toast('Demande de retrait envoyée.'); await refresh(true);
+      await b.commit(); toast(t('Demande de retrait envoyée.')); await refresh(true);
     } catch (err) { toast(errMsg(err), 'err') } finally { busy(btn, false) }
   };
   const prf = $('#profF'); if (prf) prf.onsubmit = async e => {
-    e.preventDefault(); const f = Object.fromEntries(new FormData(prf)), btn = prf.querySelector('button');
-    const name = String(f.name || '').trim().slice(0, 60); let h = String(f.handle || '').trim(); if (h && h[0] !== '@') h = '@' + h;
-    if (!name) return toast('Indique ton nom.', 'err'); if (h && !/^@[A-Za-z0-9._]{1,39}$/.test(h)) return toast('Pseudo invalide (lettres, chiffres, point, tiret bas).', 'err');
+    e.preventDefault(); const f = Object.fromEntries(new FormData(prf)), btn = prf.querySelector('button[type=submit]');
+    const name = String(f.name || '').trim().slice(0, 60), country = f.country || '';
+    if (!name) return toast(t('Indique ton nom.'), 'err');
+    if (country && !await confirmBox(t('Confirmer ton pays ?'), t('Tu as choisi {c}. Ce choix est définitif et ne pourra plus être modifié.', { c: `<b>${flag(country)} ${esc(countryName(country))}</b>` }), t('Confirmer'), false)) return;
     busy(btn, true);
     try {
-      const uid = auth.currentUser.uid, b = writeBatch(db);
-      b.update(doc(db, 'users', uid), { name, handle: h, country: String(f.country || '').trim().slice(0, 40) });
-      if (!me.isAdmin) b.set(doc(db, 'leaderboard', uid), { name, handle: h, photo: me.photo || '' }, { merge: true });
-      await b.commit(); toast('Profil mis à jour.'); await refresh(true);
+      const uid = auth.currentUser.uid, b = writeBatch(db), upd = { name };
+      if (country && !me.country) upd.country = country;
+      b.update(doc(db, 'users', uid), upd);
+      if (!me.isAdmin) b.set(doc(db, 'leaderboard', uid), { name, handle: '', photo: me.photo || '' }, { merge: true });
+      await b.commit(); toast(t('Profil mis à jour.')); await refresh(true);
     } catch (err) { toast(errMsg(err), 'err') } finally { busy(btn, false) }
   };
   const pw = $('#pwF'); if (pw) pw.onsubmit = async e => {
     e.preventDefault(); const f = Object.fromEntries(new FormData(pw)), btn = pw.querySelector('button');
-    if (!validPassword(f.nw)) return toast('8 caractères minimum, avec lettres et chiffres.', 'err'); if (f.nw !== f.nw2) return toast('Les deux mots de passe sont différents.', 'err');
-    busy(btn, true); try { await updatePassword(auth.currentUser, f.nw); pw.reset(); toast('Mot de passe modifié.') } catch (err) { toast(errMsg(err), 'err') } finally { busy(btn, false) }
+    if (!validPassword(f.nw)) return toast(t('Mot de passe trop faible : 8 caractères minimum, avec lettres et chiffres.'), 'err'); if (f.nw !== f.nw2) return toast(t('Les deux mots de passe sont différents.'), 'err');
+    busy(btn, true); try { await updatePassword(auth.currentUser, f.nw); pw.reset(); toast(t('Mot de passe modifié.')) } catch (err) { toast(errMsg(err), 'err') } finally { busy(btn, false) }
   };
 }
 
-/* ---------- Actions ---------- */
-const ALLOWED_HOSTS = /^https:\/\/([a-z0-9-]+\.)*(tiktok\.com|instagram\.com|youtube\.com|youtu\.be|x\.com|twitter\.com|facebook\.com|fb\.watch)(\/[^\s]*)?$/i;
-A.submit = cid => {
-  const act = D.camps.filter(c => (+c.spent || 0) < c.budget);
-  if (!act.length) return toast('Aucune campagne ouverte pour le moment.', 'err');
-  const sel = act.find(c => c.id === cid) || act[0];
-  const platOpts = k => (k.platforms || []).map(p => `<option>${esc(p)}</option>`).join('');
-  openModal('Soumettre un clip', `<form id="subF" class="form">
-  <label>Campagne<select name="campaign" data-ch="subCamp" required>${act.map(k => `<option value="${esc(k.id)}" ${k.id === sel.id ? 'selected' : ''}>${esc(k.title)} — ${money(k.rate)}/1K</option>`).join('')}</select></label>
-  <label>Plateforme<select name="platform" id="subPlat">${platOpts(sel)}</select></label>
-  <label>Lien de la publication<input name="url" type="url" inputmode="url" required maxlength="500" placeholder="https://www.tiktok.com/@toi/video/..."></label>
-  <label>Titre / accroche<input name="title" maxlength="90" placeholder="Ex : Le moment où tout bascule"></label>
-  <label>Vues actuelles<input name="views" type="number" inputmode="numeric" min="0" value="0"></label>
-  <p class="hint">Chaque clip est vérifié par l'équipe. Seules les vues vérifiées sont rémunérées. Les clips trompeurs ou à vues achetées sont refusés.</p>
-  <button class="btn primary block" type="submit">Envoyer pour validation</button></form>`);
-  A.subCamp = v => { const k = act.find(c => c.id === v); if (k) $('#subPlat').innerHTML = platOpts(k) };
-  $('#subF').onsubmit = async e => {
-    e.preventDefault(); const f = Object.fromEntries(new FormData(e.target)), url = String(f.url).trim(), btn = e.target.querySelector('button[type=submit]');
-    const k = act.find(c => c.id === f.campaign);
-    if (!ALLOWED_HOSTS.test(url)) return toast('Colle un lien https TikTok, Instagram, YouTube, X ou Facebook.', 'err');
-    if (D.clips.some(c => c.url.toLowerCase() === url.toLowerCase())) return toast('Tu as déjà soumis ce lien.', 'err');
+/* ---------- Chaînes ---------- */
+function newCode() { const a = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789', r = crypto.getRandomValues(new Uint8Array(6)); return 'CLX-' + [...r].map(x => a[x % a.length]).join('') }
+A.addChannel = () => {
+  openModal(t('Relier une chaîne'), `<form id="chF" class="form">
+  <label>${t('Plateforme')}<select name="platform">${PLATFORMS.map(p => `<option>${p}</option>`).join('')}</select></label>
+  <label>${t('Nom d\'utilisateur de la chaîne')}<input name="handle" required maxlength="31" placeholder="@toncompte" autocomplete="off" spellcheck="false"></label>
+  <p class="hint">${t('Tu recevras un code unique à placer dans la bio de cette chaîne. C\'est ce qui prouve qu\'elle t\'appartient : personne d\'autre ne pourra la relier.')}</p>
+  <button class="btn primary block" type="submit">${t('Obtenir mon code')}</button></form>`);
+  $('#chF').onsubmit = async e => {
+    e.preventDefault(); const f = Object.fromEntries(new FormData(e.target)), btn = e.target.querySelector('button');
+    const h = String(f.handle || '').trim().replace(/^@/, '');
+    if (!/^[A-Za-z0-9._-]{2,30}$/.test(h)) return toast(t('Nom d\'utilisateur invalide (lettres, chiffres, point, tiret, tiret bas).'), 'err');
+    if (D.channels.length >= 50) return toast(t('Nombre maximum de chaînes atteint.'), 'err');
+    const id = f.platform.toLowerCase() + '_' + h.toLowerCase();
     busy(btn, true);
     try {
-      await addDoc(collection(db, 'clips'), { userId: auth.currentUser.uid, campaignId: k.id, campaignTitle: k.title, platform: f.platform, url, title: String(f.title || '').trim().slice(0, 90),
+      await setDoc(doc(db, 'channels', id), { userId: auth.currentUser.uid, userName: me.name, platform: f.platform, handle: h, code: newCode(), status: 'pending', createdAt: serverTimestamp(), reviewedAt: null });
+      closeModal(); toast(t('Chaîne ajoutée. Place maintenant le code dans ta bio.')); view = 'channels'; await refresh(true);
+    } catch (err) { toast(err && err.code === 'permission-denied' ? t('Cette chaîne est déjà reliée à un compte Clexiq.') : errMsg(err), 'err') } finally { busy(btn, false) }
+  };
+};
+A.chSubmit = async id => {
+  const c = D.channels.find(x => x.id === id);
+  if (!await confirmBox(t('Code placé ?'), t('Vérifie que le code {c} est bien visible dans ta bio, puis confirme. L\'équipe va contrôler ta chaîne.', { c: `<b>${esc(c.code)}</b>` }), t('Confirmer'), false)) return;
+  try { await updateDoc(doc(db, 'channels', id), { status: 'submitted' }); toast(t('Demande envoyée. Garde le code jusqu\'à la validation.')); await refresh(true) } catch (e) { toast(errMsg(e), 'err') }
+};
+A.delChannel = async id => {
+  if (!await confirmBox(t('Supprimer cette chaîne ?'), t('Tu ne pourras plus soumettre de clips depuis cette chaîne, sauf si tu la relies à nouveau.'), t('Supprimer'))) return;
+  try { await deleteDoc(doc(db, 'channels', id)); toast(t('Chaîne supprimée.')); await refresh(true) } catch (e) { toast(errMsg(e), 'err') }
+};
+
+/* ---------- Clips ---------- */
+A.submit = cid => {
+  const act = D.camps.filter(c => (+c.spent || 0) < c.budget), vch = verifiedChannels();
+  if (!vch.length) { view = 'channels'; render(); return toast(t('Relie et fais vérifier une chaîne avant de soumettre un clip.'), 'err') }
+  if (!act.length) return toast(t('Aucune campagne ouverte pour le moment.'), 'err');
+  const sel = act.find(c => c.id === cid) || act[0];
+  const chOpts = k => { const L = vch.filter(c => (k.platforms || []).includes(c.platform)); return L.length ? L.map(c => `<option value="${esc(c.id)}">${esc(c.platform)} · @${esc(c.handle)}</option>`).join('') : `<option value="">${t('Aucune chaîne vérifiée pour cette campagne')}</option>` };
+  openModal(t('Soumettre un clip'), `<form id="subF" class="form">
+  <label>${t('Campagne')}<select name="campaign" data-ch="subCamp" required>${act.map(k => `<option value="${esc(k.id)}" ${k.id === sel.id ? 'selected' : ''}>${esc(k.title)} — ${money(k.rate)}${t('/1K')}</option>`).join('')}</select></label>
+  <label>${t('Chaîne de publication')}<select name="channel" id="subCh">${chOpts(sel)}</select></label>
+  <label>${t('Lien de la publication')}<input name="url" type="url" inputmode="url" required maxlength="500" placeholder="https://www.tiktok.com/@toncompte/video/..."></label>
+  <label>${t('Titre / accroche')}<input name="title" maxlength="90" placeholder="${t('Ex : Le moment où tout bascule')}"></label>
+  <label>${t('Vues actuelles')}<input name="views" type="number" inputmode="numeric" min="0" value="0"></label>
+  <p class="hint">${t('Chaque clip est vérifié par l\'équipe. Seules les vues vérifiées sont rémunérées. Les clips trompeurs ou à vues achetées sont refusés.')}</p>
+  <button class="btn primary block" type="submit">${t('Envoyer pour validation')}</button></form>`);
+  A.subCamp = v => { const k = act.find(c => c.id === v); if (k) $('#subCh').innerHTML = chOpts(k) };
+  $('#subF').onsubmit = async e => {
+    e.preventDefault(); const f = Object.fromEntries(new FormData(e.target)), url = String(f.url).trim(), btn = e.target.querySelector('button[type=submit]');
+    const k = act.find(c => c.id === f.campaign), ch = vch.find(c => c.id === f.channel);
+    if (!ch) return toast(t('Choisis une chaîne vérifiée acceptée par cette campagne.'), 'err');
+    if (!URL_OK[ch.platform].test(url)) return toast(t('Colle le lien complet de la vidéo {p}.', { p: ch.platform }), 'err');
+    if (ch.platform === 'TikTok' && !url.toLowerCase().includes('/@' + ch.handle.toLowerCase() + '/')) return toast(t('Ce lien TikTok ne vient pas de la chaîne @{h}.', { h: ch.handle }), 'err');
+    if (D.clips.some(c => c.url.toLowerCase() === url.toLowerCase())) return toast(t('Tu as déjà soumis ce lien.'), 'err');
+    busy(btn, true);
+    try {
+      await addDoc(collection(db, 'clips'), { userId: auth.currentUser.uid, campaignId: k.id, campaignTitle: k.title, channelId: ch.id, channelHandle: ch.handle, platform: ch.platform, url, title: String(f.title || '').trim().slice(0, 90),
         declaredViews: Math.min(10000000000, Math.max(0, parseInt(f.views) || 0)), views: 0, rate: k.rate, earn: 0, status: 'pending', reason: '', createdAt: serverTimestamp(), reviewedAt: null });
-      closeModal(); toast('Clip envoyé ! En attente de validation.'); clipFilter = 'all'; view = 'clips'; await refresh(true);
+      closeModal(); toast(t('Clip envoyé ! En attente de validation.')); clipFilter = 'all'; view = 'clips'; await refresh(true);
     } catch (err) { toast(errMsg(err), 'err') } finally { busy(btn, false) }
   };
 };
 A.delClip = async id => {
-  if (!await confirmBox('Retirer ce clip ?', 'Le clip sera retiré de la file de validation.', 'Retirer')) return;
-  try { await deleteDoc(doc(db, 'clips', id)); toast('Clip retiré.'); await refresh(true) } catch (e) { toast(errMsg(e), 'err') }
+  if (!await confirmBox(t('Retirer ce clip ?'), t('Le clip sera retiré de la file de validation.'), t('Retirer'))) return;
+  try { await deleteDoc(doc(db, 'clips', id)); toast(t('Clip retiré.')); await refresh(true) } catch (e) { toast(errMsg(e), 'err') }
 };
 A.deleteMe = async () => {
-  if (me.isAdmin) return toast('Le compte administrateur ne peut pas être supprimé depuis le site.', 'err');
-  if (!await confirmBox('Supprimer ton compte ?', 'Ton compte, tes clips et ton historique seront définitivement supprimés. Ton solde non retiré sera perdu.', 'Supprimer définitivement')) return;
+  if (me.isAdmin) return toast(t('Le compte administrateur ne peut pas être supprimé depuis le site.'), 'err');
+  if (!await confirmBox(t('Supprimer ton compte ?'), t('Ton compte, tes clips et ton historique seront définitivement supprimés. Ton solde non retiré sera perdu.'), t('Supprimer définitivement'))) return;
   const u = auth.currentUser;
   try {
     const b = writeBatch(db);
     D.clips.forEach(c => b.delete(doc(db, 'clips', c.id)));
     D.pays.forEach(p => b.delete(doc(db, 'payouts', p.id)));
+    D.channels.forEach(c => b.delete(doc(db, 'channels', c.id)));
     b.delete(doc(db, 'leaderboard', u.uid)); b.delete(doc(db, 'users', u.uid));
     await b.commit();
-    await deleteUser(u); toast('Compte supprimé.');
+    await deleteUser(u); toast(t('Compte supprimé.'));
   } catch (e) { toast(errMsg(e), 'err') }
 };
 </script>
