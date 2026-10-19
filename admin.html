@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-14fbKqEOc/ttv2xDP+3zXRG6QZUAm2HykKSYfwfsSc0=' https://www.gstatic.com https://apis.google.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://*.googleusercontent.com https://www.gstatic.com; connect-src https://*.googleapis.com https://*.firebaseio.com wss://*.firebaseio.com https://clexiq.firebaseapp.com; frame-src https://clexiq.firebaseapp.com https://accounts.google.com https://apis.google.com https://www.google.com; object-src 'none'; base-uri 'none'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-6SrO4QpS0hEnv4w4ChCl9fPll7l67cLNTVppz1F4Uqs=' https://www.gstatic.com https://apis.google.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://*.googleusercontent.com https://www.gstatic.com; connect-src https://*.googleapis.com https://*.firebaseio.com wss://*.firebaseio.com https://clexiq.firebaseapp.com; frame-src https://clexiq.firebaseapp.com https://accounts.google.com https://apis.google.com https://www.google.com; object-src 'none'; base-uri 'none'; form-action 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#060B1A">
 <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJDbGV4aXEiPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJjeGciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMyRUYyQzIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxNkI4REUiLz48L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJjeGIiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwRjFDMzgiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwNzBFMjAiLz48L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB4PSIyIiB5PSIyIiB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNjeGIpIiBzdHJva2U9IiMxRjNBNjMiIHN0cm9rZS13aWR0aD0iMS4yIi8+CiAgPHBhdGggZD0iTTM5LjUgMjIuNEExNSAxNSAwIDEgMCAzOS41IDQxLjYiIGZpbGw9Im5vbmUiIHN0cm9rZT0idXJsKCNjeGcpIiBzdHJva2Utd2lkdGg9IjYuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBhdGggZD0iTTI0LjUgMjUuNSAzNy41IDM4LjVNMzcuNSAyNS41IDI0LjUgMzguNSIgc3Ryb2tlPSIjRjRGOEZGIiBzdHJva2Utd2lkdGg9IjUuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGcgc3Ryb2tlPSIjMkVGMkMyIiBzdHJva2Utd2lkdGg9IjIuNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj48cGF0aCBkPSJNNDMuNiAyMi40IDQ2LjYgMTkuNCIvPjxwYXRoIGQ9Ik00NC41IDI3LjVoNS41Ii8+PHBhdGggZD0iTTQzLjUgNDAuNSA0Ny44IDQ0LjgiLz48L2c+CiAgPGNpcmNsZSBjeD0iNTAuNiIgY3k9IjE1LjQiIHI9IjIiIGZpbGw9IiMyRUYyQzIiLz4KPC9zdmc+Cg==" type="image/svg+xml">
@@ -198,6 +198,30 @@ select.lang.sm{height:34px;padding:0 24px 0 8px;font-size:12px}
 select.lang.block{width:100%;margin-bottom:10px}
 .notice .btn{flex:none}
 @media(max-width:820px){.lh select.lang{height:38px}.lh .row.gap{gap:8px}}
+/* ===== Organisation façon Kleeq ===== */
+.rankpill{display:inline-flex;align-items:center;gap:6px;height:36px;padding:0 14px;border-radius:99px;border:1px solid color-mix(in srgb,var(--c) 45%,transparent);background:color-mix(in srgb,var(--c) 12%,transparent);color:var(--c);font:700 13px Inter,sans-serif;cursor:pointer;box-shadow:0 4px 18px -8px var(--c);white-space:nowrap}
+.rankpill svg{width:16px;height:16px}
+.bell{position:relative;width:38px;height:38px;border-radius:50%}
+.bell .cnt{position:absolute;top:-4px;right:-4px;margin:0;min-width:18px;height:18px;font-size:10px;background:var(--primary);color:#04121F}
+.segtabs{display:inline-flex;gap:4px;padding:5px;border-radius:14px;background:var(--surface);border:1px solid var(--border);margin-bottom:18px;max-width:100%;overflow-x:auto}
+.segtabs button{height:40px;padding:0 18px;border:0;border-radius:10px;background:transparent;color:var(--muted);font:600 14px Inter,sans-serif;cursor:pointer;white-space:nowrap}
+.segtabs button.on{background:var(--text);color:var(--bg)}
+.checks-list{display:flex;flex-direction:column;gap:12px}
+.ck{display:flex;align-items:center;gap:12px;cursor:pointer}.ck.ok{cursor:default}
+.ck b{display:block;font-size:14px}.ck.ok b{text-decoration:line-through;color:var(--muted)}
+.ckb{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;flex:none;border:2px dashed var(--border)}
+.ck.ok .ckb{border:0;background:rgba(52,211,153,.15);color:var(--green)}.ckb svg{width:15px;height:15px}
+.lockf{position:relative;display:flex;align-items:center}.lockf input{padding-right:84px}
+.lockf>svg,.lockf>.badge{position:absolute;right:12px;color:var(--muted)}
+.prefrow{display:flex;align-items:center;gap:12px;padding:14px 16px;border:1px solid var(--border);border-radius:14px;background:var(--surface2)}
+.prefrow b{display:block}
+.langsel{display:inline-flex;flex-direction:row;align-items:center;gap:6px;height:38px;padding:0 4px 0 12px;border:1px solid var(--border);border-radius:12px;background:var(--surface2);color:var(--text);cursor:pointer;flex:none}
+.langsel svg{width:16px;height:16px;color:var(--muted)}
+.langsel select{width:auto;border:0;background:transparent;padding:0 22px 0 0;height:36px;font:700 13px Inter,sans-serif;box-shadow:none!important;cursor:pointer}
+.menu .li{gap:14px;cursor:pointer;padding:14px 4px;color:var(--text);text-decoration:none}.menu .li b{display:block}.menu .li>svg{width:20px;height:20px;color:var(--primary2)}
+.li.unread{background:rgba(25,227,181,.06);border-radius:10px;padding-left:8px}
+.bottom a svg{width:20px;height:20px}
+@media(max-width:820px){.mtop .rankpill{height:32px;padding:0 10px;font-size:12px}.bottom a{min-width:0;font-size:10px}.segtabs{display:flex}.segtabs button{flex:1;padding:0 10px}}
 
 </style>
 </head>
@@ -271,6 +295,7 @@ const ICONS = {
   search: '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>', key: '<circle cx="7.5" cy="15.5" r="4.5"/><path d="m10.7 12.3 9.3-9.3M17 6l3 3M14 9l2 2"/>',
   refresh: '<path d="M21 12a9 9 0 1 1-3-6.7L21 8M21 3v5h-5"/>', mail: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>',
   shield: '<path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/>', link: '<path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/>', copy: '<rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/>',
+  globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>', bell: '<path d="M6 8a6 6 0 1 1 12 0c0 7 3 8 3 8H3s3-1 3-8"/><path d="M10.3 21a2 2 0 0 0 3.4 0"/>', dots: '<circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/>', grid: '<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>', compass: '<circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/>', download: '<path d="M12 4v12M7 11l5 5 5-5M4 20h16"/>', support: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="m5.6 5.6 3.6 3.6M14.8 14.8l3.6 3.6M18.4 5.6l-3.6 3.6M9.2 14.8l-3.6 3.6"/>',
   lock: '<rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>'
 };
 const ic = n => `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${ICONS[n] || ''}</svg>`;
@@ -319,8 +344,14 @@ const COUNTRY_CODES = 'AF AX AL DZ AS AD AO AI AQ AG AR AM AW AU AT AZ BS BH BD 
 const flag = c => /^[A-Z]{2}$/.test(c || '') ? String.fromCodePoint(...[...c].map(x => 127397 + x.charCodeAt(0))) : '';
 function countryName(c) { if (!c) return ''; try { return new Intl.DisplayNames([LOCALE[LANG]], { type: 'region' }).of(c) || c } catch (e) { return c } }
 function countryOptions() { return COUNTRY_CODES.map(c => [c, countryName(c)]).sort((a, b) => a[1].localeCompare(b[1], LOCALE[LANG])) }
-const langSelect = (cls = '') => `<select class="lang ${cls}" data-ch="setLang" aria-label="Langue / Language">${Object.entries(LANGS).map(([k, v]) => `<option value="${k}" ${k === LANG ? 'selected' : ''}>${v}</option>`).join('')}</select>`;
-A.setLang = v => { if (!LANGS[v]) return; try { localStorage.setItem('clexiq_lang', v) } catch (e) { } location.reload() };
+const langSelect = (cls = '') => `<label class="langsel ${cls}">${ic('globe')}<select data-ch="setLang" aria-label="Langue / Language / Idioma">${Object.entries(LANGS).map(([k, v]) => `<option value="${k}" ${k === LANG ? 'selected' : ''}>${cls.includes('full') ? v : k.toUpperCase()}</option>`).join('')}</select></label>`;
+A.setLang = v => {
+  if (!LANGS[v] || v === LANG) return;
+  LANG = v; try { localStorage.setItem('clexiq_lang', v) } catch (e) { }
+  document.documentElement.lang = v;
+  if (typeof auth !== 'undefined') auth.languageCode = v;
+  if (typeof onLangChange === 'function') onLangChange(v);
+};
 
 /* ===== Firebase ===== */
 const firebaseConfig = {
@@ -385,10 +416,7 @@ async function ensureProfile(u) {
   if (snap.exists()) return { id: u.uid, ...snap.data() };
   const name = (u.displayName || (u.email || '').split('@')[0] || 'Clipper').slice(0, 60);
   const photo = /^https:\/\//.test(u.photoURL || '') ? u.photoURL.slice(0, 500) : '';
-  const b = writeBatch(db);
-  b.set(ref, { name, email: u.email, handle: '', country: '', photo, status: 'active', createdAt: serverTimestamp(), views: 0, earned: 0, paid: 0, pending: 0, approved: 0, lastPayout: '' });
-  if (!isAdminUser(u)) b.set(doc(db, 'leaderboard', u.uid), { name, handle: '', photo, views: 0 });
-  await b.commit();
+  await setDoc(ref, { name, email: u.email, handle: '', pseudo: '', country: '', photo, lang: LANG, work: 'clipping', payoutAddress: '', status: 'active', createdAt: serverTimestamp(), views: 0, earned: 0, paid: 0, pending: 0, approved: 0, lastPayout: '' });
   return { id: u.uid, ...(await getDoc(ref)).data() };
 }
 
@@ -535,7 +563,7 @@ const AV = {
     <div class="grid2"><div class="card"><div class="card-h"><h3>Clips soumis — 7 derniers jours</h3></div><div class="chart">${days.map(d => `<div><small class="muted">${d.n}</small><i style="height:${d.n / mx * 100}%"></i><small class="muted">${d.l}</small></div>`).join('')}</div></div>
     <div class="card"><div class="card-h"><h3>À valider en priorité</h3>${pend.length ? '<a class="small" data-a="go" data-v="clips">Tout voir</a>' : ''}</div>
     ${pend.length ? `<div class="list">${pend.slice(0, 5).map(c => `<div class="li">${platIc(c.platform)}<div class="grow"><a class="b" href="${safeUrl(c.url)}" target="_blank" rel="noopener noreferrer">${esc(c.title || 'Clip sans titre')}</a><small class="muted">${esc(c.user ? c.user.handle || c.user.name : '—')} · ${ago(c.createdAt)}</small></div><div class="acts"><button class="icon-btn green" title="Approuver" data-a="approve" data-v="${esc(c.id)}">${ic('check')}</button><button class="icon-btn red" title="Refuser" data-a="reject" data-v="${esc(c.id)}">${ic('x')}</button></div></div>`).join('')}</div>` : empty('Tout est à jour', 'Aucun clip en attente.', '', 'check')}</div></div>
-    <div class="card"><div class="card-h"><h3>Top clippers</h3></div>${top.length ? top.map((x, i) => { const r = rankOf(x.views || 0).cur; return `<div class="lb-r"><span class="pos p${i + 1}">${i + 1}</span><div data-a="userDetail" data-v="${esc(x.id)}">${avatar(x.name, x.photo, r.color, 'sm')}</div><div class="grow"><b>${esc(x.name)}</b><small style="color:${safeColor(r.color)}">${esc(r.name)}${x.handle ? ' · ' + esc(x.handle) : ''}</small></div><b>${nf(x.views || 0)} vues</b></div>` }).join('') : empty('Aucun clipper pour l\'instant', 'Les inscrits apparaîtront ici.', '', 'users')}</div></div>`;
+    <div class="card"><div class="card-h"><h3>Top clippers</h3></div>${top.length ? top.map((x, i) => { const r = rankOf(x.views || 0).cur; return `<div class="lb-r"><span class="pos p${i + 1}">${i + 1}</span><div data-a="userDetail" data-v="${esc(x.id)}">${avatar(x.name, x.photo, r.color, 'sm')}</div><div class="grow"><b>${esc(x.pseudo || x.name)}</b><small style="color:${safeColor(r.color)}">${esc(r.name)}</small></div><b>${nf(x.views || 0)} vues</b></div>` }).join('') : empty('Aucun clipper pour l\'instant', 'Les inscrits apparaîtront ici.', '', 'users')}</div></div>`;
   },
   clips() {
     const all = DATA.clips, c = { all: all.length }; ['pending', 'approved', 'rejected'].forEach(s => c[s] = all.filter(x => x.status === s).length);
@@ -607,6 +635,7 @@ A.chVerify = id => setChannel(id, 'verified'); A.chReject = id => setChannel(id,
 A.chDelete = async id => { if (!await confirmBox('Supprimer cette chaîne ?', 'Elle sera libérée et pourra être reliée par un autre compte.', 'Supprimer')) return; try { await deleteDoc(doc(db, 'channels', id)); toast('Chaîne supprimée.'); show(aview, true) } catch (e) { toast(errMsg(e), 'err') } };
 A.copy = async v => { try { await navigator.clipboard.writeText(v); toast('Copié !') } catch (e) { toast(v) } };
 A.resetCountry = async id => { if (!await confirmBox('Débloquer le pays ?', 'L\'utilisateur pourra choisir à nouveau son pays (une seule fois).', 'Débloquer', false)) return; try { await updateDoc(doc(db, 'users', id), { country: '' }); closeModal(); toast('Pays débloqué.'); show(aview, true) } catch (e) { toast(errMsg(e), 'err') } };
+A.resetPseudo = async id => { const u = DATA.U[id]; if (!u || !u.pseudo) return; if (!await confirmBox('Débloquer le pseudo ?', `Le pseudo <b>${esc(u.pseudo)}</b> sera libéré et l'utilisateur devra en choisir un nouveau à sa prochaine connexion.`, 'Débloquer', false)) return; try { const b = writeBatch(db); b.update(doc(db, 'users', id), { pseudo: '' }); b.delete(doc(db, 'pseudos', u.pseudo)); b.set(doc(db, 'leaderboard', id), { name: '' }, { merge: true }); await b.commit(); closeModal(); toast('Pseudo débloqué.'); show(aview, true) } catch (e) { toast(errMsg(e), 'err') } };
 const isAdminEmail = e => (e || '').toLowerCase() === ADMIN_EMAIL;
 
 /* ---------- Listes filtrées ---------- */
@@ -632,7 +661,7 @@ function fillUsers() {
   box.innerHTML = list.length ? `<div class="list">${list.map(u => {
     const r = rankOf(u.views || 0).cur, n = DATA.clips.filter(c => c.userId === u.id).length, adm = isAdminEmail(u.email);
     return `<div class="li"><div data-a="userDetail" data-v="${esc(u.id)}">${avatar(u.name, u.photo, r.color)}</div>
-    <div class="grow"><a class="b" data-a="userDetail" data-v="${esc(u.id)}">${esc(u.name || u.email)}${adm ? ' <span class="badge primary">Admin</span>' : ''}</a><small class="muted">${esc(u.email)} · ${u.country ? flag(u.country) + ' ' + esc(countryName(u.country)) : 'Pays non défini'} · ${DATA.channels.filter(c => c.userId === u.id && c.status === 'verified').length} chaîne(s) vérifiée(s) · inscrit le ${dt(u.createdAt)}</small></div>
+    <div class="grow"><a class="b" data-a="userDetail" data-v="${esc(u.id)}">${esc(u.name || u.email)}${u.pseudo ? ` <span class="muted">· ${esc(u.pseudo)}</span>` : ''}${adm ? ' <span class="badge primary">Admin</span>' : ''}</a><small class="muted">${esc(u.email)} · ${u.country ? flag(u.country) + ' ' + esc(countryName(u.country)) : 'Pays non défini'} · ${DATA.channels.filter(c => c.userId === u.id && c.status === 'verified').length} chaîne(s) vérifiée(s) · inscrit le ${dt(u.createdAt)}</small></div>
     <div class="nums hide-m"><b>${nf(u.views || 0)} vues</b><small class="muted">${n} clips · solde ${money(balanceOf(u))}</small></div>
     ${u.status === 'active' ? '<span class="badge green">Actif</span>' : '<span class="badge red">Suspendu</span>'}
     <div class="acts"><button class="icon-btn" title="Détails" data-a="userDetail" data-v="${esc(u.id)}">${ic('eye')}</button>
@@ -697,12 +726,12 @@ A.userDetail = id => {
   const u = DATA.U[id]; if (!u) return toast('Utilisateur introuvable.', 'err');
   const r = rankOf(u.views || 0).cur, cl = DATA.clips.filter(c => c.userId === id), adm = isAdminEmail(u.email);
   const cnt = s => cl.filter(c => c.status === s).length;
-  openModal('Profil utilisateur', `<div class="row gap">${avatar(u.name, u.photo, r.color, 'lg')}<div class="grow"><h3>${esc(u.name || '—')}</h3><small class="muted">${esc(u.email)} · ${u.country ? flag(u.country) + ' ' + esc(countryName(u.country)) : 'Pays non défini'}</small><small class="muted">Inscrit le ${dt(u.createdAt)}</small></div>${u.status === 'active' ? '<span class="badge green">Actif</span>' : '<span class="badge red">Suspendu</span>'}</div>
+  openModal('Profil utilisateur', `<div class="row gap">${avatar(u.name, u.photo, r.color, 'lg')}<div class="grow"><h3>${esc(u.name || '—')}${u.pseudo ? ` <span class="muted" style="font-size:14px">· ${esc(u.pseudo)}</span>` : ''}</h3><small class="muted">${esc(u.email)} · ${u.country ? flag(u.country) + ' ' + esc(countryName(u.country)) : 'Pays non défini'}</small><small class="muted">Inscrit le ${dt(u.createdAt)}</small></div>${u.status === 'active' ? '<span class="badge green">Actif</span>' : '<span class="badge red">Suspendu</span>'}</div>
   <div class="kv"><div><small class="muted">Rang</small><b style="color:${safeColor(r.color)}">${esc(r.name)}</b></div><div><small class="muted">Vues vérifiées</small><b>${nf(u.views || 0)}</b></div><div><small class="muted">Clips</small><b>${cnt('approved')} ✓ · ${cnt('pending')} ⏳ · ${cnt('rejected')} ✕</b></div>
   <div><small class="muted">Gains totaux</small><b>${money(u.earned)}</b></div><div><small class="muted">Payé</small><b>${money(u.paid)}</b></div><div><small class="muted">Solde</small><b class="green-t">${money(balanceOf(u))}</b></div></div>
   <h3 style="margin:6px 0">Chaînes</h3>${(() => { const L = DATA.channels.filter(c => c.userId === id); return L.length ? `<div class="list">${L.map(c => `<div class="li">${platIc(c.platform)}<div class="grow"><a class="b" href="${safeUrl(chLink(c))}" target="_blank" rel="noopener noreferrer">@${esc(c.handle)} ${ic('ext')}</a><small class="muted">${esc(c.platform)} · code ${esc(c.code)}</small></div>${badge(c.status, CHST)}</div>`).join('')}</div>` : '<p class="muted small">Aucune chaîne.</p>' })()}
   <h3 style="margin:14px 0 6px">Derniers clips</h3>${cl.length ? `<div class="list">${cl.slice(0, 10).map(c => `<div class="li">${platIc(c.platform)}<div class="grow"><a class="b" href="${safeUrl(c.url)}" target="_blank" rel="noopener noreferrer">${esc(c.title || 'Clip sans titre')}</a><small class="muted">${dt(c.createdAt)} · ${nf(c.status === 'approved' ? c.views : c.declaredViews)} vues</small></div>${badge(c.status)}</div>`).join('')}</div>` : '<p class="muted small">Aucun clip.</p>'}
-  ${adm ? '' : `<div class="modal-f wrap"><button class="btn ghost" data-a="sendReset" data-v="${esc(u.email)}">${ic('mail')} Lien de réinitialisation</button>${u.country ? `<button class="btn ghost" data-a="resetCountry" data-v="${esc(u.id)}">Débloquer le pays</button>` : ''}<button class="btn ghost" data-a="toggleUser" data-v="${esc(u.id)}">${ic(u.status === 'active' ? 'ban' : 'check')} ${u.status === 'active' ? 'Suspendre' : 'Réactiver'}</button><button class="btn danger" data-a="delUser" data-v="${esc(u.id)}">${ic('trash')} Supprimer</button></div>`}`, { wide: true });
+  ${adm ? '' : `<div class="modal-f wrap"><button class="btn ghost" data-a="sendReset" data-v="${esc(u.email)}">${ic('mail')} Lien de réinitialisation</button>${u.country ? `<button class="btn ghost" data-a="resetCountry" data-v="${esc(u.id)}">Débloquer le pays</button>` : ''}${u.pseudo ? `<button class="btn ghost" data-a="resetPseudo" data-v="${esc(u.id)}">Débloquer le pseudo</button>` : ''}<button class="btn ghost" data-a="toggleUser" data-v="${esc(u.id)}">${ic(u.status === 'active' ? 'ban' : 'check')} ${u.status === 'active' ? 'Suspendre' : 'Réactiver'}</button><button class="btn danger" data-a="delUser" data-v="${esc(u.id)}">${ic('trash')} Supprimer</button></div>`}`, { wide: true });
 };
 A.toggleUser = async id => {
   const u = DATA.U[id]; if (!u || isAdminEmail(u.email)) return; const susp = u.status === 'active';
@@ -721,6 +750,7 @@ A.delUser = async id => {
     DATA.clips.filter(c => c.userId === id).forEach(c => ops.push(b => b.delete(doc(db, 'clips', c.id))));
     DATA.pays.filter(p => p.userId === id).forEach(p => ops.push(b => b.delete(doc(db, 'payouts', p.id))));
     DATA.channels.filter(c => c.userId === id).forEach(c => ops.push(b => b.delete(doc(db, 'channels', c.id))));
+    if (u.pseudo) ops.push(b => b.delete(doc(db, 'pseudos', u.pseudo)));
     ops.push(b => b.delete(doc(db, 'leaderboard', id)));
     ops.push(b => b.set(doc(db, 'users', id), { name: 'Compte supprimé', email: u.email, handle: '', country: '', photo: '', status: 'deleted', createdAt: u.createdAt || serverTimestamp(), deletedAt: serverTimestamp(), views: 0, earned: 0, paid: 0, pending: 0, approved: 0, lastPayout: '' }));
     for (let i = 0; i < ops.length; i += 450) { const b = writeBatch(db); ops.slice(i, i + 450).forEach(f => f(b)); await b.commit() }
