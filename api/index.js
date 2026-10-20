@@ -9,9 +9,16 @@ let app;
 // Lit la clé Firebase même si le copier-coller depuis un téléphone l'a abîmée
 // (retours à la ligne, guillemets typographiques, \n doublés...).
 function pem(t) {
-  const m = String(t).match(/-----BEGIN PRIVATE KEY-----([\s\S]*?)-----END PRIVATE KEY-----/);
-  const body = m ? m[1].replace(/\\+[nr]|\s/g, '') : '';
-  return body ? '-----BEGIN PRIVATE KEY-----\n' + body.match(/.{1,64}/g).join('\n') + '\n-----END PRIVATE KEY-----\n' : '';
+  const D = '[-\u2010-\u2015\u2212\uFE58\uFE63\uFF0D]';
+  const m = String(t).match(new RegExp(D + '+\\s*BEGIN\\s+PRIVATE\\s+KEY\\s*' + D + '+([\\s\\S]*?)' + D + '+\\s*END\\s+PRIVATE\\s+KEY\\s*' + D + '+', 'i'));
+  let body = m ? m[1] : '';
+  if (!body) { const b = String(t).match(/MII[A-Za-z0-9+\/=\s\\]{1000,}/); body = b ? b[0] : '' }
+  body = body.replace(/\\+[nr]|\s|\\/g, '').replace(/[^A-Za-z0-9+\/=]/g, '');
+  return body.length > 1000 ? '-----BEGIN PRIVATE KEY-----\n' + body.match(/.{1,64}/g).join('\n') + '\n-----END PRIVATE KEY-----\n' : '';
+}
+function hint(t) {
+  const keys = [...new Set((String(t).match(/[a-z_]{4,20}(?=["\u201C\u201D\u201E]?\s*:)/g) || []))].slice(0, 12).join(', ');
+  return 'champs vus : ' + (keys || 'aucun') + ' ; BEGIN : ' + (/BEGIN/i.test(t) ? 'oui' : 'non') + ' ; MII : ' + (/MII/.test(t) ? 'oui' : 'non');
 }
 function readServiceAccount(raw) {
   const txt = String(raw).trim();
@@ -19,14 +26,14 @@ function readServiceAccount(raw) {
     const j = JSON.parse(txt);
     if (j.private_key && j.client_email) { const k = pem(j.private_key); if (k) { j.private_key = k; return j } }
   } catch (_) { }
-  const Q = '["“”„]';
-  const field = k => { const m = txt.match(new RegExp(Q + k + Q + '\\s*:\\s*' + Q + '([^"“”„]+)' + Q)); return m ? m[1].trim() : '' };
+  const Q = '["\u201C\u201D\u201E]';
+  const field = k => { const m = txt.match(new RegExp(Q + k + Q + '\\s*:\\s*' + Q + '([^"\u201C\u201D\u201E]+)' + Q)); return m ? m[1].trim() : '' };
   const sa = {
     project_id: field('project_id'),
     client_email: field('client_email'),
     private_key: pem(txt)
   };
-  if (!sa.private_key) throw new HttpError(500, 'config', 'FIREBASE_SERVICE_ACCOUNT invalide : clé privée introuvable (' + txt.length + ' caractères reçus).');
+  if (!sa.private_key) throw new HttpError(500, 'config', 'FIREBASE_SERVICE_ACCOUNT invalide : clé privée introuvable (' + txt.length + ' caractères reçus ; ' + hint(txt) + ').');
   if (!sa.client_email) throw new HttpError(500, 'config', 'FIREBASE_SERVICE_ACCOUNT invalide : client_email introuvable.');
   if (!sa.project_id) sa.project_id = (sa.client_email.split('@')[1] || '').split('.')[0];
   return sa;
