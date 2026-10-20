@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-6SrO4QpS0hEnv4w4ChCl9fPll7l67cLNTVppz1F4Uqs=' https://www.gstatic.com https://apis.google.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://*.googleusercontent.com https://www.gstatic.com; connect-src https://*.googleapis.com https://*.firebaseio.com wss://*.firebaseio.com https://clexiq.firebaseapp.com; frame-src https://clexiq.firebaseapp.com https://accounts.google.com https://apis.google.com https://www.google.com; object-src 'none'; base-uri 'none'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-Xk02YsqMTC+yRqjXQvt5JCC6X0qyoE+GrwgFgpWSjLk=' https://www.gstatic.com https://apis.google.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src https://*.googleapis.com https://*.firebaseio.com wss://*.firebaseio.com https://clexiq.firebaseapp.com; frame-src https://clexiq.firebaseapp.com https://accounts.google.com https://apis.google.com https://www.google.com; object-src 'none'; base-uri 'none'; form-action 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#060B1A">
 <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJDbGV4aXEiPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJjeGciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMyRUYyQzIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxNkI4REUiLz48L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJjeGIiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwRjFDMzgiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwNzBFMjAiLz48L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB4PSIyIiB5PSIyIiB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNjeGIpIiBzdHJva2U9IiMxRjNBNjMiIHN0cm9rZS13aWR0aD0iMS4yIi8+CiAgPHBhdGggZD0iTTM5LjUgMjIuNEExNSAxNSAwIDEgMCAzOS41IDQxLjYiIGZpbGw9Im5vbmUiIHN0cm9rZT0idXJsKCNjeGcpIiBzdHJva2Utd2lkdGg9IjYuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBhdGggZD0iTTI0LjUgMjUuNSAzNy41IDM4LjVNMzcuNSAyNS41IDI0LjUgMzguNSIgc3Ryb2tlPSIjRjRGOEZGIiBzdHJva2Utd2lkdGg9IjUuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGcgc3Ryb2tlPSIjMkVGMkMyIiBzdHJva2Utd2lkdGg9IjIuNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj48cGF0aCBkPSJNNDMuNiAyMi40IDQ2LjYgMTkuNCIvPjxwYXRoIGQ9Ik00NC41IDI3LjVoNS41Ii8+PHBhdGggZD0iTTQzLjUgNDAuNSA0Ny44IDQ0LjgiLz48L2c+CiAgPGNpcmNsZSBjeD0iNTAuNiIgY3k9IjE1LjQiIHI9IjIiIGZpbGw9IiMyRUYyQzIiLz4KPC9zdmc+Cg==" type="image/svg+xml">
@@ -222,6 +222,62 @@ select.lang.block{width:100%;margin-bottom:10px}
 .li.unread{background:rgba(25,227,181,.06);border-radius:10px;padding-left:8px}
 .bottom a svg{width:20px;height:20px}
 @media(max-width:820px){.mtop .rankpill{height:32px;padding:0 10px;font-size:12px}.bottom a{min-width:0;font-size:10px}.segtabs{display:flex}.segtabs button{flex:1;padding:0 10px}}
+/* ===== Campagnes façon Kleeq ===== */
+.ccard{padding:0;overflow:hidden;cursor:pointer;display:flex;flex-direction:column;transition:transform .15s,border-color .15s}
+.ccard:hover{transform:translateY(-2px);border-color:var(--primary)}
+.ccover,.dcover{position:relative;aspect-ratio:2/1;background-size:cover;background-position:center;background-color:var(--surface2)}
+.dcover{border-radius:18px;margin:10px 0 16px;aspect-ratio:2.2/1}
+.cbadge{position:absolute;top:12px;left:12px;background:#fff;color:#0E8F62;font:700 12px Inter,sans-serif;padding:6px 12px;border-radius:99px}
+.cbadge.off{color:#B4415A}
+.cend{position:absolute;top:12px;right:12px;background:rgba(6,11,26,.8);color:#fff;font:700 12px Inter,sans-serif;padding:6px 12px;border-radius:99px}
+.cplats{position:absolute;top:12px;right:12px;display:flex;gap:4px}
+.cplats i{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font:800 12px Inter,sans-serif;font-style:normal;color:#fff;border:2px solid rgba(255,255,255,.85)}
+.cbrand{position:absolute;left:16px;bottom:14px;font:700 22px 'Space Grotesk',sans-serif;color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.cbody{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
+.cbody h3{font-size:18px}
+.rpmbox{display:grid;grid-template-columns:1fr 1fr;gap:10px 16px;border:1px solid var(--border);border-radius:16px;padding:14px 16px;margin-top:14px;background:var(--surface2)}
+.rpmbox>div>b{display:block;font:700 22px 'Space Grotesk',sans-serif;margin:2px 0}.rpmbox .span2 b{font-size:13px}
+.rpmbox .span2{grid-column:1/-1}.rpmbox .bar{margin:4px 0 8px}
+.cond{margin-top:12px;padding-top:12px;border-top:1px solid var(--border)}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;vertical-align:-1px;margin-right:6px}
+.filters{padding:16px 18px}.filters hr{border:0;border-top:1px solid var(--border);margin:14px 0}
+.flabel{color:var(--muted);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:12px}
+.fchips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.fchip{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;border-radius:99px;border:1px solid var(--border);background:transparent;color:var(--text);font:600 14px Inter,sans-serif;cursor:pointer}
+.fchip span{color:var(--muted);font-weight:700}.fchip .dot{margin:0}
+.fchip.on{background:var(--text);color:var(--bg);border-color:var(--text)}.fchip.on span{color:var(--bg);opacity:.6}
+.secthead{margin:24px 0 14px;align-items:center}.secthead h2{font-size:22px}
+.sortsel{display:inline-flex;flex-direction:row;align-items:center;gap:6px;height:40px;padding:0 6px 0 12px;border:1px solid var(--border);border-radius:12px;background:var(--surface);color:var(--text)}
+.sortsel svg{width:16px;height:16px;color:var(--muted)}.sortsel select{border:0;background:transparent;width:auto;padding:0 20px 0 0;font:600 13px Inter,sans-serif;box-shadow:none!important}
+.faded{opacity:.6}
+.back{display:inline-flex;gap:6px;color:var(--muted);font-weight:600;font-size:14px;cursor:pointer}
+.dtitle{font-size:28px;margin-bottom:8px}
+.dmeta{gap:14px;margin-bottom:18px}.dmeta span{display:inline-flex;align-items:center;gap:6px}.dmeta svg{width:15px;height:15px}
+.dgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:16px;align-items:start}
+.pad0{padding:0}.dsec{padding:16px 18px;border-top:1px solid var(--border)}.dsec:first-child{border-top:0}
+.big{font:700 30px 'Space Grotesk',sans-serif}
+.rules{padding-left:18px;color:var(--muted);line-height:1.7}
+.brief{white-space:pre-line;color:var(--text);line-height:1.7;font-size:14px;word-break:break-word}
+.links{display:flex;flex-direction:column;gap:10px;margin-top:16px;padding-top:16px;border-top:1px solid var(--border)}
+.lnk{display:flex;align-items:center;gap:12px;padding:12px 14px;border:1px solid var(--border);border-radius:14px;background:var(--surface2);color:var(--text)}
+.lnk b{display:block;font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.lnk .grow{min-width:0}
+.lic{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:rgba(25,227,181,.12);color:var(--primary2);flex:none}
+.exgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.ex{color:var(--text);min-width:0}.ex small{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:6px;font-weight:600}
+.exthumb{display:grid;place-items:center;aspect-ratio:9/14;border-radius:12px;background-size:cover;background-position:center;color:rgba(255,255,255,.7)}
+.exthumb svg{opacity:.0}.ex:hover .exthumb{outline:2px solid var(--primary)}
+.rnum{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--surface2);color:var(--primary2);font-weight:800;font-size:13px;flex:none}
+/* admin : éditeur de campagne */
+.covprev{aspect-ratio:2/1;border-radius:14px;background-size:cover;background-position:center;border:1px dashed var(--border);display:grid;place-items:center;color:var(--muted);font-size:13px}
+.rowed{display:grid;grid-template-columns:1fr 1.4fr 36px;gap:8px;align-items:center;margin-bottom:8px}
+.exrow{display:grid;grid-template-columns:64px 1fr 36px;gap:10px;align-items:start;padding:10px;border:1px solid var(--border);border-radius:12px;margin-bottom:8px}
+.exrow .exthumb{aspect-ratio:9/14;width:64px;border-radius:8px;cursor:pointer;border:1px dashed var(--border)}
+.exrow .form{gap:8px}
+.minicov{width:64px;height:36px;border-radius:8px;background-size:cover;background-position:center;flex:none}
+@media(max-width:1100px){.dgrid{grid-template-columns:1fr}}
+@media(max-width:820px){.dtitle{font-size:22px}.secthead h2{font-size:19px}.rowed{grid-template-columns:1fr 36px}.rowed input:nth-child(2){grid-column:1/2}.rowed button{grid-row:1/3;grid-column:2}}
+
+.list.nowrap .li{flex-wrap:nowrap}
 
 </style>
 </head>
@@ -231,7 +287,7 @@ select.lang.block{width:100%;margin-bottom:10px}
 <noscript><p style="padding:20px">Active JavaScript pour utiliser Clexiq.</p></noscript>
 <script type="module">import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
 import { getAuth, onAuthStateChanged, GoogleAuthProvider, signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, updateProfile, updatePassword, signOut, deleteUser } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js';
-import { getFirestore, doc, getDoc, getDocs, setDoc, updateDoc, deleteDoc, addDoc, collection, query, where, orderBy, limit, writeBatch, serverTimestamp, increment, getAggregateFromServer, sum, count } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
+import { getFirestore, Timestamp, doc, getDoc, getDocs, setDoc, updateDoc, deleteDoc, addDoc, collection, query, where, orderBy, limit, writeBatch, serverTimestamp, increment, getAggregateFromServer, sum, count } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
 
 const I18N = {};
 const PLATFORMS = ['TikTok', 'Instagram', 'YouTube'];
@@ -352,6 +408,41 @@ A.setLang = v => {
   if (typeof auth !== 'undefined') auth.languageCode = v;
   if (typeof onLangChange === 'function') onLangChange(v);
 };
+
+/* ===== Campagnes : utilitaires partagés ===== */
+const campEndMs = k => k && k.endAt ? (k.endAt.toMillis ? k.endAt.toMillis() : +new Date(k.endAt)) : 0;
+const campEnded = k => k.status !== 'active' || (campEndMs(k) && campEndMs(k) < Date.now());
+const campTarget = k => (+k.rate > 0 ? (+k.budget || 0) / (+k.rate) * 1000 : 0);
+const campPct = k => Math.min(100, (+k.spent || 0) / (+k.budget || 1) * 100);
+function endsIn(k) {
+  const e = campEndMs(k); if (!e) return t('Sans date de fin');
+  const ms = e - Date.now(); if (ms <= 0) return t('Terminée');
+  const d = Math.floor(ms / 864e5), h = Math.floor(ms % 864e5 / 36e5), m = Math.floor(ms % 36e5 / 6e4);
+  return d > 0 ? t('Fin dans {d}j {h}h', { d, h }) : t('Fin dans {h}h {m}min', { h, m });
+}
+function platLine(k) { const p = k.platforms || []; return p.length === 1 ? t('{p} uniquement', { p: p[0] }) : p.join(' · ') }
+const coverStyle = k => /^(https:\/\/|data:image\/(jpeg|png|webp);base64,)/.test(k.cover || '') ? `background-image:url("${esc(k.cover)}")` : `background:linear-gradient(135deg,${safeColor(k.color)} 0%,#060B1A 120%)`;
+const domainOf = u => { try { return new URL(u).hostname.replace(/^www\./, '') } catch (e) { return '' } };
+/* Compression d'image côté navigateur (pas de stockage externe nécessaire) */
+function compressImage(file, maxW, maxBytes) {
+  return new Promise((res, rej) => {
+    if (!file || !/^image\//.test(file.type)) return rej(new Error('Fichier image invalide.'));
+    const fr = new FileReader(); fr.onerror = () => rej(new Error('Lecture impossible.'));
+    fr.onload = () => {
+      const img = new Image(); img.onerror = () => rej(new Error('Image illisible.'));
+      img.onload = () => {
+        let w = img.width, h = img.height; if (w > maxW) { h = Math.round(h * maxW / w); w = maxW }
+        const c = document.createElement('canvas'); c.width = w; c.height = h; c.getContext('2d').drawImage(img, 0, 0, w, h);
+        let q = .82, out = c.toDataURL('image/jpeg', q);
+        while (out.length > maxBytes && q > .35) { q -= .08; out = c.toDataURL('image/jpeg', q) }
+        if (out.length > maxBytes) return rej(new Error('Image trop lourde, choisis-en une plus légère.'));
+        res(out);
+      };
+      img.src = fr.result;
+    };
+    fr.readAsDataURL(file);
+  });
+}
 
 /* ===== Firebase ===== */
 const firebaseConfig = {
@@ -514,6 +605,18 @@ function renderDenied(email) {
 A.go = v => show(v);
 
 /* ---------- Données ---------- */
+/* Statistiques publiques des campagnes (vues, clippers, clips, top comptes), recalculées par l'admin */
+async function syncCampaignStats(camps, clips) {
+  const b = writeBatch(db); let n = 0;
+  for (const k of camps) {
+    const mine = clips.filter(c => c.campaignId === k.id), ok = mine.filter(c => c.status !== 'rejected'), ap = mine.filter(c => c.status === 'approved');
+    const per = {}; ap.forEach(c => { const h = c.channelHandle || '—'; per[h] = (per[h] || 0) + (+c.views || 0) });
+    const st = { views: ap.reduce((a, c) => a + (+c.views || 0), 0), spent: Math.round(ap.reduce((a, c) => a + (+c.earn || 0), 0) * 100) / 100, clipsCount: ok.length, clippers: new Set(ok.map(c => c.userId)).size,
+      top: Object.entries(per).sort((x, y) => y[1] - x[1]).slice(0, 5).map(([h, v]) => ({ h, v })) };
+    if (JSON.stringify([k.views || 0, +k.spent || 0, k.clipsCount || 0, k.clippers || 0, k.top || []]) !== JSON.stringify([st.views, st.spent, st.clipsCount, st.clippers, st.top])) { b.update(doc(db, 'campaigns', k.id), st); Object.assign(k, st); n++ }
+  }
+  if (n) { try { await b.commit() } catch (e) { console.warn('stats', e) } }
+}
 async function loadData() {
   const [users, clips, camps, pays, chs] = await Promise.all([
     getDocs(collection(db, 'users')), getDocs(query(collection(db, 'clips'), orderBy('createdAt', 'desc'), limit(2000))),
@@ -526,6 +629,7 @@ async function loadData() {
   const paysL = listOf(pays); paysL.forEach(p => p.user = U[p.userId]);
   const campsL = listOf(camps).sort(byNewest); campsL.forEach(k => k.nClips = clipsL.filter(c => c.campaignId === k.id).length);
   const chL = listOf(chs).sort(byNewest); chL.forEach(c => c.user = U[c.userId]);
+  await syncCampaignStats(campsL, clipsL);
   DATA = { channels: chL, U, users: Object.values(U).filter(u => u.status !== 'deleted').sort(byNewest), clips: clipsL, camps: campsL, pays: paysL };
 }
 async function show(v, silent) {
@@ -577,9 +681,10 @@ const AV = {
   campaigns() {
     const list = DATA.camps;
     return `<div class="card">${list.length ? `<div class="list">${list.map(k => {
-      const s = +k.spent || 0, pct = Math.min(100, s / k.budget * 100);
-      return `<div class="li"><div class="plat" style="background:${safeColor(k.color)};color:#04121F">${ic('megaphone')}</div><div class="grow"><b>${esc(k.title)}</b><small class="muted">${esc(k.brand)} · ${money(k.rate)}/1K vues · ${k.nClips} clip(s)</small>
-      <div class="bar sm" style="max-width:320px"><i style="width:${pct}%"></i></div><small class="muted">${money(s)} / ${money(k.budget)} (${Math.round(pct)} %)</small></div>${badge(k.status, CST)}
+      const pct = campPct(k), ended = campEnded(k) && k.status === 'active';
+      return `<div class="li"><div class="minicov" style='${coverStyle(k)}'></div><div class="grow"><b>${esc(k.title)}</b><small class="muted">${esc(k.brand)} · ${(k.type || 'clipping') === 'ugc' ? 'UGC' : 'Clipping'} · ${money(k.rate)}/1K · ${esc(platLine(k))}</small>
+      <small class="muted">${nf(k.views || 0)} vues · ${k.clippers || 0} clippers · ${k.clipsCount || 0} clips · ${esc(endsIn(k))}</small>
+      <div class="bar sm" style="max-width:320px"><i style="width:${pct}%"></i></div><small class="muted">${money(k.spent)} / ${money(k.budget)} (${Math.round(pct)} %)</small></div>${ended ? '<span class="badge red">Date dépassée</span>' : badge(k.status, CST)}
       <div class="acts"><button class="icon-btn" title="Modifier" data-a="campForm" data-v="${esc(k.id)}">${ic('edit')}</button>
       <button class="icon-btn" title="${k.status === 'active' ? 'Mettre en pause' : 'Activer'}" data-a="toggleCamp" data-v="${esc(k.id)}">${ic(k.status === 'active' ? 'clock' : 'check')}</button>
       <button class="icon-btn red" title="Supprimer" data-a="delCamp" data-v="${esc(k.id)}">${ic('trash')}</button></div></div>`
@@ -603,7 +708,8 @@ const AV = {
     <label>Nom affiché<input name="platformName" required maxlength="30" value="${esc(SET.platformName)}"></label>
     <label>Devise<input value="Dollar américain (USD, $)" readonly></label>
     <label>Retrait minimum ($)<input name="minPayout" type="number" min="1" step="0.01" required value="${+SET.minPayout || 20}"></label>
-    <label>Email du support<input name="supportEmail" type="email" maxlength="120" value="${esc(SET.supportEmail)}"></label><button class="btn primary" type="submit">Enregistrer</button></form></div>
+    <label>Email du support<input name="supportEmail" type="email" maxlength="120" value="${esc(SET.supportEmail)}"></label>
+    <label>Lien « Formation » (guide pour les clippers, optionnel)<input name="trainingUrl" type="url" maxlength="300" placeholder="https://…" value="${esc(SET.trainingUrl || '')}"></label><button class="btn primary" type="submit">Enregistrer</button></form></div>
     <div class="stack"><div class="card"><h3 style="margin-bottom:6px">Mon compte administrateur</h3><p class="muted small" style="margin-bottom:14px">${esc(me.email)} — le rôle admin est défini dans les règles de sécurité Firebase et ne peut pas être obtenu depuis le site.</p>
     <button class="btn ghost block" data-a="logout">${ic('logout')} Se déconnecter</button></div>
     <div class="card"><h3 style="margin-bottom:6px">Sécurité active</h3><ul class="muted small" style="padding-left:18px;line-height:1.8">
@@ -762,25 +868,71 @@ A.sendReset = async email => {
 };
 
 /* ---------- Campagnes ---------- */
-A.campForm = id => {
-  const k = id ? DATA.camps.find(c => c.id === id) : { title: '', brand: '', description: '', rules: '', rate: 1, budget: 1000, platforms: ['TikTok', 'Instagram', 'YouTube'], status: 'active', color: '#19E3B5' };
+const dtLocal = x => { const d = x ? toDate(x) : null; if (!d) return ''; const p = n => String(n).padStart(2, '0'); return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}T${p(d.getHours())}:${p(d.getMinutes())}` };
+const linkRow = (l = {}) => `<div class="rowed"><input name="lk_label" maxlength="60" placeholder="Titre (ex : Brief complet)" value="${esc(l.label || '')}"><input name="lk_url" maxlength="500" placeholder="https://…" value="${esc(l.url || '')}"><button type="button" class="icon-btn red" data-a="rmRow" aria-label="Retirer">${ic('trash')}</button></div>`;
+const exRow = (e = {}) => `<div class="exrow"><label class="exthumb" style='${/^(https:\/\/|data:image\/)/.test(e.thumb || '') ? `background-image:url("${esc(e.thumb)}")` : ''}' title="Choisir une miniature">${e.thumb ? '' : '+'}<input type="file" accept="image/*" hidden data-ch="exThumb"><input type="hidden" name="ex_thumb" value="${esc(e.thumb || '')}"></label>
+  <div class="form"><input name="ex_title" maxlength="80" placeholder="Titre du clip" value="${esc(e.title || '')}"><input name="ex_url" maxlength="500" placeholder="Lien de la vidéo (https://…)" value="${esc(e.url || '')}"></div><button type="button" class="icon-btn red" data-a="rmRow" aria-label="Retirer">${ic('trash')}</button></div>`;
+A.rmRow = (v, el) => (el.closest('.rowed') || el.closest('.exrow')).remove();
+A.addLink = () => { if ($('#lkRows').children.length >= 10) return toast('10 liens maximum.', 'err'); $('#lkRows').insertAdjacentHTML('beforeend', linkRow()) };
+A.addEx = () => { if ($('#exRows').children.length >= 12) return toast('12 exemples maximum.', 'err'); $('#exRows').insertAdjacentHTML('beforeend', exRow()) };
+A.coverFile = async (v, el) => {
+  const f = el.files[0]; if (!f) return;
+  try { const url = await compressImage(f, 1100, 260000); $('#cpF [name=cover]').value = url; $('#covPrev').style.backgroundImage = `url("${url}")`; $('#covPrev').textContent = ''; toast('Image prête (' + Math.round(url.length / 1024) + ' Ko).') } catch (e) { toast(e.message, 'err') }
+  el.value = '';
+};
+A.coverUrl = v => { const p = $('#covPrev'); if (/^https:\/\//.test(v)) { $('#cpF [name=cover]').value = v; p.style.backgroundImage = `url("${v.replace(/"/g, '')}")`; p.textContent = '' } };
+A.coverClear = () => { $('#cpF [name=cover]').value = ''; $('#cpF [name=coverUrl]').value = ''; const p = $('#covPrev'); p.style.backgroundImage = ''; p.textContent = 'Aucune image' };
+A.exThumb = async (v, el) => {
+  const f = el.files[0]; if (!f) return; const box = el.closest('.exthumb');
+  try { const url = await compressImage(f, 360, 45000); box.querySelector('[name=ex_thumb]').value = url; box.style.backgroundImage = `url("${url}")`; [...box.childNodes].forEach(n => { if (n.nodeType === 3) n.remove() }) } catch (e) { toast(e.message, 'err') }
+  el.value = '';
+};
+A.campForm = async id => {
+  const k = id ? DATA.camps.find(c => c.id === id) : { title: '', brand: '', type: 'clipping', cover: '', description: '', rules: '', links: [], rate: 1, budget: 1000, platforms: ['TikTok', 'Instagram', 'YouTube'], status: 'active', color: '#19E3B5', startAt: null, endAt: null };
   if (!k) return;
-  openModal(id ? 'Modifier la campagne' : 'Nouvelle campagne', `<form id="cpF" class="form"><div class="grid2"><label>Titre<input name="title" required maxlength="60" value="${esc(k.title)}"></label><label>Marque / créateur<input name="brand" required maxlength="40" value="${esc(k.brand)}"></label></div>
-  <label>Description<textarea name="description" required maxlength="500">${esc(k.description)}</textarea></label><label>Règles du brief<textarea name="rules" maxlength="800">${esc(k.rules)}</textarea></label>
-  <div class="grid2"><label>Tarif ($ / 1K vues)<input name="rate" type="number" min="0.01" step="0.01" required value="${k.rate}"></label><label>Budget total ($)<input name="budget" type="number" min="1" step="0.01" required value="${k.budget}"></label></div>
-  <label>Plateformes acceptées<div class="checks">${PLATFORMS.map(p => `<label class="check"><input type="checkbox" name="pf" value="${p}" ${(k.platforms || []).includes(p) ? 'checked' : ''}>${p}</label>`).join('')}</div></label>
-  <div class="grid2"><label>Statut<select name="status">${Object.entries(CST).map(([v, [l]]) => `<option value="${v}" ${k.status === v ? 'selected' : ''}>${l}</option>`).join('')}</select></label><label>Couleur de la carte<input name="color" type="color" value="${safeColor(k.color)}"></label></div>
-  ${id ? '<p class="hint">Changer le tarif ne s\'applique qu\'aux nouveaux clips : les clips déjà soumis gardent leur tarif.</p>' : ''}
-  <button class="btn primary block" type="submit">${id ? 'Enregistrer' : 'Créer la campagne'}</button></form>`, { wide: true });
+  let ex = { examples: [] };
+  if (id) { try { const s = await getDoc(doc(db, 'campaignExtras', id)); if (s.exists()) ex = s.data() } catch (e) { } }
+  const isUrl = /^https:\/\//.test(k.cover || '');
+  openModal(id ? 'Modifier la campagne' : 'Nouvelle campagne', `<form id="cpF" class="form">
+  <h3>1. L'essentiel</h3>
+  <div class="grid2"><label>Titre<input name="title" required maxlength="60" value="${esc(k.title)}" placeholder="ex : 630G ft. Ateyaba “YOLO”"></label><label>Marque / artiste<input name="brand" required maxlength="40" value="${esc(k.brand)}"></label></div>
+  <div class="grid2"><label>Type<select name="type"><option value="clipping" ${(k.type || 'clipping') === 'clipping' ? 'selected' : ''}>Clipping</option><option value="ugc" ${k.type === 'ugc' ? 'selected' : ''}>Ambassadeur UGC</option></select></label><label>Statut<select name="status">${Object.entries(CST).map(([v, [l]]) => `<option value="${v}" ${k.status === v ? 'selected' : ''}>${l}</option>`).join('')}</select></label></div>
+  <label>Image de couverture</label><div id="covPrev" class="covprev" style='${k.cover ? `background-image:url("${esc(k.cover)}")` : ''}'>${k.cover ? '' : 'Aucune image'}</div>
+  <div class="row gap wrap"><label class="btn ghost sm" style="flex-direction:row">${ic('plus')} Choisir une image<input type="file" accept="image/*" hidden data-ch="coverFile"></label><button type="button" class="btn ghost sm" data-a="coverClear">Retirer</button></div>
+  <input name="coverUrl" type="url" placeholder="…ou colle le lien https d'une image" value="${isUrl ? esc(k.cover) : ''}" data-in="coverUrl"><input type="hidden" name="cover" value="${esc(k.cover || '')}">
+  <h3 style="margin-top:8px">2. Rémunération & durée</h3>
+  <div class="grid2"><label>RPM ($ pour 1 000 vues)<input name="rate" type="number" min="0.01" step="0.01" required value="${k.rate}"></label><label>Budget total ($)<input name="budget" type="number" min="1" step="0.01" required value="${k.budget}"></label></div>
+  <div class="grid2"><label>Début<input name="startAt" type="datetime-local" value="${dtLocal(k.startAt || (id ? k.createdAt : new Date()))}"></label><label>Fin (optionnel)<input name="endAt" type="datetime-local" value="${dtLocal(k.endAt)}"></label></div>
+  <p class="hint">Les clippers verront « Fin dans X j X h ». Après la date de fin, plus aucun clip ne peut être soumis (bloqué aussi par les règles de sécurité).</p>
+  <h3 style="margin-top:8px">3. Conditions</h3>
+  <label>Plateformes acceptées<div class="checks">${PLATFORMS.map(p => `<label class="check"><input type="checkbox" name="pf" value="${p}" ${(k.platforms || []).includes(p) ? 'checked' : ''}>${p === 'YouTube' ? 'YouTube Shorts' : p}</label>`).join('')}</div></label>
+  <label>Règles (une par ligne)<textarea name="rules" maxlength="800" placeholder="Format vertical 9:16&#10;Mentionner @artiste dans la description">${esc(k.rules)}</textarea></label>
+  <h3 style="margin-top:8px">4. Brief</h3>
+  <label>Ce que le client attend<textarea name="description" required maxlength="2000" style="min-height:150px">${esc(k.description)}</textarea></label>
+  <label>Liens utiles (brief Notion, son TikTok, dossier de rushs…)</label><div id="lkRows">${(k.links || []).map(linkRow).join('')}</div><button type="button" class="btn ghost sm" data-a="addLink">${ic('plus')} Ajouter un lien</button>
+  <h3 style="margin-top:8px">5. Exemples de clips</h3><p class="muted small" style="margin-top:-8px">Montre aux clippers ce qui marche : miniature + titre + lien de la vidéo.</p>
+  <div id="exRows">${(ex.examples || []).map(exRow).join('')}</div><button type="button" class="btn ghost sm" data-a="addEx">${ic('plus')} Ajouter un exemple</button>
+  <label style="margin-top:8px">Couleur de secours (si pas d'image)<input name="color" type="color" value="${safeColor(k.color)}"></label>
+  ${id ? '<p class="hint">Changer le RPM ne s\'applique qu\'aux nouveaux clips : les clips déjà soumis gardent leur tarif.</p>' : ''}
+  <button class="btn primary block lg" type="submit">${id ? 'Enregistrer' : 'Créer la campagne'}</button></form>`, { wide: true });
   $('#cpF').onsubmit = async e => {
-    e.preventDefault(); const fd = new FormData(e.target), pf = fd.getAll('pf'), btn = e.target.querySelector('button[type=submit]');
+    e.preventDefault(); const f = e.target, fd = new FormData(f), pf = fd.getAll('pf'), btn = f.querySelector('button[type=submit]');
     if (!pf.length) return toast('Choisis au moins une plateforme.', 'err');
-    const v = { title: fd.get('title').trim(), brand: fd.get('brand').trim(), description: fd.get('description').trim(), rules: fd.get('rules').trim(), rate: +fd.get('rate'), budget: +fd.get('budget'), platforms: pf, status: fd.get('status'), color: fd.get('color') };
-    if (!(v.rate > 0) || !(v.budget > 0)) return toast('Tarif et budget doivent être positifs.', 'err');
+    const links = [...f.querySelectorAll('#lkRows .rowed')].map(r => ({ label: r.querySelector('[name=lk_label]').value.trim().slice(0, 60), url: r.querySelector('[name=lk_url]').value.trim() })).filter(l => l.url);
+    if (links.some(l => !/^https:\/\/\S+$/.test(l.url))) return toast('Chaque lien doit commencer par https://', 'err');
+    const examples = [...f.querySelectorAll('#exRows .exrow')].map(r => ({ title: r.querySelector('[name=ex_title]').value.trim().slice(0, 80), url: r.querySelector('[name=ex_url]').value.trim(), thumb: r.querySelector('[name=ex_thumb]').value })).filter(x => x.url || x.title || x.thumb);
+    if (examples.some(x => !/^https:\/\/\S+$/.test(x.url))) return toast('Chaque exemple doit avoir un lien de vidéo en https://', 'err');
+    const sA = fd.get('startAt'), eA = fd.get('endAt'), start = sA ? new Date(sA) : new Date(), end = eA ? new Date(eA) : null;
+    if (end && end <= start) return toast('La date de fin doit être après le début.', 'err');
+    const v = { title: fd.get('title').trim(), brand: fd.get('brand').trim(), type: fd.get('type'), cover: fd.get('cover') || '', description: fd.get('description').trim(), rules: fd.get('rules').trim(), links,
+      rate: cents(fd.get('rate')), budget: cents(fd.get('budget')), platforms: pf, status: fd.get('status'), color: fd.get('color'), startAt: Timestamp.fromDate(start), endAt: end ? Timestamp.fromDate(end) : null };
+    if (!(v.rate > 0) || !(v.budget > 0)) return toast('RPM et budget doivent être positifs.', 'err');
     busy(btn, true);
     try {
-      if (id) await updateDoc(doc(db, 'campaigns', id), v);
-      else await addDoc(collection(db, 'campaigns'), { ...v, spent: 0, createdAt: serverTimestamp() });
+      const ref = id ? doc(db, 'campaigns', id) : doc(collection(db, 'campaigns')), b = writeBatch(db);
+      if (id) b.update(ref, v); else b.set(ref, { ...v, spent: 0, views: 0, clipsCount: 0, clippers: 0, top: [], createdAt: serverTimestamp() });
+      b.set(doc(db, 'campaignExtras', ref.id), { examples });
+      await b.commit();
       closeModal(); toast(id ? 'Campagne mise à jour.' : 'Campagne créée et visible par les clippers.'); show('campaigns', true);
     } catch (err) { toast(errMsg(err), 'err') } finally { busy(btn, false) }
   };
@@ -793,7 +945,7 @@ A.delCamp = async id => {
   const k = DATA.camps.find(c => c.id === id);
   if (DATA.clips.some(c => c.campaignId === id && c.status === 'approved')) return toast('Des clips approuvés y sont liés : passe-la plutôt en « Terminée ».', 'err');
   if (!await confirmBox('Supprimer « ' + k.title + ' » ?', 'La campagne et ses clips en attente ou refusés seront supprimés.', 'Supprimer')) return;
-  try { const b = writeBatch(db); DATA.clips.filter(c => c.campaignId === id).forEach(c => b.delete(doc(db, 'clips', c.id))); b.delete(doc(db, 'campaigns', id)); await b.commit(); toast('Campagne supprimée.'); show('campaigns', true) } catch (e) { toast(errMsg(e), 'err') }
+  try { const b = writeBatch(db); DATA.clips.filter(c => c.campaignId === id).forEach(c => b.delete(doc(db, 'clips', c.id))); b.delete(doc(db, 'campaignExtras', id)); b.delete(doc(db, 'campaigns', id)); await b.commit(); toast('Campagne supprimée.'); show('campaigns', true) } catch (e) { toast(errMsg(e), 'err') }
 };
 
 /* ---------- Retraits ---------- */
@@ -823,7 +975,7 @@ function bindA() {
   };
   const sf = $('#setF'); if (sf) sf.onsubmit = async e => {
     e.preventDefault(); const f = Object.fromEntries(new FormData(sf)), btn = sf.querySelector('button'); busy(btn, true);
-    try { await setDoc(doc(db, 'settings', 'main'), { platformName: f.platformName.trim().slice(0, 30), currency: 'USD', minPayout: Math.max(1, cents(f.minPayout) || 20), supportEmail: f.supportEmail.trim().slice(0, 120) }, { merge: true }); toast('Paramètres enregistrés.'); show('settings', true) }
+    try { await setDoc(doc(db, 'settings', 'main'), { platformName: f.platformName.trim().slice(0, 30), currency: 'USD', minPayout: Math.max(1, cents(f.minPayout) || 20), supportEmail: f.supportEmail.trim().slice(0, 120), trainingUrl: /^https:\/\/\S+$/.test((f.trainingUrl || '').trim()) ? f.trainingUrl.trim().slice(0, 300) : '' }, { merge: true }); toast('Paramètres enregistrés.'); show('settings', true) }
     catch (err) { toast(errMsg(err), 'err') } finally { busy(btn, false) }
   };
 }
