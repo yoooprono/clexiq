@@ -10,8 +10,13 @@ function boot() {
   if (app) return app;
   const raw = process.env.FIREBASE_SERVICE_ACCOUNT;
   if (!raw) throw new HttpError(500, 'config', 'FIREBASE_SERVICE_ACCOUNT manquant.');
-  const sa = JSON.parse(raw);
-  if (!getApps().length) initializeApp({ credential: cert(sa), projectId: sa.project_id });
+  let sa;
+  try { sa = JSON.parse(raw.trim().replace(/^['"]|['"]$/g, '')) }
+  catch (e) { throw new HttpError(500, 'config', `FIREBASE_SERVICE_ACCOUNT invalide : le contenu du fichier .json est incomplet ou mal copié (${raw.length} caractères reçus, environ 2300 attendus).`) }
+  if (!sa.private_key || !sa.client_email) throw new HttpError(500, 'config', 'FIREBASE_SERVICE_ACCOUNT invalide : private_key ou client_email manquant.');
+  sa.private_key = String(sa.private_key).replace(/\\n/g, '\n');
+  try { if (!getApps().length) initializeApp({ credential: cert(sa), projectId: sa.project_id }) }
+  catch (e) { throw new HttpError(500, 'config', 'Clé Firebase refusée : ' + e.message) }
   app = createApp({ db: getFirestore(), auth: getAuth(), fetch: globalThis.fetch, env: process.env, FieldValue, Timestamp });
   return app;
 }
