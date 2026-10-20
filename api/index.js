@@ -6,15 +6,36 @@ const { getAuth } = require('firebase-admin/auth');
 const { createApp, HttpError } = require('../server/core');
 
 let app;
+// Lit la clé Firebase même si le copier-coller depuis un téléphone l'a abîmée
+// (retours à la ligne, guillemets typographiques, \n doublés...).
+function pem(t) {
+  const m = String(t).match(/-----BEGIN PRIVATE KEY-----([\s\S]*?)-----END PRIVATE KEY-----/);
+  const body = m ? m[1].replace(/\\+[nr]|\s/g, '') : '';
+  return body ? '-----BEGIN PRIVATE KEY-----\n' + body.match(/.{1,64}/g).join('\n') + '\n-----END PRIVATE KEY-----\n' : '';
+}
+function readServiceAccount(raw) {
+  const txt = String(raw).trim();
+  try {
+    const j = JSON.parse(txt);
+    if (j.private_key && j.client_email) { const k = pem(j.private_key); if (k) { j.private_key = k; return j } }
+  } catch (_) { }
+  const Q = '["“”„]';
+  const field = k => { const m = txt.match(new RegExp(Q + k + Q + '\\s*:\\s*' + Q + '([^"“”„]+)' + Q)); return m ? m[1].trim() : '' };
+  const sa = {
+    project_id: field('project_id'),
+    client_email: field('client_email'),
+    private_key: pem(txt)
+  };
+  if (!sa.private_key) throw new HttpError(500, 'config', 'FIREBASE_SERVICE_ACCOUNT invalide : clé privée introuvable (' + txt.length + ' caractères reçus).');
+  if (!sa.client_email) throw new HttpError(500, 'config', 'FIREBASE_SERVICE_ACCOUNT invalide : client_email introuvable.');
+  if (!sa.project_id) sa.project_id = (sa.client_email.split('@')[1] || '').split('.')[0];
+  return sa;
+}
 function boot() {
   if (app) return app;
   const raw = process.env.FIREBASE_SERVICE_ACCOUNT;
   if (!raw) throw new HttpError(500, 'config', 'FIREBASE_SERVICE_ACCOUNT manquant.');
-  let sa;
-  try { sa = JSON.parse(raw.trim().replace(/^['"]|['"]$/g, '')) }
-  catch (e) { throw new HttpError(500, 'config', `FIREBASE_SERVICE_ACCOUNT invalide : le contenu du fichier .json est incomplet ou mal copié (${raw.length} caractères reçus, environ 2300 attendus).`) }
-  if (!sa.private_key || !sa.client_email) throw new HttpError(500, 'config', 'FIREBASE_SERVICE_ACCOUNT invalide : private_key ou client_email manquant.');
-  sa.private_key = String(sa.private_key).replace(/\\n/g, '\n');
+  const sa = readServiceAccount(raw);
   try { if (!getApps().length) initializeApp({ credential: cert(sa), projectId: sa.project_id }) }
   catch (e) { throw new HttpError(500, 'config', 'Clé Firebase refusée : ' + e.message) }
   app = createApp({ db: getFirestore(), auth: getAuth(), fetch: globalThis.fetch, env: process.env, FieldValue, Timestamp });
@@ -29,7 +50,7 @@ module.exports = async (req, res) => {
   res.setHeader('X-Content-Type-Options', 'nosniff');
   if (req.method === 'OPTIONS') return res.status(204).end();
   // Chemin réel (/api/a/b) en secours si la réécriture ne fournit pas ?path=
-  try { const u = new URL(req.url, 'http://x'); req.query = req.query || {}; if (!req.query.path && /^\/api\/(?!index)/.test(u.pathname)) req.query.path = u.pathname.slice(5); if (Array.isArray(req.query.path)) req.query.path = req.query.path.join('/') } catch (_) {}
+  try { const u = new URL(req.url, 'http://x'); req.query = req.query || {}; if (!req.query.path && /^\/api\/(?!index)/.test(u.pathname)) req.query.path = u.pathname.slice(5); if (Array.isArray(req.query.path)) req.query.path = req.query.path.join('/') } catch (_) { }
   if (typeof req.body === 'string') { try { req.body = JSON.parse(req.body) } catch (_) { req.body = {} } }
   try { await boot().route(req, res) }
   catch (e) {
