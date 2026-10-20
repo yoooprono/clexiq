@@ -1,0 +1,8 @@
+{
+  "name": "clexiq",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Clexiq – plateforme de clipping (site + API de liaison et synchronisation)",
+  "engines": { "node": ">=20" },
+  "dependencies": { "firebase-admin": "^12.7.0" }
+}
