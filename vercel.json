@@ -3,7 +3,7 @@
   "outputDirectory": "public",
   "cleanUrls": true,
   "functions": { "api/index.js": { "maxDuration": 60 } },
-  "rewrites": [ { "source": "/api/:path*", "destination": "/api/index?path=:path*" } ],
+  "rewrites": [ { "source": "/api/((?!index).+)", "destination": "/api/index?path=$1" } ],
   "headers": [
     { "source": "/(.*)", "headers": [
       { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" },
