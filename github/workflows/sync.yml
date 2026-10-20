@@ -1,0 +1,19 @@
+name: Synchro des vues Clexiq
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch: {}
+permissions: {}
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Appeler /api/sync
+        env:
+          SYNC_URL: ${{ secrets.SYNC_URL }}
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+        run: |
+          code=$(curl -sS -o out.json -w "%{http_code}" --max-time 90 -X POST "$SYNC_URL" -H "Authorization: Bearer $CRON_SECRET")
+          cat out.json; echo
+          test "$code" = "200"
