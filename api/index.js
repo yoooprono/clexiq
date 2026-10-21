@@ -1,7 +1,7 @@
 'use strict';
 // Point d'entrée unique des fonctions Vercel : /api/* → /api/index?path=*
 const { initializeApp, cert, getApps } = require('firebase-admin/app');
-const { getFirestore, FieldValue, Timestamp } = require('firebase-admin/firestore');
+const { getFirestore, FieldValue, Timestamp, FieldPath } = require('firebase-admin/firestore');
 const { getAuth } = require('firebase-admin/auth');
 const { createApp, HttpError } = require('../server/core');
 
@@ -38,6 +38,21 @@ function readServiceAccount(raw) {
   if (!sa.project_id) sa.project_id = (sa.client_email.split('@')[1] || '').split('.')[0];
   return sa;
 }
+// Envoi d'e-mails par SMTP (Gmail avec un mot de passe d'application, ou tout autre serveur SMTP).
+// Le module n'est chargé qu'au moment d'envoyer : s'il manque, seul l'envoi d'e-mails échoue.
+function makeMailer(env) {
+  const user = (env.SMTP_USER || '').trim(), pass = (env.SMTP_PASS || '').replace(/\s+/g, '');
+  const host = (env.SMTP_HOST || 'smtp.gmail.com').trim(), port = +(env.SMTP_PORT || 465);
+  const from = (env.MAIL_FROM || (user ? `Clexiq <${user}>` : '')).trim();
+  let tr = null;
+  return {
+    configured: !!(user && pass && from),
+    async send({ to, subject, html, text, headers }) {
+      if (!tr) { const nm = require('nodemailer'); tr = nm.createTransport({ host, port, secure: port === 465, auth: { user, pass }, connectionTimeout: 10000, greetingTimeout: 10000, socketTimeout: 15000 }) }
+      return tr.sendMail({ from, to, subject, html, text, headers });
+    }
+  };
+}
 function boot() {
   if (app) return app;
   const raw = process.env.FIREBASE_SERVICE_ACCOUNT;
@@ -45,7 +60,7 @@ function boot() {
   const sa = readServiceAccount(raw);
   try { if (!getApps().length) initializeApp({ credential: cert(sa), projectId: sa.project_id }) }
   catch (e) { throw new HttpError(500, 'config', 'Clé Firebase refusée : ' + e.message) }
-  app = createApp({ db: getFirestore(), auth: getAuth(), fetch: globalThis.fetch, env: process.env, FieldValue, Timestamp });
+  app = createApp({ db: getFirestore(), auth: getAuth(), fetch: globalThis.fetch, env: process.env, FieldValue, Timestamp, FieldPath, mailer: makeMailer(process.env) });
   return app;
 }
 
