@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-theme="dark">
 <head>
 <meta charset="utf-8">
+<script>try{var t=localStorage.getItem('clexiq_theme');var d=t!=='light'&&(t!=='system'||matchMedia('(prefers-color-scheme: dark)').matches);document.documentElement.dataset.theme=d?'dark':'light'}catch(e){document.documentElement.dataset.theme='dark'}</script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-HXTzQStxotlyzHbNiKoVLaufJZJ7TTiI7xqm0BKYVDI=' https://www.gstatic.com https://apis.google.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://*.vercel.app https://*.googleapis.com https://*.firebaseio.com wss://*.firebaseio.com https://clexiq.firebaseapp.com; frame-src https://clexiq.firebaseapp.com https://accounts.google.com https://apis.google.com https://www.google.com; object-src 'none'; base-uri 'none'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-z/Rw9jnlYNwVXJYDg6SQzuUhd7YyLVxJSxHh0K2uIiE=' 'sha256-uO8aAzznoyQnKDI2xYTieFk093yGXUKOYVfJKHdS5tA=' https://www.gstatic.com https://apis.google.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://*.vercel.app https://*.googleapis.com https://*.firebaseio.com wss://*.firebaseio.com https://clexiq.firebaseapp.com; frame-src https://clexiq.firebaseapp.com https://accounts.google.com https://apis.google.com https://www.google.com; object-src 'none'; base-uri 'none'; form-action 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#060B1A">
 <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJDbGV4aXEiPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJjeGciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMyRUYyQzIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxNkI4REUiLz48L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJjeGIiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwRjFDMzgiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwNzBFMjAiLz48L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB4PSIyIiB5PSIyIiB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNjeGIpIiBzdHJva2U9IiMxRjNBNjMiIHN0cm9rZS13aWR0aD0iMS4yIi8+CiAgPHBhdGggZD0iTTM5LjUgMjIuNEExNSAxNSAwIDEgMCAzOS41IDQxLjYiIGZpbGw9Im5vbmUiIHN0cm9rZT0idXJsKCNjeGcpIiBzdHJva2Utd2lkdGg9IjYuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBhdGggZD0iTTI0LjUgMjUuNSAzNy41IDM4LjVNMzcuNSAyNS41IDI0LjUgMzguNSIgc3Ryb2tlPSIjRjRGOEZGIiBzdHJva2Utd2lkdGg9IjUuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGcgc3Ryb2tlPSIjMkVGMkMyIiBzdHJva2Utd2lkdGg9IjIuNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj48cGF0aCBkPSJNNDMuNiAyMi40IDQ2LjYgMTkuNCIvPjxwYXRoIGQ9Ik00NC41IDI3LjVoNS41Ii8+PHBhdGggZD0iTTQzLjUgNDAuNSA0Ny44IDQ0LjgiLz48L2c+CiAgPGNpcmNsZSBjeD0iNTAuNiIgY3k9IjE1LjQiIHI9IjIiIGZpbGw9IiMyRUYyQzIiLz4KPC9zdmc+Cg==" type="image/svg+xml">
@@ -16,7 +17,14 @@
   --bg:#060B1A;--surface:#0C1428;--surface2:#121C36;--border:#1D2A4A;
   --text:#EAF1FB;--muted:#8796B5;
   --primary:#19E3B5;--primary2:#3FF3CC;--cyan:#22C7E6;--green:#34D399;--amber:#F5B544;--red:#F0506E;
-  --grad:linear-gradient(135deg,#2EF2C2 0%,#16B8DE 100%);--r:14px
+  --grad:linear-gradient(135deg,#2EF2C2 0%,#16B8DE 100%);--r:14px;
+  --shadow:0 10px 30px rgba(0,0,0,.45);--overlay:rgba(3,5,12,.72);--wm:#F4F8FF;--navon:#fff;color-scheme:dark
+}
+:root[data-theme=light]{
+  --bg:#F3F6FB;--surface:#FFFFFF;--surface2:#EEF2F8;--border:#DCE3EE;
+  --text:#0B1630;--muted:#5B6884;
+  --primary:#0FB892;--primary2:#08977A;--cyan:#0B8DB3;--green:#0C9467;--amber:#B26B05;--red:#D2385A;
+  --shadow:0 10px 30px rgba(15,30,60,.14);--overlay:rgba(11,22,48,.45);--wm:#0B1630;--navon:#0B1630;color-scheme:light
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%}
@@ -62,7 +70,8 @@ svg.i{width:18px;height:18px;flex:none;stroke:currentColor;fill:none;stroke-widt
 .li .b{color:var(--text);font-weight:600;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .li .acts{display:flex;gap:6px;flex:none}
 .nums{text-align:right;flex:none}.nums b{font-size:14px;display:block;white-space:nowrap}
-.plat{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;font-weight:800;font-size:13px;flex:none}
+.plat{width:38px;height:38px;border-radius:10px;display:inline-grid;place-items:center;font-weight:800;font-size:13px;flex:none;color:#fff}
+.plat .pl{width:52%;height:52%}.plat.sm{width:28px;height:28px;border-radius:8px}.plat.xs{width:22px;height:22px;border-radius:6px}.plat.lg{width:46px;height:46px;border-radius:12px}
 .av{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:13px;color:#fff;flex:none;cursor:pointer}
 .av.sm{width:32px;height:32px;font-size:12px}.av.lg{width:56px;height:56px;font-size:18px}
 .form{display:flex;flex-direction:column;gap:14px}
@@ -95,7 +104,7 @@ input[type=color]{padding:3px;height:44px;cursor:pointer}
 .side nav{display:flex;flex-direction:column;gap:2px;flex:1}
 .nav{display:flex;align-items:center;gap:12px;height:42px;padding:0 12px;border-radius:10px;color:var(--muted);font:600 14px Inter,sans-serif;cursor:pointer;border:0;background:none;width:100%;text-align:left}
 .nav:hover{background:var(--surface2);color:var(--text)}
-.nav.on{background:rgba(25,227,181,.12);color:#fff}.nav.on svg{color:var(--primary2)}
+.nav.on{background:rgba(25,227,181,.12);color:var(--navon)}.nav.on svg{color:var(--primary2)}
 .cnt{margin-left:auto;background:var(--red);color:#fff;font-size:11px;font-weight:700;min-width:20px;height:20px;padding:0 6px;border-radius:99px;display:grid;place-items:center}
 .side-foot{border-top:1px solid var(--border);padding-top:12px}
 .me{display:flex;align-items:center;gap:10px;padding:6px 8px 10px;min-width:0}.me b{font-size:14px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -104,10 +113,10 @@ input[type=color]{padding:3px;height:44px;cursor:pointer}
 .top h1{font-size:26px}.top p{margin-top:4px}
 .mtop,.bottom{display:none}
 .toasts{position:fixed;top:16px;right:16px;left:16px;z-index:200;display:flex;flex-direction:column;align-items:flex-end;gap:8px;pointer-events:none}
-.toast{background:var(--surface2);border:1px solid var(--border);border-left:4px solid var(--green);padding:12px 16px;border-radius:10px;font-size:14px;font-weight:500;box-shadow:0 10px 30px rgba(0,0,0,.45);animation:tin .25s;max-width:360px;pointer-events:auto}
+.toast{background:var(--surface2);border:1px solid var(--border);border-left:4px solid var(--green);padding:12px 16px;border-radius:10px;font-size:14px;font-weight:500;box-shadow:var(--shadow);animation:tin .25s;max-width:360px;pointer-events:auto}
 .toast.err{border-left-color:var(--red)}.toast.out{opacity:0;transform:translateY(-6px);transition:.3s}
 @keyframes tin{from{opacity:0;transform:translateY(-8px)}}
-.modal-bg{position:fixed;inset:0;background:rgba(3,5,12,.72);backdrop-filter:blur(4px);z-index:100;display:grid;place-items:center;padding:16px;animation:tin .2s}
+.modal-bg{position:fixed;inset:0;background:var(--overlay);backdrop-filter:blur(4px);z-index:100;display:grid;place-items:center;padding:16px;animation:tin .2s}
 .modal{background:var(--surface);border:1px solid var(--border);border-radius:18px;width:100%;max-width:480px;max-height:90vh;overflow:auto}
 .modal.wide{max-width:760px}
 .modal-h{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid var(--border);position:sticky;top:0;background:var(--surface);z-index:1}
@@ -180,7 +189,7 @@ input[type=color]{padding:3px;height:44px;cursor:pointer}
 
 /* ===== Clexiq ===== */
 .logo img{width:36px;height:36px;flex:none}
-.wm{font:700 21px 'Space Grotesk',Inter,sans-serif;letter-spacing:-.5px;color:#F4F8FF}
+.wm{font:700 21px 'Space Grotesk',Inter,sans-serif;letter-spacing:-.5px;color:var(--wm)}
 .wm .x{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .av{overflow:hidden;background:var(--surface2)}.av img{width:100%;height:100%;object-fit:cover}
 .btn.google{background:#fff;color:#1F1F1F;border-color:#DADCE0;width:100%}.btn.google svg{width:18px;height:18px}
@@ -208,7 +217,7 @@ select.lang.block{width:100%;margin-bottom:10px}
 .segtabs button.on{background:var(--text);color:var(--bg)}
 .checks-list{display:flex;flex-direction:column;gap:12px}
 .ck{display:flex;align-items:center;gap:12px;cursor:pointer}.ck.ok{cursor:default}
-.ck b{display:block;font-size:14px}.ck.ok b{text-decoration:line-through;color:var(--muted)}
+.ck b{display:block;font-size:14px}.ck.ok b{color:var(--text)}
 .ckb{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;flex:none;border:2px dashed var(--border)}
 .ck.ok .ckb{border:0;background:rgba(52,211,153,.15);color:var(--green)}.ckb svg{width:15px;height:15px}
 .lockf{position:relative;display:flex;align-items:center}.lockf input{padding-right:84px}
@@ -308,7 +317,7 @@ select.lang.block{width:100%;margin-bottom:10px}
 .vrm{position:absolute;top:8px;left:8px;width:26px;height:26px;border-radius:50%;border:0;background:rgba(6,11,26,.75);color:#fff;display:grid;place-items:center;cursor:pointer}.vrm svg{width:14px;height:14px}
 .vfoot{position:absolute;left:0;right:0;bottom:0;padding:24px 8px 8px;background:linear-gradient(transparent,rgba(0,0,0,.8));color:#fff;font-size:12px;font-weight:700;display:flex;flex-direction:column;gap:2px}
 .vfoot svg{width:13px;height:13px;vertical-align:-2px}.vfoot small{font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;opacity:.85}
-.subbar{position:sticky;bottom:12px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px 12px 18px;border-radius:16px;background:var(--surface);border:1px solid var(--border);box-shadow:0 12px 30px rgba(0,0,0,.5);z-index:5}
+.subbar{position:sticky;bottom:12px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px 12px 18px;border-radius:16px;background:var(--surface);border:1px solid var(--border);box-shadow:var(--shadow);z-index:5}
 @media(max-width:820px){.vgrid{grid-template-columns:repeat(3,1fr)}.subbar{bottom:84px}.sumgrid .big{font-size:21px}}
 .vfoot .vv small{white-space:normal;font-size:10.5px;opacity:.9}.vfoot .vdt{opacity:.7;font-size:10.5px}
 .vt:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
@@ -318,6 +327,114 @@ select.lang.block{width:100%;margin-bottom:10px}
 .av.sm img{width:100%;height:100%;object-fit:cover;border-radius:inherit}
 @media(max-width:820px){.conngrid{grid-template-columns:1fr}.vgrid{grid-template-columns:repeat(2,1fr)}}
 
+/* ===== v3 : logos, thème, notifications, assistance, menu Plus ===== */
+html{-webkit-tap-highlight-color:transparent}
+:focus{outline:none}:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+.me,.me *{text-decoration:none!important;-webkit-user-select:none;user-select:none}
+.me{cursor:pointer;border-radius:12px}.me:hover{background:var(--surface2)}
+.pdot{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:6px;color:#fff;flex:none;vertical-align:middle}
+.pdot .pl{width:12px;height:12px}
+.fchip .pdot,.btn .pdot{margin:0}
+.cplats .plat{width:28px;height:28px;border-radius:50%;border:2px solid rgba(255,255,255,.85)}
+.btn.conn .plat{width:26px;height:26px;border-radius:7px}
+.badge.cyan{background:rgba(34,199,230,.14);color:var(--cyan)}
+.pill2.cyan{background:rgba(34,199,230,.14);color:var(--cyan)}
+.cbox.cyan{background:rgba(34,199,230,.07);border-color:rgba(34,199,230,.35)}.tag.cyan{color:var(--cyan)}
+.cthumb{color:#fff}
+/* en-têtes de page secondaires */
+.phead{display:flex;align-items:center;gap:10px;margin-bottom:18px}
+.phead h1{font-size:24px}.phead .grow p{margin-top:2px}
+.backbtn{width:40px;height:40px;border-radius:12px}
+/* menu Plus */
+.mprof{display:flex;align-items:center;gap:14px}
+.mprof b{display:block;font-size:17px}
+.msec{margin-top:18px}.msec>small{color:var(--muted);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:11.5px;margin:0 6px 8px}
+.mlist{background:var(--surface);border:1px solid var(--border);border-radius:16px;overflow:hidden}
+.mitem{display:flex;align-items:center;gap:14px;padding:14px 16px;color:var(--text);cursor:pointer;border-top:1px solid var(--border);text-decoration:none;width:100%;background:none;border-left:0;border-right:0;border-bottom:0;font:inherit;text-align:left}
+.mitem:first-child{border-top:0}.mitem:hover{background:var(--surface2)}
+.mitem .mic{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:var(--surface2);color:var(--primary2);flex:none}
+.mitem .mic svg{width:18px;height:18px}
+.mitem b{display:block;font-size:14.5px;font-weight:600}.mitem small{color:var(--muted)}
+.mitem>.chev{color:var(--muted);width:16px;height:16px}
+.mitem.danger b,.mitem.danger .mic{color:var(--red)}
+.mitem .cnt{margin-left:0}
+/* thème */
+.themes{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.thm{border:2px solid var(--border);border-radius:16px;padding:10px;cursor:pointer;background:var(--surface);color:var(--text);font:inherit;text-align:left;display:flex;flex-direction:column;gap:10px}
+.thm.on{border-color:var(--primary);box-shadow:0 0 0 2px rgba(25,227,181,.25)}
+.thm .prev{height:84px;border-radius:10px;overflow:hidden;display:grid;grid-template-columns:30% 70%;border:1px solid var(--border)}
+.thm .prev i{display:block}.thm .prev.pv-sys{grid-template-columns:1fr 1fr}
+.thm .lbl{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px}.thm .lbl svg{width:16px;height:16px}
+.pv-dark{background:#060B1A}.pv-dark .sb{background:#0C1428}.pv-dark .ln{background:#1D2A4A}.pv-dark .ac{background:#19E3B5}
+.pv-light{background:#F3F6FB}.pv-light .sb{background:#FFFFFF}.pv-light .ln{background:#DCE3EE}.pv-light .ac{background:#0FB892}
+.pv{display:flex;flex-direction:column;gap:6px;padding:10px}.pv .ln{height:7px;border-radius:4px}.pv .ac{height:14px;width:55%;border-radius:5px}
+.pv-sys{display:grid;grid-template-columns:1fr 1fr}
+/* bascule */
+.switch{position:relative;width:46px;height:28px;flex:none}
+.switch input{position:absolute;inset:0;opacity:0;margin:0;cursor:pointer;width:100%;height:100%;z-index:1}
+.switch span{position:absolute;inset:0;border-radius:99px;background:var(--border);transition:.2s}
+.switch span:after{content:"";position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;background:#fff;transition:.2s;box-shadow:0 1px 3px rgba(0,0,0,.3)}
+.switch input:checked+span{background:var(--primary)}.switch input:checked+span:after{transform:translateX(18px)}
+/* notifications */
+.ntop{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.nlist{display:flex;flex-direction:column}
+.nrow{display:flex;gap:12px;align-items:flex-start;padding:14px 14px;border-top:1px solid var(--border);cursor:pointer;position:relative}
+.nrow:first-child{border-top:0}.nrow:hover{background:var(--surface2)}
+.nrow.unread{background:rgba(25,227,181,.06)}
+.nrow.unread:before{content:"";position:absolute;left:4px;top:22px;width:7px;height:7px;border-radius:50%;background:var(--primary)}
+.nrow .nic{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;flex:none}
+.nrow .nb{flex:1;min-width:0}.nrow .nb b{display:block;font-size:14.5px}.nrow:not(.unread) .nb b{font-weight:600}
+.nrow .nb p{font-size:13.5px;color:var(--muted);margin-top:2px;word-break:break-word}
+.nrow .nb small{margin-top:4px;color:var(--muted)}
+.nrow .nact{display:flex;gap:6px;flex:none}
+.nchk{width:22px;height:22px;flex:none;margin-top:8px;color:var(--muted)}.nchk.on{color:var(--primary)}
+.nchk svg{width:22px;height:22px}
+.selbar{position:sticky;bottom:12px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:10px 12px;border-radius:16px;background:var(--surface);border:1px solid var(--border);box-shadow:var(--shadow);z-index:6;margin-top:12px}
+.selbar .grow{font-weight:700;font-size:14px}
+.nmore{display:inline-flex;margin-top:8px}
+/* avertissements */
+.wban{border-radius:16px;padding:16px 18px;display:flex;gap:14px;align-items:flex-start;border:1px solid}
+.wban .wic{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;flex:none}
+.wban.reminder{background:rgba(34,199,230,.08);border-color:rgba(34,199,230,.35)}.wban.reminder .wic{background:rgba(34,199,230,.16);color:var(--cyan)}
+.wban.official{background:rgba(245,181,68,.08);border-color:rgba(245,181,68,.35)}.wban.official .wic{background:rgba(245,181,68,.16);color:var(--amber)}
+.wban.final{background:rgba(240,80,110,.08);border-color:rgba(240,80,110,.4)}.wban.final .wic{background:rgba(240,80,110,.16);color:var(--red)}
+.wsec{padding:14px 0;border-top:1px solid var(--border)}.wsec:first-child{border-top:0;padding-top:0}
+.wsec>small{color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11.5px}
+.wsec p{margin-top:6px;white-space:pre-line;word-break:break-word;line-height:1.6}
+.sev{display:inline-flex;gap:3px;vertical-align:middle}.sev i{width:8px;height:14px;border-radius:3px;background:var(--border)}
+.sev.s1 i:nth-child(-n+1),.sev.s2 i:nth-child(-n+2),.sev.s3 i:nth-child(-n+3),.sev.s4 i:nth-child(-n+4){background:var(--sevc,var(--amber))}
+/* assistance */
+.tk{display:flex;gap:12px;align-items:center;padding:14px 4px;border-top:1px solid var(--border);cursor:pointer}
+.tk:first-child{border-top:0}.tk:hover{background:var(--surface2)}
+.tk .tref{font:700 12px ui-monospace,Menlo,monospace;color:var(--muted)}
+.tk b{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.udot{width:9px;height:9px;border-radius:50%;background:var(--primary);flex:none}
+.thread{display:flex;flex-direction:column;gap:12px}
+.msg{max-width:86%;padding:12px 14px;border-radius:16px;background:var(--surface2);border:1px solid var(--border)}
+.msg.mine{align-self:flex-end;background:rgba(25,227,181,.12);border-color:rgba(25,227,181,.3);border-bottom-right-radius:6px}
+.msg.them{align-self:flex-start;border-bottom-left-radius:6px}
+.msg .mh{display:flex;gap:8px;align-items:center;font-size:12px;color:var(--muted);margin-bottom:4px}.msg .mh b{color:var(--text)}
+.msg p{white-space:pre-line;word-break:break-word;font-size:14px;line-height:1.55}
+.atts{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.att{width:78px;height:78px;border-radius:10px;background-size:cover;background-position:center;border:1px solid var(--border);cursor:zoom-in;position:relative}
+.att .vrm{top:4px;left:auto;right:4px;width:22px;height:22px}
+.imgfull{width:100%;border-radius:12px;display:block}
+.steps3{display:flex;gap:6px;align-items:center;flex-wrap:wrap;font-size:12.5px;color:var(--muted)}
+.steps3 span{display:inline-flex;align-items:center;gap:6px}.steps3 i{width:9px;height:9px;border-radius:50%;background:var(--border);display:inline-block}
+.steps3 .on i{background:var(--primary)}.steps3 .on{color:var(--text);font-weight:600}
+/* aide */
+.faq details{border-top:1px solid var(--border);padding:2px 0}.faq details:first-of-type{border-top:0}
+.faq summary{cursor:pointer;list-style:none;padding:14px 4px;font-weight:600;display:flex;gap:10px;align-items:center;justify-content:space-between}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";font-size:20px;color:var(--muted);line-height:1}.faq details[open] summary:after{content:"–"}
+.faq details p{padding:0 4px 14px;color:var(--muted);line-height:1.65;font-size:14px;white-space:pre-line}
+.rulesec h3{display:flex;gap:10px;align-items:center;margin-bottom:8px}.rulesec h3 svg{color:var(--primary2)}
+.rulesec ul{padding-left:20px;line-height:1.8;color:var(--text);font-size:14px}.rulesec li{margin:2px 0}
+.rulesec:target{border-color:var(--primary)}
+.aboutlogo{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;padding:10px 0}
+.aboutlogo img{width:64px;height:64px}
+@media(max-width:820px){.themes{grid-template-columns:1fr 1fr 1fr;gap:8px}.thm{padding:8px}.thm .prev{height:64px}.thm .lbl{font-size:12.5px}.phead h1{font-size:20px}.selbar{bottom:84px}.msg{max-width:94%}}
+
 </style>
 </head>
 <body>
@@ -326,13 +443,34 @@ select.lang.block{width:100%;margin-bottom:10px}
 <noscript><p style="padding:20px">Active JavaScript pour utiliser Clexiq.</p></noscript>
 <script type="module">import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
 import { getAuth, onAuthStateChanged, GoogleAuthProvider, signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, updateProfile, updatePassword, signOut, deleteUser } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js';
-import { getFirestore, Timestamp, doc, getDoc, getDocs, setDoc, updateDoc, deleteDoc, addDoc, collection, query, where, orderBy, limit, writeBatch, serverTimestamp, increment, getAggregateFromServer, sum, count } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
+import { getFirestore, Timestamp, doc, getDoc, getDocs, setDoc, updateDoc, deleteDoc, addDoc, collection, query, where, orderBy, limit, writeBatch, serverTimestamp, increment, getAggregateFromServer, sum, count, onSnapshot } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
 
 const I18N = {};
 const PLATFORMS = ['TikTok', 'Instagram', 'YouTube'];
 const PLC = { 'TikTok': '#FF2D55', 'Instagram': '#E1306C', 'YouTube': '#FF4D4D' };
+/* Logos officiels (Font Awesome Free, licence CC BY 4.0) — marques de leurs propriétaires respectifs */
+const PLOGO = {"TikTok":{"vb":"0 0 448 512","d":"M448.5 209.9c-44 .1-87-13.6-122.8-39.2l0 178.7c0 33.1-10.1 65.4-29 92.6s-45.6 48-76.6 59.6-64.8 13.5-96.9 5.3-60.9-25.9-82.7-50.8-35.3-56-39-88.9 2.9-66.1 18.6-95.2 40-52.7 69.6-67.7 62.9-20.5 95.7-16l0 89.9c-15-4.7-31.1-4.6-46 .4s-27.9 14.6-37 27.3-14 28.1-13.9 43.9 5.2 31 14.5 43.7 22.4 22.1 37.4 26.9 31.1 4.8 46-.1 28-14.4 37.2-27.1 14.2-28.1 14.2-43.8l0-349.4 88 0c-.1 7.4 .6 14.9 1.9 22.2 3.1 16.3 9.4 31.9 18.7 45.7s21.3 25.6 35.2 34.6c19.9 13.1 43.2 20.1 67 20.1l0 87.4z"},"Instagram":{"vb":"0 0 448 512","d":"M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"},"YouTube":{"vb":"0 0 576 512","d":"M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z"}};
+const PBG = { TikTok: '#000000', Instagram: 'linear-gradient(45deg,#F9CE34 0%,#EE2A7B 50%,#6228D7 100%)', YouTube: '#FF0000' };
+const plogo = p => PLOGO[p] ? `<svg class="pl" viewBox="${PLOGO[p].vb}" aria-hidden="true" focusable="false"><path fill="currentColor" d="${PLOGO[p].d}"/></svg>` : '';
+/* tuile logo (listes) et pastille logo (filtres, puces) */
+const platIc = (p, cls = '') => `<span class="plat ${cls}" style="background:${PBG[p] || '#8796B5'}" title="${esc(p)}" role="img" aria-label="${esc(p)}">${plogo(p) || esc((p || '?')[0])}</span>`;
+const pdot = p => `<span class="pdot" style="background:${PBG[p] || '#8796B5'}" title="${esc(p)}">${plogo(p)}</span>`;
+/* ===== Thème : clair, sombre ou celui du téléphone ===== */
+const THEMES = ['system', 'light', 'dark'];
+let THEME = 'dark';
+try { const v = localStorage.getItem('clexiq_theme'); if (THEMES.includes(v)) THEME = v } catch (e) { }
+const sysDark = () => { try { return matchMedia('(prefers-color-scheme: dark)').matches } catch (e) { return true } };
+function applyTheme(v) {
+  if (THEMES.includes(v)) THEME = v;
+  const dark = THEME === 'dark' || (THEME === 'system' && sysDark());
+  document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+  const m = document.querySelector('meta[name=theme-color]'); if (m) m.content = dark ? '#060B1A' : '#F3F6FB';
+}
+function setTheme(v) { if (!THEMES.includes(v)) return; try { localStorage.setItem('clexiq_theme', v) } catch (e) { } applyTheme(v) }
+applyTheme();
+try { matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => { if (THEME === 'system') applyTheme() }) } catch (e) { }
 const METHODS = ['USDT BEP20', 'PayPal'];
-const ST = { pending: ['En attente', 'amber'], approved: ['Approuvé', 'green'], rejected: ['Refusé', 'red'] };
+const ST = { pending: ['En attente de validation', 'amber'], needs_fix: ['À corriger', 'cyan'], approved: ['Approuvée', 'green'], rejected: ['Rejetée', 'red'] };
 const PST = { pending: ['En attente', 'amber'], paid: ['Payé', 'green'], rejected: ['Refusé', 'red'] };
 const CST = { active: ['Active', 'green'], paused: ['En pause', 'amber'], ended: ['Terminée', 'red'] };
 const CHST = { pending: ['En attente', 'amber'], submitted: ['En attente', 'amber'], verified: ['Vérifiée', 'green'], failed: ['Échec', 'red'], rejected: ['Échec', 'red'] };
@@ -391,13 +529,28 @@ const ICONS = {
   refresh: '<path d="M21 12a9 9 0 1 1-3-6.7L21 8M21 3v5h-5"/>', mail: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>',
   shield: '<path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/>', link: '<path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/>', copy: '<rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/>',
   globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>', bell: '<path d="M6 8a6 6 0 1 1 12 0c0 7 3 8 3 8H3s3-1 3-8"/><path d="M10.3 21a2 2 0 0 0 3.4 0"/>', dots: '<circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/>', grid: '<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>', compass: '<circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/>', download: '<path d="M12 4v12M7 11l5 5 5-5M4 20h16"/>', support: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="m5.6 5.6 3.6 3.6M14.8 14.8l3.6 3.6M18.4 5.6l-3.6 3.6M9.2 14.8l-3.6 3.6"/>',
-  lock: '<rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>'
+  lock: '<rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>',
+  alert: '<path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/>',
+  help: '<circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3M12 17h.01"/>',
+  info: '<circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/>',
+  sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+  moon: '<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>',
+  phone: '<rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/>',
+  book: '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/>',
+  file: '<path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/>',
+  chat: '<path d="M21 12a8 8 0 0 1-11.6 7.1L4 21l1.9-5.4A8 8 0 1 1 21 12z"/>',
+  send: '<path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/>',
+  paperclip: '<path d="m21.4 11.1-9.2 9.2a6 6 0 0 1-8.5-8.5l9.2-9.2a4 4 0 0 1 5.7 5.7l-9.2 9.2a2 2 0 0 1-2.8-2.8l8.5-8.5"/>',
+  chevron: '<path d="m9 6 6 6-6 6"/>', back: '<path d="M15 18 9 12l6-6"/>',
+  checkall: '<path d="M18 6 7 17l-5-5M22 10l-7.5 7.5L13 16"/>', square: '<rect x="4" y="4" width="16" height="16" rx="3"/>',
+  checksq: '<rect x="4" y="4" width="16" height="16" rx="3"/><path d="m8 12 3 3 5-6"/>',
+  palette: '<circle cx="13.5" cy="6.5" r="1.3"/><circle cx="17.5" cy="10.5" r="1.3"/><circle cx="8.5" cy="7.5" r="1.3"/><circle cx="6.5" cy="12.5" r="1.3"/><path d="M12 2a10 10 0 0 0 0 20c1.1 0 2-.9 2-2 0-.5-.2-1-.5-1.3-.3-.4-.5-.8-.5-1.3 0-1.1.9-2 2-2h2.4A5.6 5.6 0 0 0 23 9.8C23 5.5 18.1 2 12 2z"/>',
+  flag: '<path d="M4 22V4M4 4h13l-2 4 2 4H4"/>'
 };
 const ic = n => `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${ICONS[n] || ''}</svg>`;
 const GOOGLE = '<svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.6 5.4 2.7 13.3l7.9 6.1C12.5 13.6 17.8 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.4c-.5 2.9-2.2 5.4-4.6 7l7.4 5.7c4.3-4 6.9-9.9 6.9-17.2z"/><path fill="#FBBC05" d="M10.6 28.6c-.5-1.4-.8-3-.8-4.6s.3-3.2.8-4.6l-7.9-6.1C1 16.6 0 20.2 0 24s1 7.4 2.7 10.7l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.8-5.8l-7.4-5.7c-2.1 1.4-4.8 2.3-8.4 2.3-6.2 0-11.5-4.2-13.4-9.9l-7.9 6.1C6.6 42.6 14.6 48 24 48z"/></svg>';
 const logo = tag => `<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJDbGV4aXEiPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJjeGciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMyRUYyQzIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxNkI4REUiLz48L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJjeGIiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwRjFDMzgiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwNzBFMjAiLz48L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB4PSIyIiB5PSIyIiB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNjeGIpIiBzdHJva2U9IiMxRjNBNjMiIHN0cm9rZS13aWR0aD0iMS4yIi8+CiAgPHBhdGggZD0iTTM5LjUgMjIuNEExNSAxNSAwIDEgMCAzOS41IDQxLjYiIGZpbGw9Im5vbmUiIHN0cm9rZT0idXJsKCNjeGcpIiBzdHJva2Utd2lkdGg9IjYuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBhdGggZD0iTTI0LjUgMjUuNSAzNy41IDM4LjVNMzcuNSAyNS41IDI0LjUgMzguNSIgc3Ryb2tlPSIjRjRGOEZGIiBzdHJva2Utd2lkdGg9IjUuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGcgc3Ryb2tlPSIjMkVGMkMyIiBzdHJva2Utd2lkdGg9IjIuNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj48cGF0aCBkPSJNNDMuNiAyMi40IDQ2LjYgMTkuNCIvPjxwYXRoIGQ9Ik00NC41IDI3LjVoNS41Ii8+PHBhdGggZD0iTTQzLjUgNDAuNSA0Ny44IDQ0LjgiLz48L2c+CiAgPGNpcmNsZSBjeD0iNTAuNiIgY3k9IjE1LjQiIHI9IjIiIGZpbGw9IiMyRUYyQzIiLz4KPC9zdmc+Cg==" alt="" width="36" height="36"><span class="wm">Cle<span class="x">X</span>iq</span>${tag ? `<em>${esc(tag)}</em>` : ''}`;
 const badge = (st, map = ST) => { const [l, c] = map[st] || [st, '']; return `<span class="badge ${c}">${esc(t(l))}</span>` };
-const platIc = p => `<div class="plat" style="background:${PLC[p] || '#8796B5'}22;color:${PLC[p] || '#8796B5'}" title="${esc(p)}">${esc((p || '?')[0])}</div>`;
 const avatar = (name, url, color, cls = '') => `<div class="av ${cls}" style="background:${safeColor(color)}">${/^https:\/\//.test(url || '') ? `<img src="${esc(url)}" alt="" referrerpolicy="no-referrer">` : esc(initials(name))}</div>`;
 const stat = (l, v, i, c) => `<div class="card stat"><div class="si t-${c}">${ic(i)}</div><div style="min-width:0"><small class="muted">${l}</small><b>${v}</b></div></div>`;
 const empty = (t, d, act = '', i = 'film') => `<div class="empty"><div class="ei">${ic(i)}</div><h3>${t}</h3><p class="muted">${d}</p>${act}</div>`;
@@ -629,10 +782,14 @@ A.logout = async () => { await signOut(auth); toast(t('Tu es déconnecté.')) };
 
 /* ===== Panel administrateur ===== */
 LANG = 'fr'; document.documentElement.lang = 'fr'; auth.languageCode = 'fr';
-let SYNC = null, me = null, aview = 'overview', chSt = 'all', clipSt = 'pending', clipQ = '', userQ = '', userSt = 'all', paySt = 'pending', DATA = null;
+let SYNC = null, me = null, aview = 'overview', chSt = 'all', clipSt = 'pending', clipQ = '', userQ = '', userSt = 'all', paySt = 'pending', DATA = null, tkSt = 'open', wnQ = '', logQ = '';
 const root = () => document.getElementById('root');
-const NAVA = [['overview', 'Vue d\'ensemble', 'chart'], ['clips', 'Clips à valider', 'film'], ['channels', 'Chaînes', 'link'], ['users', 'Utilisateurs', 'users'], ['campaigns', 'Campagnes', 'megaphone'], ['payouts', 'Retraits', 'wallet'], ['ranks', 'Rangs', 'trophy'], ['settings', 'Paramètres', 'settings']];
-const TA = { overview: 'Vue d\'ensemble', clips: 'Modération des clips', channels: 'Vérification des chaînes', users: 'Utilisateurs', campaigns: 'Campagnes', payouts: 'Demandes de retrait', ranks: 'Système de rangs', settings: 'Paramètres' };
+const NAVA = [['overview', 'Vue d\'ensemble', 'chart'], ['clips', 'Clips à valider', 'film'], ['support', 'Assistance', 'support'], ['payouts', 'Retraits', 'wallet'], ['users', 'Utilisateurs', 'users'], ['warnings', 'Avertissements', 'alert'], ['campaigns', 'Campagnes', 'megaphone'], ['channels', 'Chaînes', 'link'], ['log', 'Journal', 'file'], ['ranks', 'Rangs', 'trophy'], ['settings', 'Paramètres', 'settings']];
+const TA = { overview: 'Vue d\'ensemble', clips: 'Modération des clips', channels: 'Vérification des chaînes', users: 'Utilisateurs', campaigns: 'Campagnes', payouts: 'Demandes de retrait', ranks: 'Système de rangs', settings: 'Paramètres', support: 'Assistance', warnings: 'Avertissements', log: 'Journal des actions' };
+const BOTTOMA = ['overview', 'clips', 'support', 'payouts'];
+/* trace côté navigateur pour les actions admin faites directement dans la base (retraits, suppressions, campagnes) */
+const logDoc = (b, action, targetUid, detail) => b.set(doc(collection(db, 'adminLog')), { action, targetUid: targetUid || '', detail: String(detail || '').slice(0, 500), by: me.email.toLowerCase(), byUid: auth.currentUser.uid, createdAt: serverTimestamp() });
+const notifDoc = (b, userId, type, title, body, vars, link) => b.set(doc(collection(db, 'notifications')), { userId, type, title, body, vars: vars || {}, link: link || null, read: false, createdAt: serverTimestamp() });
 
 root().innerHTML = '<div class="boot"><div class="loader"></div></div>';
 onAuthStateChanged(auth, async u => {
@@ -658,7 +815,6 @@ function renderDenied(email) {
   root().innerHTML = `<div class="login"><div class="card center"><div class="logo" style="justify-content:center">${logo('ADMIN')}</div><div class="empty"><div class="ei">${ic('lock')}</div><h3>Accès refusé</h3><p class="muted">Le compte ${esc(email || '')} n'a pas les droits administrateur.</p>
   <div class="row gap" style="justify-content:center"><a class="btn ghost" href="index.html">Aller au site</a><button class="btn primary" data-a="logout">Changer de compte</button></div></div></div></div>`;
 }
-A.go = v => show(v);
 
 /* ---------- Données ---------- */
 /* Statistiques publiques des campagnes (vues, clippers, clips, top comptes), recalculées par l'admin */
@@ -674,10 +830,12 @@ async function syncCampaignStats(camps, clips) {
   if (n) { try { await b.commit() } catch (e) { console.warn('stats', e) } }
 }
 async function loadData() {
-  const [users, clips, camps, pays, chs, sy, sl] = await Promise.all([
+  const [users, clips, camps, pays, chs, sy, sl, tks, wns, lg, mj] = await Promise.all([
     getDocs(collection(db, 'users')), getDocs(query(collection(db, 'clips'), orderBy('createdAt', 'desc'), limit(2000))),
     getDocs(collection(db, 'campaigns')), getDocs(query(collection(db, 'payouts'), orderBy('createdAt', 'desc'), limit(2000))), getDocs(collection(db, 'channels')),
-    getDoc(doc(db, 'settings', 'sync')).catch(() => null), getDoc(doc(db, 'settings', 'syncLog')).catch(() => null)
+    getDoc(doc(db, 'settings', 'sync')).catch(() => null), getDoc(doc(db, 'settings', 'syncLog')).catch(() => null),
+    getDocs(collection(db, 'tickets')).catch(() => null), getDocs(collection(db, 'warnings')).catch(() => null),
+    getDocs(query(collection(db, 'adminLog'), orderBy('createdAt', 'desc'), limit(400))).catch(() => null), getDocs(collection(db, 'mailJobs')).catch(() => null)
   ]);
   SYNC = sy && sy.exists() ? { ...sy.data(), errors: sl && sl.exists() ? sl.data().errors || [] : [] } : null; if (CFG === undefined) await loadConfig();
   const U = {}; listOf(users).forEach(u => U[u.id] = u);
@@ -688,7 +846,9 @@ async function loadData() {
   const campsL = listOf(camps).sort(byNewest); campsL.forEach(k => k.nClips = clipsL.filter(c => c.campaignId === k.id).length);
   const chL = listOf(chs).sort(byNewest); chL.forEach(c => c.user = U[c.userId]);
   await syncCampaignStats(campsL, clipsL);
-  DATA = { channels: chL, U, users: Object.values(U).filter(u => u.status !== 'deleted').sort(byNewest), clips: clipsL, camps: campsL, pays: paysL };
+  const MJ = {}; if (mj) listOf(mj).forEach(j => MJ[j.id] = j);
+  DATA = { channels: chL, U, users: Object.values(U).filter(u => u.status !== 'deleted').sort(byNewest), clips: clipsL, camps: campsL, pays: paysL,
+    tickets: tks ? listOf(tks).sort((a, b) => tms(b.updatedAt) - tms(a.updatedAt)) : [], warnings: wns ? listOf(wns).sort(byNewest) : [], log: lg ? listOf(lg) : [], mail: MJ };
 }
 async function show(v, silent) {
   aview = v;
@@ -702,14 +862,18 @@ async function show(v, silent) {
   }
 }
 function renderShell(content) {
-  const cnt = DATA ? { clips: DATA.clips.filter(c => c.status === 'pending').length, payouts: DATA.pays.filter(p => p.status === 'pending').length } : {};
+  const cnt = DATA ? { clips: DATA.clips.filter(c => c.status === 'pending').length, payouts: DATA.pays.filter(p => p.status === 'pending').length, support: DATA.tickets.filter(x => x.unreadAdmin && x.status !== 'resolved').length } : {};
+  const moreCnt = cnt.support || 0, moreOn = !BOTTOMA.includes(aview);
   root().innerHTML = `<div class="app">
   <div class="mtop"><div class="logo">${logo('ADMIN')}</div><div class="row gap"><a class="icon-btn" href="index.html" target="_blank" rel="noopener" aria-label="Voir le site">${ic('ext')}</a><button class="icon-btn" data-a="logout" aria-label="Déconnexion">${ic('logout')}</button></div></div>
   <aside class="side"><div class="logo">${logo('ADMIN')}</div><nav>${NAVA.map(([k, l, i]) => `<button class="nav ${aview === k ? 'on' : ''}" data-a="go" data-v="${k}">${ic(i)}<span>${l}</span>${cnt[k] ? `<span class="cnt">${cnt[k]}</span>` : ''}</button>`).join('')}</nav>
   <div class="side-foot"><div class="me">${avatar(me.name, me.photo, '#19E3B5')}<div style="min-width:0"><b>${esc(me.name)}</b><small class="muted">${esc(me.email)}</small></div></div><a class="nav" href="index.html" target="_blank" rel="noopener">${ic('ext')}<span>Voir le site clipper</span></a><button class="nav" data-a="logout">${ic('logout')}<span>Déconnexion</span></button></div></aside>
   <main class="main"><header class="top"><div><h1>${TA[aview]}</h1><p class="muted small">Connecté en tant qu'administrateur</p></div>${aview === 'campaigns' ? `<button class="btn primary" data-a="campForm">${ic('plus')}<span>Nouvelle campagne</span></button>` : `<button class="icon-btn" data-a="go" data-v="${aview}" title="Actualiser" aria-label="Actualiser">${ic('refresh')}</button>`}</header>${content}</main>
-  <nav class="bottom">${NAVA.map(([k, l, i]) => `<a class="${aview === k ? 'on' : ''}" data-a="go" data-v="${k}">${ic(i)}${l.split(' ')[0]}${cnt[k] ? `<span class="cnt">${cnt[k]}</span>` : ''}</a>`).join('')}</nav></div>`;
+  <nav class="bottom">${NAVA.filter(n => BOTTOMA.includes(n[0])).map(([k, l, i]) => `<a class="${aview === k ? 'on' : ''}" data-a="go" data-v="${k}">${ic(i)}${l.split(' ')[0]}${cnt[k] ? `<span class="cnt">${cnt[k]}</span>` : ''}</a>`).join('')}<a class="${moreOn ? 'on' : ''}" data-a="amore">${ic('dots')}Plus</a></nav></div>`;
 }
+A.amore = () => openModal('Menu', `<div class="mlist">${NAVA.filter(n => !BOTTOMA.includes(n[0])).map(([k, l, i]) => `<button class="mitem" data-a="go" data-v="${k}"><span class="mic">${ic(i)}</span><span class="grow"><b>${l}</b></span>${k === 'support' && DATA ? cntBadge(DATA.tickets.filter(x => x.unreadAdmin && x.status !== 'resolved').length) : ''}</button>`).join('')}<a class="mitem" href="index.html" target="_blank" rel="noopener"><span class="mic">${ic('ext')}</span><span class="grow"><b>Voir le site clipper</b></span></a><button class="mitem danger" data-a="logout"><span class="mic">${ic('logout')}</span><span class="grow"><b>Déconnexion</b></span></button></div>`);
+const cntBadge = n => n ? `<span class="cnt">${n}</span>` : '';
+A.go = v => { closeModal(); show(v) };
 const uName = u => u ? (u.status === 'deleted' ? 'Compte supprimé' : (u.name || u.email)) : 'Utilisateur supprimé';
 
 /* ---------- Vues ---------- */
@@ -728,8 +892,9 @@ const AV = {
     <div class="card"><div class="card-h"><h3>Top clippers</h3></div>${top.length ? top.map((x, i) => { const r = rankOf(x.views || 0).cur; return `<div class="lb-r"><span class="pos p${i + 1}">${i + 1}</span><div data-a="userDetail" data-v="${esc(x.id)}">${avatar(x.name, x.photo, r.color, 'sm')}</div><div class="grow"><b>${esc(x.pseudo || x.name)}</b><small style="color:${safeColor(r.color)}">${esc(r.name)}</small></div><b>${nf(x.views || 0)} vues</b></div>` }).join('') : empty('Aucun clipper pour l\'instant', 'Les inscrits apparaîtront ici.', '', 'users')}</div></div>`;
   },
   clips() {
-    const all = DATA.clips, c = { all: all.length }; ['pending', 'approved', 'rejected'].forEach(s => c[s] = all.filter(x => x.status === s).length);
-    return `<div class="tabs">${[['pending', 'En attente'], ['approved', 'Approuvés'], ['rejected', 'Refusés'], ['all', 'Tous']].map(([k, l]) => `<button class="tab ${clipSt === k ? 'on' : ''}" data-a="clipTab" data-v="${k}">${l}<span>${c[k]}</span></button>`).join('')}</div>
+    const all = DATA.clips, c = { all: all.length }; ['pending', 'needs_fix', 'approved', 'rejected'].forEach(s => c[s] = all.filter(x => x.status === s).length);
+    return `<div class="hint" style="margin-bottom:14px"><b style="color:var(--text)">Validation manuelle</b> : chaque vidéo soumise attend ta décision. Approuve-la, demande une correction (le clipper reçoit tes consignes et peut la renvoyer) ou rejette-la avec un motif. Le clipper est prévenu dans ses notifications.</div>
+    <div class="tabs">${[['pending', 'En attente de validation'], ['needs_fix', 'À corriger'], ['approved', 'Approuvées'], ['rejected', 'Rejetées'], ['all', 'Toutes']].map(([k, l]) => `<button class="tab ${clipSt === k ? 'on' : ''}" data-a="clipTab" data-v="${k}">${l}<span>${c[k]}</span></button>`).join('')}</div>
     <div class="toolbar"><div class="search">${ic('search')}<input placeholder="Rechercher un clipper, un titre, une campagne…" value="${esc(clipQ)}" data-in="clipSearch"></div></div><div class="card" id="clipList"></div>`;
   },
   users() {
@@ -741,9 +906,9 @@ const AV = {
     return `<div class="card">${list.length ? `<div class="list">${list.map(k => {
       const pct = campPct(k), ended = campEnded(k) && k.status === 'active';
       return `<div class="li"><div class="minicov" style='${coverStyle(k)}'></div><div class="grow"><b>${esc(k.title)}</b><small class="muted">${esc(k.brand)} · ${(k.type || 'clipping') === 'ugc' ? 'UGC' : 'Clipping'} · ${money(k.rate)}/1K · ${esc(platLine(k))}</small>
-      <small class="muted">${nf(k.views || 0)} vues · ${k.clippers || 0} clippers · ${k.clipsCount || 0} clips · ${esc(endsIn(k))}</small>
+      <small class="muted">${nf(k.views || 0)} vues · ${k.clippers || 0} clippers · ${k.clipsCount || 0} clips · ${esc(endsIn(k))}</small>${mailLine(k)}
       <div class="bar sm" style="max-width:320px"><i style="width:${pct}%"></i></div><small class="muted">${money(k.spent)} / ${money(k.budget)} (${Math.round(pct)} %)</small></div>${ended ? '<span class="badge red">Date dépassée</span>' : badge(k.status, CST)}
-      <div class="acts"><button class="icon-btn" title="Modifier" data-a="campForm" data-v="${esc(k.id)}">${ic('edit')}</button>
+      <div class="acts">${k.status === 'active' && !campEnded(k) && !(DATA.mail[k.id] && DATA.mail[k.id].done) ? `<button class="icon-btn" title="${DATA.mail[k.id] ? 'Relancer l\'envoi' : 'Annoncer par e-mail'}" aria-label="Annoncer par e-mail" data-a="announce" data-v="${esc(k.id)}">${ic('mail')}</button>` : ''}<button class="icon-btn" title="Modifier" data-a="campForm" data-v="${esc(k.id)}">${ic('edit')}</button>
       <button class="icon-btn" title="${k.status === 'active' ? 'Mettre en pause' : 'Activer'}" data-a="toggleCamp" data-v="${esc(k.id)}">${ic(k.status === 'active' ? 'clock' : 'check')}</button>
       <button class="icon-btn red" title="Supprimer" data-a="delCamp" data-v="${esc(k.id)}">${ic('trash')}</button></div></div>`
     }).join('')}</div>` : empty('Aucune campagne', 'Crée ta première campagne pour attirer des clippers.', '<button class="btn primary" data-a="campForm">Nouvelle campagne</button>', 'megaphone')}</div>`;
@@ -768,8 +933,7 @@ const AV = {
     <label>Retrait minimum ($)<input name="minPayout" type="number" min="1" step="0.01" required value="${+SET.minPayout || 20}"></label>
     <label>Email du support<input name="supportEmail" type="email" maxlength="120" value="${esc(SET.supportEmail)}"></label>
     <label>Lien « Formation » (guide pour les clippers, optionnel)<input name="trainingUrl" type="url" maxlength="300" placeholder="https://…" value="${esc(SET.trainingUrl || '')}"></label>
-    <label class="row gap" style="flex-direction:row;align-items:center"><input type="checkbox" name="autoApprove" style="width:auto" ${SET.autoApprove === false ? '' : 'checked'}> Approbation automatique des clips (recommandé)</label>
-    <p class="muted small" style="margin-top:-8px">Activée : un clip qui passe les contrôles automatiques (chaîne vérifiée, date, doublon, budget) est validé tout de suite. Désactivée : il attend ton approbation, ses vues étant déjà suivies.</p>
+    <p class="hint">Validation des vidéos : <b style="color:var(--text)">manuelle</b>. Chaque vidéo soumise attend ton approbation dans « Clips à valider » (ses vues sont suivies pendant ce temps).</p>
     <label>Adresse du serveur API (vide si le site est hébergé sur Vercel)<input name="apiBase" type="url" maxlength="200" placeholder="https://clexiq.vercel.app" value="${esc(SET.apiBase || '')}" autocomplete="off" spellcheck="false"></label><button class="btn primary" type="submit">Enregistrer</button></form></div>
     <div class="stack">${syncCard()}<div class="card"><h3 style="margin-bottom:6px">Mon compte administrateur</h3><p class="muted small" style="margin-bottom:14px">${esc(me.email)} — le rôle admin est défini dans les règles de sécurité Firebase et ne peut pas être obtenu depuis le site.</p>
     <button class="btn ghost block" data-a="logout">${ic('logout')} Se déconnecter</button></div>
@@ -781,7 +945,7 @@ const AV = {
 function syncCard() {
   const P = CFG && CFG.platforms, row = (p, ok) => `<div class="row between"><span>${p}</span>${ok ? '<span class="badge green">Activé</span>' : '<span class="badge amber">Clés manquantes</span>'}</div>`;
   return `<div class="card"><h3 style="margin-bottom:10px">Serveur & synchronisation</h3>
-  ${CFG ? `<div class="stack" style="gap:8px;margin-bottom:12px">${row('YouTube', P.YouTube)}${row('TikTok', P.TikTok)}${row('Instagram', P.Instagram)}</div>` : '<p class="notice" style="margin-bottom:12px">Serveur API injoignable : vérifie le déploiement Vercel et l\'adresse du serveur ci-contre.</p>'}
+  ${CFG ? `<div class="stack" style="gap:8px;margin-bottom:12px">${row('YouTube', P.YouTube)}${row('TikTok', P.TikTok)}${row('Instagram', P.Instagram)}<div class="row between"><span>E-mails (SMTP)</span>${CFG.email ? '<span class="badge green">Activé</span>' : '<span class="badge amber">Non configuré</span>'}</div></div>${CFG.email ? '' : '<p class="hint" style="margin-bottom:12px">Pour envoyer de vrais e-mails, ajoute SMTP_USER et SMTP_PASS (mot de passe d\'application Gmail) dans Vercel, puis redéploie. Sans eux, aucun e-mail n\'est envoyé : les clippers reçoivent seulement la notification dans l\'application.</p>'}` : '<p class="notice" style="margin-bottom:12px">Serveur API injoignable : vérifie le déploiement Vercel et l\'adresse du serveur ci-contre.</p>'}
   <p class="muted small">${SYNC && SYNC.lastRunAt ? `Dernière synchro : <b>${ago(SYNC.lastRunAt)}</b> · ${SYNC.checked || 0} clip(s) vérifié(s), ${SYNC.updated || 0} mis à jour, ${SYNC.removed || 0} retiré(s), ${SYNC.channelsVerified || 0} chaîne(s) vérifiée(s)` : 'Aucune synchro enregistrée pour l\'instant.'}</p>
   ${SYNC && SYNC.errors && SYNC.errors.length ? `<details style="margin-top:8px"><summary class="amber-t small">${SYNC.errors.length} erreur(s) au dernier passage</summary><ul class="muted small" style="padding-left:18px">${SYNC.errors.map(e => `<li>${esc(e)}</li>`).join('')}</ul></details>` : ''}
   <button class="btn ghost block" style="margin-top:12px" data-a="runSync" ${CFG ? '' : 'disabled'}>${ic('refresh')} Lancer une synchro maintenant</button></div>`;
@@ -804,7 +968,15 @@ function fillChannels() {
 }
 A.chDelete = async id => { if (!await confirmBox('Déconnecter cette chaîne ?', 'Son autorisation est effacée du serveur et elle pourra être reliée par un autre compte.', 'Déconnecter')) return; try { await api('channels/unlink', { method: 'POST', body: { id } }); toast('Chaîne déconnectée.'); show(aview, true) } catch (e) { toast(e.message, 'err') } };
 A.copy = async v => { try { await navigator.clipboard.writeText(v); toast('Copié !') } catch (e) { toast(v) } };
-A.resetCountry = async id => { if (!await confirmBox('Débloquer le pays ?', 'L\'utilisateur pourra choisir à nouveau son pays (une seule fois).', 'Débloquer', false)) return; try { await updateDoc(doc(db, 'users', id), { country: '' }); closeModal(); toast('Pays débloqué.'); show(aview, true) } catch (e) { toast(errMsg(e), 'err') } };
+A.resetCountry = async id => { if (!await confirmBox('Débloquer le pays ?', 'L\'utilisateur devra choisir à nouveau son pays (une seule fois) à sa prochaine connexion. L\'action est enregistrée dans le journal.', 'Débloquer', false)) return; try { await api('admin/user', { method: 'POST', body: { id, action: 'country', country: '' } }); closeModal(); toast('Pays débloqué.'); show(aview, true) } catch (e) { toast(e.message, 'err') } };
+A.setCountry = id => {
+  const u = DATA.U[id]; if (!u) return;
+  openModal('Corriger le pays', `<form id="scF" class="form"><p class="muted small">Mécanisme exceptionnel : le pays est normalement définitif. Utilise-le seulement sur demande justifiée de l'utilisateur. L'action est enregistrée dans le journal.</p>
+  <label>Pays actuel<input readonly value="${esc(u.country ? flag(u.country) + ' ' + countryName(u.country) : 'Non défini')}"></label>
+  <label>Nouveau pays<select name="c" required><option value="">Choisir…</option>${countryOptions().map(([c, n]) => `<option value="${c}">${flag(c)} ${esc(n)}</option>`).join('')}</select></label>
+  <button class="btn primary block" type="submit">Enregistrer le nouveau pays</button></form>`);
+  $('#scF').onsubmit = async e => { e.preventDefault(); const c = new FormData(e.target).get('c'), btn = e.target.querySelector('button'); if (!c) return toast('Choisis un pays.', 'err'); busy(btn, true); try { await api('admin/user', { method: 'POST', body: { id, action: 'country', country: c } }); closeModal(); toast('Pays mis à jour.'); show(aview, true) } catch (err) { toast(err.message, 'err') } finally { busy(btn, false) } };
+};
 A.resetPseudo = async id => { const u = DATA.U[id]; if (!u || !u.pseudo) return; if (!await confirmBox('Débloquer le pseudo ?', `Le pseudo <b>${esc(u.pseudo)}</b> sera libéré et l'utilisateur devra en choisir un nouveau à sa prochaine connexion.`, 'Débloquer', false)) return; try { const b = writeBatch(db); b.update(doc(db, 'users', id), { pseudo: '' }); b.delete(doc(db, 'pseudos', u.pseudo)); b.set(doc(db, 'leaderboard', id), { name: '' }, { merge: true }); await b.commit(); closeModal(); toast('Pseudo débloqué.'); show(aview, true) } catch (e) { toast(errMsg(e), 'err') } };
 const isAdminEmail = e => (e || '').toLowerCase() === ADMIN_EMAIL;
 
@@ -817,17 +989,18 @@ function fillClips() {
   if (clipSt === 'pending') list.sort((a, b) => tms(a.createdAt) - tms(b.createdAt));
   box.innerHTML = list.length ? `<div class="list">${list.map(c => `<div class="li">${/^https:\/\//.test(c.thumb || '') ? `<div class="minicov" style='width:40px;height:56px;background-image:url("${esc(c.thumb)}")'></div>` : platIc(c.platform)}<div class="grow">${clipChecks(c).filter(x => x[0] === 'red').map(x => `<small class="red-t">⛔ ${esc(x[1])}</small>`).join('')}<a class="b" href="${safeUrl(c.url)}" target="_blank" rel="noopener noreferrer">${esc(c.title || 'Clip sans titre')} ${ic('ext')}</a>
   <small class="muted"><a data-a="userDetail" data-v="${esc(c.userId)}">${esc(uName(c.user))}</a>${c.channelHandle ? ' · @' + esc(c.channelHandle) : ''} · ${esc(c.campaignTitle || '—')} · ${ago(c.createdAt)}</small>
-  ${c.dup ? '<small class="amber-t">⚠ Ce lien a été soumis plusieurs fois</small>' : ''}${c.status === 'rejected' && c.reason ? `<small class="red-t">Motif : ${esc(c.reason)}</small>` : ''}</div>
+  ${c.dup ? '<small class="amber-t">⚠ Ce lien a été soumis plusieurs fois</small>' : ''}${c.status === 'rejected' && c.reason ? `<small class="red-t">Motif : ${esc(c.reason)}</small>` : ''}${c.status === 'needs_fix' && c.reason ? `<small class="amber-t">Correction demandée : ${esc(c.reason)}</small>` : ''}${c.fixNote && c.status === 'pending' ? `<small class="muted">Renvoyé après correction (« ${esc(c.fixNote)} »)</small>` : ''}</div>
   <div class="nums"><b>${nf(Math.max(+c.views || 0, +c.declaredViews || 0))} vues</b><small class="${c.status === 'approved' ? 'green-t' : 'muted'}">${c.status === 'approved' ? money(clipEarn(c)) : 'non payées'}</small></div>${badge(c.status)}
-  <div class="acts">${c.status !== 'approved' ? `<button class="icon-btn green" title="Approuver" data-a="approve" data-v="${esc(c.id)}">${ic('check')}</button>` : `<button class="icon-btn" title="Détails" data-a="approve" data-v="${esc(c.id)}">${ic('eye')}</button>`}
-  ${c.status !== 'rejected' ? `<button class="icon-btn red" title="Refuser" data-a="reject" data-v="${esc(c.id)}">${ic('x')}</button>` : ''}
+  <div class="acts">${c.status === 'pending' || c.status === 'needs_fix' ? `<button class="icon-btn green" title="Examiner / approuver" aria-label="Examiner / approuver" data-a="approve" data-v="${esc(c.id)}">${ic('check')}</button>` : `<button class="icon-btn" title="Détails" data-a="approve" data-v="${esc(c.id)}">${ic('eye')}</button>`}
+  ${c.status === 'pending' ? `<button class="icon-btn" title="Demander une correction" aria-label="Demander une correction" data-a="fixClip" data-v="${esc(c.id)}">${ic('edit')}</button>` : ''}
+  ${c.status !== 'rejected' ? `<button class="icon-btn red" title="Rejeter" aria-label="Rejeter" data-a="reject" data-v="${esc(c.id)}">${ic('x')}</button>` : ''}
   <button class="icon-btn red" title="Supprimer" data-a="delClip" data-v="${esc(c.id)}">${ic('trash')}</button></div></div>`).join('')}</div>` : empty('Aucun clip', 'Aucun résultat pour ce filtre.', '', 'film');
 }
 A.userSearch = v => { userQ = v; fillUsers() };
 A.userFilter = v => { userSt = v; fillUsers() };
 function fillUsers() {
   const box = $('#userList'); if (!box) return; const qq = userQ.trim().toLowerCase();
-  const list = DATA.users.filter(u => userSt === 'all' || u.status === userSt).filter(u => !qq || [u.name, u.email, u.handle, u.country].join(' ').toLowerCase().includes(qq));
+  const list = DATA.users.filter(u => userSt === 'all' || u.status === userSt).filter(u => !qq || [u.name, u.email, u.pseudo, u.handle, u.country].join(' ').toLowerCase().includes(qq));
   box.innerHTML = list.length ? `<div class="list">${list.map(u => {
     const r = rankOf(u.views || 0).cur, n = DATA.clips.filter(c => c.userId === u.id).length, adm = isAdminEmail(u.email);
     return `<div class="li"><div data-a="userDetail" data-v="${esc(u.id)}">${avatar(u.name, u.photo, r.color)}</div>
@@ -835,7 +1008,7 @@ function fillUsers() {
     <div class="nums hide-m"><b>${nf(u.views || 0)} vues</b><small class="muted">${n} clips · solde ${money(balanceOf(u))}</small></div>
     ${u.status === 'active' ? '<span class="badge green">Actif</span>' : '<span class="badge red">Suspendu</span>'}
     <div class="acts"><button class="icon-btn" title="Détails" data-a="userDetail" data-v="${esc(u.id)}">${ic('eye')}</button>
-    ${adm ? '' : `<button class="icon-btn" title="${u.status === 'active' ? 'Suspendre' : 'Réactiver'}" data-a="toggleUser" data-v="${esc(u.id)}">${ic(u.status === 'active' ? 'ban' : 'check')}</button><button class="icon-btn red" title="Supprimer le compte" data-a="delUser" data-v="${esc(u.id)}">${ic('trash')}</button>`}</div></div>`
+    ${adm ? '' : `<button class="icon-btn" title="Avertir" aria-label="Avertir" data-a="warnForm" data-v="${esc(u.id)}">${ic('alert')}</button><button class="icon-btn" title="${u.status === 'active' ? 'Suspendre' : 'Réactiver'}" data-a="toggleUser" data-v="${esc(u.id)}">${ic(u.status === 'active' ? 'ban' : 'check')}</button><button class="icon-btn red" title="Supprimer le compte" data-a="delUser" data-v="${esc(u.id)}">${ic('trash')}</button>`}</div></div>`
   }).join('')}</div>` : empty('Aucun utilisateur', 'Aucun résultat.', '', 'users');
 }
 A.payTab = k => { paySt = k; renderShell(AV.payouts()) };
@@ -858,19 +1031,38 @@ A.approve = id => {
   openModal(edit ? 'Détails du clip' : 'Approuver le clip', `<div class="hint" style="margin-bottom:14px"><b style="color:var(--text)">${esc(c.title || 'Clip sans titre')}</b><br>${esc(uName(c.user))} · ${esc(c.platform)} · ${esc(c.campaignTitle || '—')}<br>Compte : @${esc(c.channelHandle || '—')} · Vues relevées : <b>${nf(Math.max(+c.views || 0, +c.declaredViews || 0))}</b><br><a href="${safeUrl(c.url)}" target="_blank" rel="noopener noreferrer">Ouvrir la publication ↗</a></div>
   <div class="stack" style="gap:6px;margin-bottom:14px">${clipChecks(c).map(([cl, txt]) => `<small class="${cl ? cl + '-t' : 'muted'}">${cl === 'red' ? '⛔' : cl === 'amber' ? '⚠' : '•'} ${esc(txt)}</small>`).join('')}</div>
   <p class="muted small" style="margin-bottom:14px">Les vues et les gains ne se saisissent pas à la main : ils viennent de l'API ${esc(c.platform)} et sont recalculés à chaque synchro (RPM ${money(c.rate)} / 1K, plafonné au budget).</p>
-  ${edit ? '' : `<button class="btn success block" data-a="approveGo" data-v="${esc(id)}">${ic('check')} Approuver le clip</button>`}`);
+  ${edit || c.status === 'rejected' ? (c.status === 'rejected' ? '<p class="hint">Vidéo rejetée : elle ne peut plus être approuvée. Le clipper peut soumettre une autre vidéo.</p>' : '') : `<div class="stack" style="gap:8px"><button class="btn success block" data-a="approveGo" data-v="${esc(id)}">${ic('check')} Approuver la vidéo</button>${c.status === 'pending' ? `<button class="btn ghost block" data-a="fixClip" data-v="${esc(id)}">${ic('edit')} Demander une correction</button>` : ''}<button class="btn ghost block red-t" data-a="reject" data-v="${esc(id)}">${ic('x')} Rejeter</button></div>`}`);
 };
-A.approveGo = async (id, el) => { busy(el, true); try { await modClip(id, 'approve'); closeModal(); toast('Clip approuvé.'); show(aview, true) } catch (e) { toast(e.message, 'err') } finally { busy(el, false) } };
-const REASONS = ['Hors brief', 'Lien invalide ou vidéo supprimée', 'Vues suspectes (bots ou achat de vues)', 'Qualité insuffisante', 'Doublon', 'Marque non mentionnée'];
+A.approveGo = async (id, el) => { busy(el, true); try { await modClip(id, 'approve'); closeModal(); toast('Vidéo approuvée. Le clipper a été prévenu.'); show(aview, true) } catch (e) { toast(e.message, 'err') } finally { busy(el, false) } };
+const FIXES = ['Ajouter la mention de la marque dans la légende', 'Ajouter le lien ou le hashtag demandé', 'Respecter le format vertical 9:16', 'Retirer la musique ou le logo non autorisé', 'Autre (préciser)'];
+A.fixClip = id => {
+  const c = getClip(id);
+  openModal('Demander une correction', `<form id="fxF" class="form"><div class="hint"><b style="color:var(--text)">${esc(c.title || 'Clip sans titre')}</b><br>${esc(uName(c.user))} · @${esc(c.channelHandle || '—')}</div>
+  <label>Correction attendue<select name="r">${FIXES.map(r => `<option>${r}</option>`).join('')}</select></label>
+  <label>Consignes pour le clipper<textarea name="d" maxlength="500" required placeholder="Explique précisément ce qu'il doit modifier…"></textarea></label>
+  <p class="muted small">Le clip passe en « À corriger ». Le clipper reçoit une notification avec tes consignes et pourra le renvoyer une fois corrigé.</p>
+  <button class="btn primary block" type="submit">${ic('edit')} Envoyer la demande de correction</button></form>`);
+  $('#fxF').onsubmit = async e => {
+    e.preventDefault(); const f = Object.fromEntries(new FormData(e.target)), btn = e.target.querySelector('button'), d = f.d.trim();
+    const reason = (f.r.startsWith('Autre') ? d : f.r + (d ? ' : ' + d : '')).slice(0, 500);
+    if (reason.length < 5) return toast('Explique ce qui doit être corrigé.', 'err');
+    busy(btn, true); try { await modClip(id, 'fix', reason); closeModal(); toast('Correction demandée. Le clipper a été prévenu.'); show(aview, true) } catch (err) { toast(err.message, 'err') } finally { busy(btn, false) }
+  };
+};
+const REASONS = ['Hors brief', 'Lien invalide ou vidéo supprimée', 'Vues suspectes (bots ou achat de vues)', 'Qualité insuffisante', 'Doublon', 'Marque non mentionnée', 'Contenu inapproprié', 'Autre motif'];
 A.reject = id => {
   const c = getClip(id);
-  openModal('Refuser le clip', `<form id="rjF" class="form"><label>Motif<select name="r">${REASONS.map(r => `<option>${r}</option>`).join('')}</select></label>
-  <label>Précision pour le clipper (optionnel)<textarea name="d" maxlength="200" placeholder="Explique ce qui doit être corrigé…"></textarea></label>
-  ${c.status === 'approved' ? '<p class="hint">Ce clip était approuvé : ses gains seront retirés du solde du clipper.</p>' : ''}
-  <button class="btn danger block" type="submit">${ic('x')} Refuser le clip</button></form>`);
+  openModal('Rejeter la vidéo', `<form id="rjF" class="form"><label>Motif du rejet<select name="r">${REASONS.map(r => `<option>${r}</option>`).join('')}</select></label>
+  <label>Précision pour le clipper<textarea name="d" maxlength="300" placeholder="Explique la raison du rejet (obligatoire pour « Autre motif »)…"></textarea></label>
+  ${c.status === 'approved' ? '<p class="hint">Cette vidéo était approuvée : ses gains seront retirés du solde du clipper.</p>' : ''}
+  <p class="muted small">Le clipper reçoit une notification avec ce motif.</p>
+  <button class="btn danger block" type="submit">${ic('x')} Rejeter la vidéo</button></form>`);
   $('#rjF').onsubmit = async e => {
-    e.preventDefault(); const f = Object.fromEntries(new FormData(e.target)), btn = e.target.querySelector('button'); busy(btn, true);
-    try { await modClip(id, 'reject', (f.r + (f.d.trim() ? ' : ' + f.d.trim() : '')).slice(0, 300)); closeModal(); toast('Clip refusé.'); show(aview, true) } catch (err) { toast(err.message, 'err') } finally { busy(btn, false) }
+    e.preventDefault(); const f = Object.fromEntries(new FormData(e.target)), btn = e.target.querySelector('button'), d = f.d.trim();
+    if (f.r === 'Autre motif' && d.length < 3) return toast('Précise le motif du rejet.', 'err');
+    const reason = (f.r === 'Autre motif' ? d : f.r + (d ? ' : ' + d : '')).slice(0, 300);
+    busy(btn, true);
+    try { await modClip(id, 'reject', reason); closeModal(); toast('Vidéo rejetée. Le clipper a été prévenu.'); show(aview, true) } catch (err) { toast(err.message, 'err') } finally { busy(btn, false) }
   };
 };
 A.delClip = async id => {
@@ -888,17 +1080,22 @@ A.userDetail = id => {
   <div class="kv"><div><small class="muted">Rang</small><b style="color:${safeColor(r.color)}">${esc(r.name)}</b></div><div><small class="muted">Vues vérifiées</small><b>${nf(u.views || 0)}</b></div><div><small class="muted">Clips</small><b>${cnt('approved')} ✓ · ${cnt('pending')} ⏳ · ${cnt('rejected')} ✕</b></div>
   <div><small class="muted">Gains totaux</small><b>${money(u.earned)}</b></div><div><small class="muted">Payé</small><b>${money(u.paid)}</b></div><div><small class="muted">Solde</small><b class="green-t">${money(balanceOf(u))}</b></div></div>
   <h3 style="margin:6px 0">Chaînes</h3>${(() => { const L = DATA.channels.filter(c => c.userId === id); return L.length ? `<div class="list">${L.map(c => `<div class="li">${platIc(c.platform)}<div class="grow"><a class="b" href="${safeUrl(chLink(c))}" target="_blank" rel="noopener noreferrer">@${esc(c.handle)} ${ic('ext')}</a><small class="muted">${esc(c.platform)} · code ${esc(c.code)}</small></div>${badge(c.status, CHST)}</div>`).join('')}</div>` : '<p class="muted small">Aucune chaîne.</p>' })()}
+  ${(() => { const W = DATA.warnings.filter(w => w.userId === id); return W.length ? `<h3 style="margin:14px 0 6px">Avertissements (${W.length})</h3><div class="list">${W.slice(0, 5).map(w => `<div class="li"><span class="badge ${w.level === 'final' ? 'red' : w.level === 'official' ? 'amber' : 'cyan'}">${esc(WL[w.level] || w.level)}</span><div class="grow"><b>${esc(w.title)}</b><small class="muted">${dt(w.createdAt)} · par ${esc(w.by)}</small></div></div>`).join('')}</div>` : '' })()}
   <h3 style="margin:14px 0 6px">Derniers clips</h3>${cl.length ? `<div class="list">${cl.slice(0, 10).map(c => `<div class="li">${platIc(c.platform)}<div class="grow"><a class="b" href="${safeUrl(c.url)}" target="_blank" rel="noopener noreferrer">${esc(c.title || 'Clip sans titre')}</a><small class="muted">${dt(c.createdAt)} · ${nf(c.status === 'approved' ? c.views : c.declaredViews)} vues</small></div>${badge(c.status)}</div>`).join('')}</div>` : '<p class="muted small">Aucun clip.</p>'}
-  ${adm ? '' : `<div class="modal-f wrap"><button class="btn ghost" data-a="sendReset" data-v="${esc(u.email)}">${ic('mail')} Lien de réinitialisation</button>${u.country ? `<button class="btn ghost" data-a="resetCountry" data-v="${esc(u.id)}">Débloquer le pays</button>` : ''}${u.pseudo ? `<button class="btn ghost" data-a="resetPseudo" data-v="${esc(u.id)}">Débloquer le pseudo</button>` : ''}<button class="btn ghost" data-a="toggleUser" data-v="${esc(u.id)}">${ic(u.status === 'active' ? 'ban' : 'check')} ${u.status === 'active' ? 'Suspendre' : 'Réactiver'}</button><button class="btn danger" data-a="delUser" data-v="${esc(u.id)}">${ic('trash')} Supprimer</button></div>`}`, { wide: true });
+  ${adm ? '' : `<div class="modal-f wrap"><button class="btn ghost" data-a="sendReset" data-v="${esc(u.email)}">${ic('mail')} Lien de réinitialisation</button><button class="btn ghost" data-a="warnForm" data-v="${esc(u.id)}">${ic('alert')} Avertir</button><button class="btn ghost" data-a="setCountry" data-v="${esc(u.id)}">Corriger le pays</button>${u.country ? `<button class="btn ghost" data-a="resetCountry" data-v="${esc(u.id)}">Débloquer le pays</button>` : ''}${u.pseudo ? `<button class="btn ghost" data-a="resetPseudo" data-v="${esc(u.id)}">Débloquer le pseudo</button>` : ''}<button class="btn ghost" data-a="toggleUser" data-v="${esc(u.id)}">${ic(u.status === 'active' ? 'ban' : 'check')} ${u.status === 'active' ? 'Suspendre' : 'Réactiver'}</button><button class="btn danger" data-a="delUser" data-v="${esc(u.id)}">${ic('trash')} Supprimer</button></div>`}`, { wide: true });
 };
 A.toggleUser = async id => {
   const u = DATA.U[id]; if (!u || isAdminEmail(u.email)) return; const susp = u.status === 'active';
-  if (!await confirmBox((susp ? 'Suspendre ' : 'Réactiver ') + (u.name || u.email) + ' ?', susp ? 'Le compte sera bloqué : plus aucune connexion, soumission ni retrait possible.' : 'L\'utilisateur pourra de nouveau utiliser Clexiq.', susp ? 'Suspendre' : 'Réactiver', susp)) return;
-  try {
-    const b = writeBatch(db); b.update(doc(db, 'users', id), { status: susp ? 'suspended' : 'active' });
-    if (susp) b.delete(doc(db, 'leaderboard', id)); else b.set(doc(db, 'leaderboard', id), { name: u.name, handle: u.handle || '', photo: u.photo || '', views: u.views || 0 });
-    await b.commit(); toast(susp ? 'Compte suspendu.' : 'Compte réactivé.'); show(aview, true);
-  } catch (e) { toast(errMsg(e), 'err') }
+  let reason = '';
+  if (susp) {
+    reason = await new Promise(res => {
+      openModal('Suspendre ' + (u.pseudo || u.name || u.email) + ' ?', `<form id="spF" class="form"><p class="muted small">Le compte sera bloqué : plus aucune connexion, soumission ni retrait possible. Pense à envoyer d'abord un avertissement si ce n'est pas déjà fait.</p><label>Motif (enregistré dans le journal)<textarea name="r" maxlength="300" required placeholder="ex : achat de vues confirmé après dernier avertissement"></textarea></label><div class="modal-f"><button type="button" class="btn ghost" id="spNo">Annuler</button><button class="btn danger" type="submit">Suspendre</button></div></form>`);
+      $('#spNo').onclick = () => { closeModal(); res(null) };
+      $('#spF').onsubmit = e => { e.preventDefault(); const r = String(new FormData(e.target).get('r') || '').trim(); if (r.length < 3) return toast('Indique le motif.', 'err'); closeModal(); res(r) };
+    });
+    if (reason === null) return;
+  } else if (!await confirmBox('Réactiver ' + (u.pseudo || u.name || u.email) + ' ?', 'L\'utilisateur pourra de nouveau utiliser Clexiq.', 'Réactiver', false)) return;
+  try { await api('admin/user', { method: 'POST', body: { id, action: susp ? 'suspend' : 'reactivate', reason } }); toast(susp ? 'Compte suspendu.' : 'Compte réactivé.'); show(aview, true) } catch (e) { toast(e.message, 'err') }
 };
 A.delUser = async id => {
   const u = DATA.U[id]; if (!u || isAdminEmail(u.email)) return;
@@ -910,6 +1107,7 @@ A.delUser = async id => {
     for (const c of DATA.channels.filter(c => c.userId === id)) await api('channels/unlink', { method: 'POST', body: { id: c.id } });
     if (u.pseudo) ops.push(b => b.delete(doc(db, 'pseudos', u.pseudo)));
     ops.push(b => b.delete(doc(db, 'leaderboard', id)));
+    ops.push(b => logDoc(b, 'delete_user', id, (u.pseudo || u.name || '') + ' · ' + u.email));
     ops.push(b => b.set(doc(db, 'users', id), { name: 'Compte supprimé', email: u.email, handle: '', country: '', photo: '', status: 'deleted', createdAt: u.createdAt || serverTimestamp(), deletedAt: serverTimestamp(), views: 0, earned: 0, paid: 0, pending: 0, approved: 0, lastPayout: '' }));
     for (let i = 0; i < ops.length; i += 450) { const b = writeBatch(db); ops.slice(i, i + 450).forEach(f => f(b)); await b.commit() }
     closeModal(); toast('Compte supprimé.'); show(aview, true);
@@ -920,6 +1118,24 @@ A.sendReset = async email => {
 };
 
 /* ---------- Campagnes ---------- */
+const MST = { running: ['Envoi en cours', 'cyan'], done: ['Terminé', 'green'], not_configured: ['SMTP non configuré', 'amber'], waiting_quota: ['Quota du jour atteint, reprise demain', 'amber'], cancelled: ['Annulé', 'red'] };
+function mailLine(k) {
+  const j = DATA.mail[k.id]; if (!j) return '';
+  const [l, c] = MST[j.status] || [j.status, ''];
+  return `<small class="${c ? c + '-t' : 'muted'}">${ic('mail')} E-mails : ${esc(l)} · ${j.sent || 0} envoyé(s)${j.failed ? ' · ' + j.failed + ' échec(s)' : ''}${j.skipped ? ' · ' + j.skipped + ' désinscrit(s)' : ''} · ${j.notified || 0} notifié(s) dans l'app${j.lastError ? ' · dernière erreur : ' + esc(j.lastError) : ''}</small>`;
+}
+async function announceCamp(id, el) {
+  busy(el, true);
+  try {
+    const r = await api('admin/campaign/announce', { method: 'POST', body: { id } }), j = r.job || {};
+    toast(r.emailConfigured ? `Annonce : ${j.sent || 0} e-mail(s) envoyé(s)${j.failed ? ', ' + j.failed + ' échec(s)' : ''}, ${j.notified || 0} notification(s). ${j.done ? '' : 'La suite part automatiquement.'}` : `${j.notified || 0} clipper(s) prévenu(s) dans l'application. E-mails non envoyés : SMTP non configuré.`, r.emailConfigured ? 'ok' : 'err');
+  } catch (e) { toast('Annonce : ' + e.message, 'err') } finally { busy(el, false) }
+}
+A.announce = async (id, el) => {
+  const k = DATA.camps.find(c => c.id === id), j = DATA.mail[id];
+  if (!await confirmBox(j ? 'Relancer l\'envoi ?' : 'Annoncer « ' + k.title + ' » ?', j ? 'Seuls les clippers pas encore prévenus (ou dont l\'e-mail a échoué) recevront l\'e-mail : aucun doublon.' : 'Les clippers concernés reçoivent une notification et un e-mail (sauf ceux qui se sont désinscrits).', j ? 'Relancer' : 'Annoncer', false)) return;
+  await announceCamp(id, el); show('campaigns', true);
+};
 const dtLocal = x => { const d = x ? toDate(x) : null; if (!d) return ''; const p = n => String(n).padStart(2, '0'); return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}T${p(d.getHours())}:${p(d.getMinutes())}` };
 const linkRow = (l = {}) => `<div class="rowed"><input name="lk_label" maxlength="60" placeholder="Titre (ex : Brief complet)" value="${esc(l.label || '')}"><input name="lk_url" maxlength="500" placeholder="https://…" value="${esc(l.url || '')}"><button type="button" class="icon-btn red" data-a="rmRow" aria-label="Retirer">${ic('trash')}</button></div>`;
 const exRow = (e = {}) => `<div class="exrow"><label class="exthumb" style='${/^(https:\/\/|data:image\/)/.test(e.thumb || '') ? `background-image:url("${esc(e.thumb)}")` : ''}' title="Choisir une miniature">${e.thumb ? '' : '+'}<input type="file" accept="image/*" hidden data-ch="exThumb"><input type="hidden" name="ex_thumb" value="${esc(e.thumb || '')}"></label>
@@ -965,7 +1181,7 @@ A.campForm = async id => {
   <h3 style="margin-top:8px">5. Exemples de clips</h3><p class="muted small" style="margin-top:-8px">Montre aux clippers ce qui marche : miniature + titre + lien de la vidéo.</p>
   <div id="exRows">${(ex.examples || []).map(exRow).join('')}</div><button type="button" class="btn ghost sm" data-a="addEx">${ic('plus')} Ajouter un exemple</button>
   <label style="margin-top:8px">Couleur de secours (si pas d'image)<input name="color" type="color" value="${safeColor(k.color)}"></label>
-  ${id ? '<p class="hint">Changer le RPM ne s\'applique qu\'aux nouveaux clips : les clips déjà soumis gardent leur tarif.</p>' : ''}
+  ${id ? '<p class="hint">Changer le RPM ne s\'applique qu\'aux nouveaux clips : les clips déjà soumis gardent leur tarif.</p>' : `<label class="check"><input type="checkbox" name="announce" checked> Prévenir les clippers (notification + e-mail) dès la publication</label><p class="muted small" style="margin-top:-8px">Envoyé seulement si la campagne est « Active ». Les clippers désinscrits des e-mails reçoivent seulement la notification.</p>`}
   <button class="btn primary block lg" type="submit">${id ? 'Enregistrer' : 'Créer la campagne'}</button></form>`, { wide: true });
   $('#cpF').onsubmit = async e => {
     e.preventDefault(); const f = e.target, fd = new FormData(f), pf = fd.getAll('pf'), btn = f.querySelector('button[type=submit]');
@@ -976,6 +1192,7 @@ A.campForm = async id => {
     if (examples.some(x => !/^https:\/\/\S+$/.test(x.url))) return toast('Chaque exemple doit avoir un lien de vidéo en https://', 'err');
     const sA = fd.get('startAt'), eA = fd.get('endAt'), start = sA ? new Date(sA) : new Date(), end = eA ? new Date(eA) : null;
     if (end && end <= start) return toast('La date de fin doit être après le début.', 'err');
+    if (!fd.get('title').trim() || !fd.get('brand').trim() || !fd.get('description').trim()) return toast('Titre, marque et brief sont obligatoires.', 'err');
     const v = { title: fd.get('title').trim(), brand: fd.get('brand').trim(), type: fd.get('type'), cover: fd.get('cover') || '', description: fd.get('description').trim(), rules: fd.get('rules').trim(), links,
       rate: cents(fd.get('rate')), budget: cents(fd.get('budget')), platforms: pf, status: fd.get('status'), color: fd.get('color'), startAt: Timestamp.fromDate(start), endAt: end ? Timestamp.fromDate(end) : null };
     if (!(v.rate > 0) || !(v.budget > 0)) return toast('RPM et budget doivent être positifs.', 'err');
@@ -984,8 +1201,11 @@ A.campForm = async id => {
       const ref = id ? doc(db, 'campaigns', id) : doc(collection(db, 'campaigns')), b = writeBatch(db);
       if (id) b.update(ref, v); else b.set(ref, { ...v, spent: 0, views: 0, clipsCount: 0, clippers: 0, top: [], createdAt: serverTimestamp() });
       b.set(doc(db, 'campaignExtras', ref.id), { examples });
+      logDoc(b, id ? 'campaign_update' : 'campaign_create', '', ref.id + ' · ' + v.title);
       await b.commit();
-      closeModal(); toast(id ? 'Campagne mise à jour.' : 'Campagne créée et visible par les clippers.'); show('campaigns', true);
+      closeModal(); toast(id ? 'Campagne mise à jour.' : 'Campagne créée et visible par les clippers.');
+      if (!id && fd.get('announce') && v.status === 'active' && !(end && end < new Date())) await announceCamp(ref.id, btn);
+      show('campaigns', true);
     } catch (err) { toast(errMsg(err), 'err') } finally { busy(btn, false) }
   };
 };
@@ -997,7 +1217,7 @@ A.delCamp = async id => {
   const k = DATA.camps.find(c => c.id === id);
   if (DATA.clips.some(c => c.campaignId === id && c.status === 'approved')) return toast('Des clips approuvés y sont liés : passe-la plutôt en « Terminée ».', 'err');
   if (!await confirmBox('Supprimer « ' + k.title + ' » ?', 'La campagne et ses clips en attente ou refusés seront supprimés.', 'Supprimer')) return;
-  try { const b = writeBatch(db); DATA.clips.filter(c => c.campaignId === id).forEach(c => b.delete(doc(db, 'clips', c.id))); b.delete(doc(db, 'campaignExtras', id)); b.delete(doc(db, 'campaigns', id)); await b.commit(); toast('Campagne supprimée.'); show('campaigns', true) } catch (e) { toast(errMsg(e), 'err') }
+  try { const ids = DATA.clips.filter(c => c.campaignId === id).map(c => c.id); for (let i = 0; i < ids.length; i += 450) { const bb = writeBatch(db); ids.slice(i, i + 450).forEach(x => bb.delete(doc(db, 'clips', x))); await bb.commit() } const b = writeBatch(db); b.delete(doc(db, 'campaignExtras', id)); b.delete(doc(db, 'campaigns', id)); logDoc(b, 'campaign_delete', '', id + ' · ' + k.title); await b.commit(); toast('Campagne supprimée.'); show('campaigns', true) } catch (e) { toast(errMsg(e), 'err') }
 };
 
 /* ---------- Retraits ---------- */
@@ -1007,7 +1227,11 @@ async function setPay(id, st) {
   try {
     const b = writeBatch(db);
     b.update(doc(db, 'payouts', id), { status: st, processedAt: serverTimestamp() });
-    if (p.user && p.user.status !== 'deleted') b.update(doc(db, 'users', p.userId), st === 'paid' ? { pending: increment(-p.amount), paid: increment(p.amount) } : { pending: increment(-p.amount) });
+    if (p.user && p.user.status !== 'deleted') {
+      b.update(doc(db, 'users', p.userId), st === 'paid' ? { pending: increment(-p.amount), paid: increment(p.amount) } : { pending: increment(-p.amount) });
+      notifDoc(b, p.userId, 'payment', st === 'paid' ? 'Retrait envoyé' : 'Retrait refusé', st === 'paid' ? 'Ton retrait de {m} a été envoyé en USDT (BEP20).' : 'Ton retrait de {m} a été refusé : le montant est recrédité sur ton solde.', { m: '$' + (+p.amount).toFixed(2) }, { view: 'payments' });
+    }
+    logDoc(b, st === 'paid' ? 'payout_paid' : 'payout_rejected', p.userId, '$' + (+p.amount).toFixed(2) + ' · ' + p.account);
     await b.commit(); toast(st === 'paid' ? 'Retrait marqué comme payé.' : 'Retrait refusé, montant recrédité.'); show('payouts', true);
   } catch (e) { toast(errMsg(e), 'err') }
 }
@@ -1027,10 +1251,110 @@ function bindA() {
   };
   const sf = $('#setF'); if (sf) sf.onsubmit = async e => {
     e.preventDefault(); const f = Object.fromEntries(new FormData(sf)), btn = sf.querySelector('button'); busy(btn, true);
-    try { await setDoc(doc(db, 'settings', 'main'), { platformName: f.platformName.trim().slice(0, 30), currency: 'USD', minPayout: Math.max(1, cents(f.minPayout) || 20), supportEmail: f.supportEmail.trim().slice(0, 120), trainingUrl: /^https:\/\/\S+$/.test((f.trainingUrl || '').trim()) ? f.trainingUrl.trim().slice(0, 300) : '', autoApprove: f.autoApprove === 'on', apiBase: /^https:\/\/[a-z0-9.-]+(:\d+)?$/i.test((f.apiBase || '').trim().replace(/\/+$/, '')) ? f.apiBase.trim().replace(/\/+$/, '') : '' }, { merge: true }); toast('Paramètres enregistrés.'); show('settings', true) }
+    try { await setDoc(doc(db, 'settings', 'main'), { platformName: f.platformName.trim().slice(0, 30), currency: 'USD', minPayout: Math.max(1, cents(f.minPayout) || 20), supportEmail: f.supportEmail.trim().slice(0, 120), trainingUrl: /^https:\/\/\S+$/.test((f.trainingUrl || '').trim()) ? f.trainingUrl.trim().slice(0, 300) : '', autoApprove: false, apiBase: /^https:\/\/[a-z0-9.-]+(:\d+)?$/i.test((f.apiBase || '').trim().replace(/\/+$/, '')) ? f.apiBase.trim().replace(/\/+$/, '') : '' }, { merge: true }); toast('Paramètres enregistrés.'); show('settings', true) }
     catch (err) { toast(errMsg(err), 'err') } finally { busy(btn, false) }
   };
 }
+
+/* ---------- Assistance : demandes des clippers ---------- */
+const TCATA = { technical: 'Problème technique', account: 'Compte', payment: 'Paiement', campaign: 'Campagne', video: 'Vidéo', report: 'Signalement', other: 'Autre' };
+const TSTA = { open: ['En attente', 'amber'], in_progress: ['En cours de traitement', 'cyan'], resolved: ['Résolue', 'green'] };
+AV.support = () => {
+  const all = DATA.tickets, c = { all: all.length }; ['open', 'in_progress', 'resolved'].forEach(k => c[k] = all.filter(x => x.status === k).length);
+  const L = all.filter(x => tkSt === 'all' || x.status === tkSt);
+  return `<div class="tabs">${[['open', 'En attente'], ['in_progress', 'En cours'], ['resolved', 'Résolues'], ['all', 'Toutes']].map(([k, l]) => `<button class="tab ${tkSt === k ? 'on' : ''}" data-a="tkTab" data-v="${k}">${l}<span>${c[k]}</span></button>`).join('')}</div>
+  <div class="card">${L.length ? `<div class="list">${L.map(x => `<div class="tk" data-a="tkOpen" data-v="${esc(x.id)}" role="button" tabindex="0">${x.unreadAdmin ? '<span class="udot" title="Nouveau message"></span>' : ''}<div class="grow"><span class="tref">${esc(x.ref || x.id)}</span><b>${esc(x.subject)}</b><small class="muted">${esc(TCATA[x.category] || x.category)} · ${esc(x.userName || '')} (${esc(x.userEmail || '')}) · ${x.messagesCount || 1} message(s) · ${ago(x.updatedAt)}</small><small class="muted" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${x.lastBy === 'admin' ? 'Toi : ' : ''}${esc(x.lastMessage || '')}</small></div>${badge(x.status, TSTA)}</div>`).join('')}</div>` : empty('Aucune demande', 'Rien à traiter ici.', '', 'chat')}</div>`;
+};
+A.tkTab = k => { tkSt = k; renderShell(AV.support()) };
+A.viewImg = src => { if (/^data:image\/(jpeg|png|webp);base64,/.test(src || '')) openModal('Pièce jointe', `<img class="imgfull" src="${esc(src)}" alt="">`, { wide: true }) };
+A.tkOpen = async id => {
+  const x = DATA.tickets.find(y => y.id === id); if (!x) return;
+  openModal('Demande ' + (x.ref || x.id), '<div class="loader" style="min-height:160px"></div>', { wide: true });
+  let M = [];
+  try { M = listOf(await getDocs(query(collection(db, 'tickets', id, 'messages'), orderBy('createdAt', 'asc')))) } catch (e) { toast(errMsg(e), 'err') }
+  if (x.unreadAdmin) { x.unreadAdmin = false; api('support/read', { method: 'POST', body: { id } }).catch(() => { }) }
+  const u = DATA.U[x.userId];
+  const atts = L => (L || []).length ? `<div class="atts">${L.map(a => `<span class="att" style='background-image:url("${esc(a.data)}")' data-a="viewImg" data-v="${esc(a.data)}"></span>`).join('')}</div>` : '';
+  const m = $('#modal .modal-b'); if (!m) return;
+  m.innerHTML = `<div class="row between gap wrap" style="margin-bottom:12px"><div><b style="font-size:17px">${esc(x.subject)}</b><small class="muted">${esc(TCATA[x.category] || x.category)} · ouverte le ${dt(x.createdAt)} · <a data-a="userDetail" data-v="${esc(x.userId)}">${esc(u ? (u.pseudo || u.name) : x.userName)}</a> · ${esc(x.userEmail || '')}</small></div>${badge(x.status, TSTA)}</div>
+  <div class="thread" style="max-height:46vh;overflow:auto;padding:4px">${M.map(g => `<div class="msg ${g.from === 'admin' ? 'mine' : 'them'}"><div class="mh"><b>${g.from === 'admin' ? 'Assistance Clexiq' : esc(g.authorName || 'Clipper')}</b><span>· ${ago(g.createdAt)}</span></div>${g.text ? `<p>${esc(g.text)}</p>` : ''}${atts(g.attachments)}</div>`).join('')}</div>
+  <form id="taF" class="form" style="margin-top:14px"><label>Réponse au clipper<textarea name="m" maxlength="4000" placeholder="Écris ta réponse…"></textarea></label>
+  <div class="row gap wrap"><label style="flex:1;min-width:180px">Statut<select name="st"><option value="">${x.status === 'open' ? 'Passer « En cours » (automatique)' : 'Garder « ' + esc(TSTA[x.status][0]) + ' »'}</option>${Object.entries(TSTA).filter(([k]) => k !== x.status).map(([k, [l]]) => `<option value="${k}">${l}</option>`).join('')}</select></label>
+  <button class="btn primary" type="submit" style="align-self:flex-end">${ic('send')} Envoyer</button></div><p class="muted small">Le clipper est prévenu dans ses notifications.</p></form>`;
+  $('#taF').onsubmit = async e => {
+    e.preventDefault(); const f = Object.fromEntries(new FormData(e.target)), btn = e.target.querySelector('button[type=submit]');
+    if (!f.m.trim() && !f.st) return toast('Écris une réponse ou choisis un statut.', 'err');
+    busy(btn, true);
+    try { await api('admin/support', { method: 'POST', body: { id, message: f.m.trim(), status: f.st || undefined } }); closeModal(); toast('Réponse envoyée.'); show('support', true) } catch (err) { toast(err.message, 'err') } finally { busy(btn, false) }
+  };
+};
+
+/* ---------- Avertissements ---------- */
+const WL = { reminder: 'Rappel des règles', official: 'Avertissement officiel', final: 'Dernier avertissement' };
+const WSV = { low: 'Faible', medium: 'Moyenne', high: 'Élevée', critical: 'Critique' };
+const WC = { content: 'Contenu non conforme', views: 'Vues suspectes ou achetées', spam: 'Spam ou doublons', behavior: 'Comportement inapproprié', payment: 'Paiement', account: 'Compte', other: 'Autre' };
+const WTPL = {
+  views: { title: 'Vues suspectes sur tes clips', message: 'Nous avons détecté une activité anormale sur les vues de certains de tes clips.', rule: 'Vues authentiques uniquement : pas d\'achat de vues ni de robots.', instructions: 'Arrête toute promotion payante ou service d\'achat de vues. Les vues concernées ne seront pas rémunérées.' },
+  content: { title: 'Contenu non conforme au brief', message: 'Un ou plusieurs de tes clips ne respectent pas le brief de la campagne.', rule: 'Contenu conforme au brief.', instructions: 'Relis le brief avant de publier et respecte le format et les mentions demandées.' },
+  spam: { title: 'Soumissions en double', message: 'Tu as soumis plusieurs vidéos quasi identiques ou republié le contenu d\'un autre clipper.', rule: 'Pas de doublons ni de spam.', instructions: 'Soumets uniquement des clips originaux, une seule fois chacun.' }
+};
+AV.warnings = () => {
+  const qq = wnQ.trim().toLowerCase(), L = DATA.warnings.filter(w => !qq || [w.userName, w.userEmail, w.title, w.by].join(' ').toLowerCase().includes(qq));
+  const cntL = k => DATA.warnings.filter(w => w.level === k).length;
+  return `<div class="stack"><div class="card"><div class="row between gap wrap"><div><h3>Envoyer un avertissement</h3><p class="muted small" style="margin-top:4px">L'avertissement arrive dans les notifications du clipper avec un bouton « En savoir plus ». Il est conservé dans son historique et dans le journal.</p></div><button class="btn primary" data-a="warnForm">${ic('alert')} Nouvel avertissement</button></div>
+  <div class="row gap wrap" style="margin-top:12px"><span class="badge cyan">${cntL('reminder')} rappel(s)</span><span class="badge amber">${cntL('official')} officiel(s)</span><span class="badge red">${cntL('final')} dernier(s)</span></div></div>
+  <div class="card"><div class="card-h"><h3>Historique des avertissements</h3></div><div class="search" style="margin-bottom:10px">${ic('search')}<input placeholder="Clipper, titre, auteur…" value="${esc(wnQ)}" data-in="wnSearch"></div><div id="wnList">${wnList(L)}</div></div></div>`;
+};
+const wnList = L => L.length ? `<div class="list">${L.map(w => `<div class="li" data-a="warnDetail" data-v="${esc(w.id)}" style="cursor:pointer"><span class="badge ${w.level === 'final' ? 'red' : w.level === 'official' ? 'amber' : 'cyan'}">${esc(WL[w.level] || w.level)}</span><div class="grow"><b>${esc(w.title)}</b><small class="muted">${esc(w.userName || '')} · ${esc(WC[w.category] || w.category)} · gravité ${esc(WSV[w.severity] || w.severity)}</small><small class="muted">${dt(w.createdAt)} · par ${esc(w.by)}${w.readAt ? ' · lu' : ' · non lu'}</small></div></div>`).join('')}</div>` : empty('Aucun avertissement', 'Les avertissements envoyés apparaîtront ici.', '', 'alert');
+A.wnSearch = v => { wnQ = v; const qq = v.trim().toLowerCase(), b = $('#wnList'); if (b) b.innerHTML = wnList(DATA.warnings.filter(w => !qq || [w.userName, w.userEmail, w.title, w.by].join(' ').toLowerCase().includes(qq))) };
+A.warnDetail = id => {
+  const w = DATA.warnings.find(x => x.id === id); if (!w) return;
+  const sec = (l, v) => v ? `<div class="wsec"><small>${l}</small><p>${esc(v)}</p></div>` : '';
+  openModal('Avertissement', `<div class="wban ${esc(w.level)}" style="margin-bottom:14px"><span class="wic">${ic('alert')}</span><div class="grow"><small class="muted">${esc(WL[w.level])} · gravité ${esc(WSV[w.severity])} · ${esc(WC[w.category])}</small><b style="display:block;font-size:17px;margin-top:4px">${esc(w.title)}</b><small class="muted">Envoyé à <a data-a="userDetail" data-v="${esc(w.userId)}">${esc(w.userName)}</a> le ${dt(w.createdAt)} par ${esc(w.by)} · ${w.readAt ? 'lu le ' + dt(w.readAt) : 'pas encore lu'}</small></div></div>
+  ${sec('Message', w.message)}${sec('Problème constaté', w.problem)}${sec('Règle enfreinte', w.rule)}${sec('Comment corriger', w.instructions)}${sec('Explications complètes (« En savoir plus »)', w.details)}`, { wide: true });
+};
+A.warnForm = uid => {
+  const users = DATA.users.filter(u => !isAdminEmail(u.email));
+  const opt = u => `<option value="${esc(u.id)}" ${u.id === uid ? 'selected' : ''}>${esc(u.pseudo || u.name || '—')} · ${esc(u.email)}${u.status !== 'active' ? ' (suspendu)' : ''}</option>`;
+  openModal('Nouvel avertissement', `<form id="wnF" class="form">
+  <label>Rechercher le clipper<input id="wnUq" placeholder="Pseudo, nom ou e-mail…" data-in="wnUserQ" autocomplete="off"></label>
+  <label>Clipper concerné<select name="userId" required size="5" id="wnUser">${users.map(opt).join('')}</select></label>
+  <div class="grid2"><label>Type d'avertissement<select name="category" required data-ch="wnTpl">${Object.entries(WC).map(([k, l]) => `<option value="${k}">${l}</option>`).join('')}</select></label>
+  <label>Niveau<select name="level" required>${Object.entries(WL).map(([k, l]) => `<option value="${k}" ${k === 'official' ? 'selected' : ''}>${l}</option>`).join('')}</select></label></div>
+  <label>Gravité<select name="severity" required>${Object.entries(WSV).map(([k, l]) => `<option value="${k}" ${k === 'medium' ? 'selected' : ''}>${l}</option>`).join('')}</select></label>
+  <label>Titre<input name="title" required minlength="3" maxlength="120" placeholder="ex : Vues suspectes sur tes clips"></label>
+  <label>Message<textarea name="message" required minlength="10" maxlength="2000" placeholder="Le message principal, affiché dans la notification et en haut de l'avertissement."></textarea></label>
+  <label>Problème constaté<textarea name="problem" maxlength="2000" placeholder="Ce que tu as observé précisément (clip, date, chiffres…)."></textarea></label>
+  <label>Règle enfreinte (optionnel)<input name="rule" maxlength="300" placeholder="ex : Vues authentiques uniquement"></label>
+  <label>Comment corriger<textarea name="instructions" maxlength="2000" placeholder="Ce que le clipper doit faire pour se mettre en règle."></textarea></label>
+  <label>Explications complètes pour « En savoir plus » (optionnel)<textarea name="details" maxlength="6000" style="min-height:110px" placeholder="Le détail complet : contexte, conséquences, prochaines étapes…"></textarea></label>
+  <p class="hint">Le contenu est entièrement libre. Les modèles se remplissent selon le type choisi, tu peux tout modifier. Aucune sanction n'est appliquée : pour suspendre un compte, utilise l'action dédiée dans Utilisateurs.</p>
+  <button class="btn primary block" type="submit">${ic('send')} Envoyer l'avertissement</button></form>`, { wide: true });
+  A.wnTpl('views');
+  $('#wnF').onsubmit = async e => {
+    e.preventDefault(); const f = Object.fromEntries(new FormData(e.target)), btn = e.target.querySelector('button[type=submit]');
+    if (!f.userId) return toast('Choisis le clipper concerné.', 'err');
+    if (f.title.trim().length < 3) return toast('Le titre doit faire au moins 3 caractères.', 'err');
+    if (f.message.trim().length < 10) return toast('Le message doit faire au moins 10 caractères.', 'err');
+    const u = DATA.U[f.userId];
+    if (!await confirmBox('Envoyer cet avertissement ?', `<b>${esc(WL[f.level])}</b> à <b>${esc(u.pseudo || u.name)}</b> : « ${esc(f.title)} ».`, 'Envoyer', false)) return;
+    busy(btn, true);
+    try { await api('admin/warn', { method: 'POST', body: f }); toast('Avertissement envoyé.'); show(aview === 'users' ? 'users' : 'warnings', true) } catch (err) { toast(err.message, 'err') } finally { busy(btn, false) }
+  };
+};
+A.wnUserQ = v => { const qq = v.trim().toLowerCase(), sel = $('#wnUser'); if (!sel) return; [...sel.options].forEach(o => { o.hidden = !!qq && !o.textContent.toLowerCase().includes(qq) }); const first = [...sel.options].find(o => !o.hidden); if (first && qq) sel.value = first.value };
+A.wnTpl = k => { const f = $('#wnF'), tp = WTPL[k]; if (!f || !tp) return; for (const [n, v] of Object.entries(tp)) { const el = f.querySelector(`[name=${n}]`); if (el && (!el.value || el.dataset.tpl === '1')) { el.value = v; el.dataset.tpl = '1' } } };
+
+/* ---------- Journal des actions ---------- */
+const LOGL = { warn: 'Avertissement', suspend: 'Suspension', reactivate: 'Réactivation', delete_user: 'Suppression de compte', country_set: 'Pays corrigé', country_unlock: 'Pays débloqué', clip_approve: 'Vidéo approuvée', clip_fix: 'Correction demandée', clip_reject: 'Vidéo rejetée', clip_delete: 'Vidéo supprimée', payout_paid: 'Retrait payé', payout_rejected: 'Retrait refusé', support: 'Assistance', campaign_create: 'Campagne créée', campaign_update: 'Campagne modifiée', campaign_delete: 'Campagne supprimée', campaign_announce: 'Campagne annoncée' };
+AV.log = () => `<div class="stack"><div class="hint">Toutes les actions sensibles des administrateurs sont enregistrées ici (date, action, utilisateur concerné, auteur). Le journal ne peut être ni modifié ni effacé depuis le site.</div>
+  <div class="card"><div class="search" style="margin-bottom:10px">${ic('search')}<input placeholder="Action, utilisateur, détail, auteur…" value="${esc(logQ)}" data-in="logSearch"></div><div id="logList">${logList()}</div></div></div>`;
+function logList() {
+  const qq = logQ.trim().toLowerCase(), uN = id => { const u = DATA.U[id]; return u ? (u.pseudo || u.name || u.email) : (id ? 'Compte supprimé' : '') };
+  const L = DATA.log.filter(l => !qq || [LOGL[l.action] || l.action, uN(l.targetUid), l.detail, l.by].join(' ').toLowerCase().includes(qq));
+  return L.length ? `<div class="list">${L.map(l => `<div class="li"><div class="grow"><b>${esc(LOGL[l.action] || l.action)}</b>${l.targetUid ? ` <a class="small" data-a="userDetail" data-v="${esc(l.targetUid)}">${esc(uN(l.targetUid))}</a>` : ''}<small class="muted" style="word-break:break-word">${esc(l.detail || '')}</small><small class="muted">${l.createdAt ? new Date(tms(l.createdAt)).toLocaleString('fr-FR', { dateStyle: 'medium', timeStyle: 'short' }) : ''} · par ${esc(l.by || '—')}</small></div></div>`).join('')}</div>` : empty('Journal vide', 'Les prochaines actions apparaîtront ici.', '', 'file');
+}
+A.logSearch = v => { logQ = v; const b = $('#logList'); if (b) b.innerHTML = logList() };
 </script>
 </body>
 </html>
